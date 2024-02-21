@@ -87,6 +87,44 @@
         bottom: 0;
         z-index: 0;
       }
+
+      .terms_and_conditions_label {
+        font-size: 18px;
+      }
+
+      .sign-up-row {
+        padding: 0;
+      }
+
+      @media screen and (max-width: 424px) {
+        .terms_and_conditions_label {
+          font-size: 13px !important;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .sign-up-div {
+          padding: 0;
+        }
+
+        .sign-up-button {
+          float: right;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .sign-up-row {
+          padding: 15px;
+        }
+
+        .sign-up-div {
+          padding: 0;
+        }
+
+        .sign-up-button {
+          float: right;
+        }
+      }
     </style>
   </head>
   <body>
@@ -459,20 +497,23 @@
                   </div>
                 </div>
               </div>
+
               <div class="col-12">
-                <h4 class="text-center mb-4">
+                <h4 class="text-center mb-3">
                   Sign Up to receive our cruise job vacancies
                 </h4>
                 <form action="">
-                  <div class="row">
-                    <div class="col-11">
+                  <div class="row sign-up-row">
+                    <div class="col-lg-11 col-md-12 col-sm-12 mb-4">
                       <div class="row form_border_reviews">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
                           <div class="row">
-                            <label for="" class="col-sm-2 col-form-label"
+                            <label
+                              for=""
+                              class="col-lg-2 col-md-12 col-sm-12 col-form-label"
                               >Name:-</label
                             >
-                            <div class="col-sm-10">
+                            <div class="col-lg-10 col-md-12 col-sm-12">
                               <input
                                 type="text"
                                 class="form-control cusom_form_control_review"
@@ -482,12 +523,14 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
                           <div class="row">
-                            <label for="" class="col-sm-3 col-form-label"
-                              >Whatsappa:-</label
+                            <label
+                              for=""
+                              class="col-lg-4 col-md-12 col-sm-12 col-form-label"
+                              >Whatsapp:-</label
                             >
-                            <div class="col-sm-9">
+                            <div class="col-lg-8 col-md-12 col-sm-12">
                               <input
                                 type="text"
                                 class="form-control cusom_form_control_review"
@@ -497,12 +540,14 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
                           <div class="row">
-                            <label for="" class="col-sm-3 col-form-label"
+                            <label
+                              for=""
+                              class="col-lg-2 col-md-12 col-sm-12 col-form-label"
                               >Email:-</label
                             >
-                            <div class="col-sm-9">
+                            <div class="col-lg-10 col-md-12 col-sm-12">
                               <input
                                 type="text"
                                 class="form-control cusom_form_control_review"
@@ -514,9 +559,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-1">
+                    <div class="col-lg-1 col-md-12 col-sm-12 sign-up-div">
                       <button
-                        class="btn btn-primary custom_button_text"
+                        class="btn btn-primary custom_button_text sign-up-button"
                         type="button"
                       >
                         Submit
@@ -525,11 +570,13 @@
                   </div>
                 </form>
               </div>
+
               <div
-                class="col-12 text-center mt-4"
-                style="font-size: 18px; color: white"
+                class="col-12 text-center mt-2 terms_and_conditions_label"
+                style="color: white"
               >
                 <input id="checkbox" type="checkbox" />
+                &nbsp;
                 <label for="checkbox">
                   I agree to these <a href="#">Terms and Conditions</a>.
                   <span class="text-danger">*</span>
