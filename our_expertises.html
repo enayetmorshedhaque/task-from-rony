@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISOL</title>
+
+    <!-- Bootstrap CSS File -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/bootstrap-5/css/bootstrap.min.css"
+    />
+
+    <!-- Fontawesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/86bc96ac49.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme/theme.css" />
+
+    <!-- Page Style -->
+    <style>
+      body {
+        background-color: #000000;
+      }
+
+      .card-title {
+        padding-bottom: 10px;
+      }
+
+      .card-title h2 {
+        font-size: 26px;
+        line-height: 1.63;
+        color: black;
+        font-weight: bold;
+        padding-bottom: 20px;
+        position: relative;
+      }
+
+      .card-title h2::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #f88a04ff;
+        bottom: 0;
+        left: 0;
+      }
+
+      .oll {
+        counter-reset: li;
+        list-style: none;
+        padding: 0;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+      }
+
+      .oll span {
+        position: relative;
+        display: block;
+        padding: 0.4em 0.4em 0.4em 0.8em;
+        margin: 0.5em 0 0.5em 2.5em;
+        background: #d3d4da;
+        color: #444;
+        text-decoration: none;
+        transition: all 0.3s ease-out;
+      }
+
+      .oll span:before {
+        content: counter(li);
+        counter-increment: li;
+        position: absolute;
+        left: -2.5em;
+        top: 50%;
+        margin-top: -1em;
+        background: #f9dd94;
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .oll span:hover:after {
+        left: -0.5em;
+        border-left-color: #f9dd94;
+      }
+      .oll span:after {
+        position: absolute;
+        content: "";
+        border: 0.5em solid transparent;
+        left: -1em;
+        top: 50%;
+        margin-top: -0.5em;
+        transition: all 0.3s ease-out;
+      }
+
+      .oll span:hover {
+        background: #dcdde1;
+      }
+    </style>
+  </head>
+  <body class="montserrat-font">
+    <!-- Main Section Starts Here -->
+    <main>
+      <!-- Page Top Section Starts Here -->
+      <section class="page_top_section">
+        <div class="container">
+          <div class="page-header my-auto">
+            <h3>Interworld Shipping Overseas Limited</h3>
+            <h2>Our Expertise</h2>
+          </div>
+        </div>
+      </section>
+      <!-- Page Top Section Ends Here -->
+
+      <!-- Our Expertise Section Starts Here -->
+      <section class="py-5">
+        <div class="container">
+          <p class="mb-4">
+            At ISOL, as a premier HR Management Service recruitment agency
+            dedicated to the cruise liner industry, we bring unparalleled
+            expertise and a deep understanding of the industry&#39;s unique
+            staffing needs.
+          </p>
+
+          <div class="card px-3 py-5 rounded-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card-title fira-sans-font">
+                    <h2>Our Expertise Covers:</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <ol class="oll">
+                    <li><span>Industry insight</span></li>
+                    <li><span>Global Talent Network</span></li>
+                    <li><span>Cruise Specific Recruitment</span></li>
+                    <li><span>Rigorous Screening &amp; Assessment</span></li>
+                    <li><span>Tailor-made Staffing Solutions</span></li>
+                    <li><span>Dedicated solutions and follow up</span></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Expertise Section Ends Here -->
+    </main>
+    <!-- Main Section Ends Here -->
+
+    <!-- Footer Starts Here -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          INTERWORLD SHIPPING OVERSEAS LIMITED (ISOL) &copy; Copyright. All
+          Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <!-- Bootstrap JS File -->
+    <link rel="stylesheet" href="./assets/js/bootstrap-5/js/bootstrap.min.js" />
+
+    <!-- jQuery JS File -->
+    <link rel="stylesheet" href="./assets/js/jquery/jquery.min.js" />
+  </body>
+</html>
