@@ -23,6 +23,121 @@ body {
   color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+}
+
+.section-title h2,
+.section-title1 h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  color: white;
+}
+
+.footer_upper_box img {
+  height: 55px;
+  width: 60px;
+}
+
+.footer_upper_box h3 {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Contact Section Homepage */
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.contact .info i {
+  font-size: 32px;
+  color: #ffffff;
+  float: left;
+  line-height: 1;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #ebebeb;
+}
+
+/* Footer Section Homepage */
+.footer_header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer_link_list p {
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer_link_list p a {
+  color: #fff;
+}
+
+/* Footer Custom Button Homepage */
+.custom-btn1 {
+  background-color: #ff6f42;
+  font-size: 20px;
+  color: #ffcc07;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.custom-btn2 {
+  background-color: #ffcc07;
+  font-size: 20px;
+  color: #ff6f42;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.custom-btn1:hover {
+  color: #212529;
+  background-color: #ff6f42;
+}
+
+.custom-btn2:hover {
+  background-color: #ffcc07;
+  color: #212529;
+}
+
+/* Footer Link Homepage */
+.footer_link {
+  padding-top: 15px;
+}
+
+.footer_link a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Social Icon Homepage */
+.social_icon_list a {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
 .header_text {
   font-size: 50px;
   font-variant: small-caps;
