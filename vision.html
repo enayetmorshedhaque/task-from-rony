@@ -31,6 +31,51 @@
       body {
         background-color: #000000;
       }
+
+      .card {
+        border-width: 0;
+      }
+
+      .card-title {
+        padding-bottom: 10px;
+      }
+
+      .card-title h2 {
+        font-size: 26px;
+        line-height: 1.63;
+        font-weight: bold;
+        padding-bottom: 20px;
+        position: relative;
+      }
+
+      .card-title h2::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #f88a04ff;
+        bottom: 0;
+        left: 0;
+      }
+
+      .mission_statement {
+        padding: 30px 30px 18px;
+        border: 0;
+        border-left: 5px solid #eb9356;
+        background: #f2f2f2;
+        font-size: 18px;
+        line-height: 26px;
+        color: #212121;
+        font-style: italic;
+        font-weight: 500;
+      }
+
+      .section-title p {
+        margin-bottom: 0;
+        color: #777777;
+        font-size: 15px;
+      }
     </style>
   </head>
   <body class="montserrat-font">
@@ -128,6 +173,60 @@
       <div class="header-shadow-wrapper"></div>
     </div>
     <!-- Navigation Bar Ends Here -->
+
+    <!-- Main Section Starts Here -->
+    <main>
+      <!-- Page Top Section Starts Here -->
+      <section class="page_top_section">
+        <div class="container">
+          <div class="page-header my-auto">
+            <h3>Interworld Shipping Overseas Limited</h3>
+            <h2>Vision</h2>
+          </div>
+        </div>
+      </section>
+      <!-- Page Top Section Ends Here -->
+
+      <!-- Our Vision Section Starts Here -->
+      <section class="py-5">
+        <div class="container">
+          <div class="card-title fira-sans-font">
+            <h2>Our Vision</h2>
+          </div>
+          <div class="card rounded-0 mb-4">
+            <div class="card-body mission_statement">
+              <ul>
+                <li>
+                  <span
+                    >To continue as the most innovative, dynamic and passionate
+                    organization within the Global Marine Industry, and</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >To ensure an unparalleled quality service to the Cruise
+                    Liner Industry.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Vision Section Ends Here -->
+    </main>
+    <!-- Main Section Ends Here -->
+
+    <!-- Footer Starts Here -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          INTERWORLD SHIPPING OVERSEAS LIMITED (ISOL) &copy; Copyright. All
+          Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends Here -->
 
     <!-- Bootstrap JS File -->
     <link rel="stylesheet" href="./assets/js/bootstrap-5/js/bootstrap.min.js" />

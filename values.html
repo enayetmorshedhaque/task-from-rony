@@ -36,8 +36,32 @@
         border-width: 0;
       }
 
+      .card-title {
+        padding-bottom: 10px;
+      }
+
+      .card-title h2 {
+        font-size: 26px;
+        line-height: 1.63;
+        font-weight: bold;
+        padding-bottom: 20px;
+        position: relative;
+      }
+
+      .card-title h2::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #f88a04ff;
+        bottom: 0;
+        left: 0;
+      }
+
       .mission_statement {
         padding: 30px 30px 18px;
+        border: 0;
         border-left: 5px solid #eb9356;
         background: #f2f2f2;
         font-size: 18px;
@@ -45,6 +69,12 @@
         color: #212121;
         font-style: italic;
         font-weight: 500;
+      }
+
+      .section-title p {
+        margin-bottom: 0;
+        color: #777777;
+        font-size: 15px;
       }
     </style>
   </head>
@@ -151,38 +181,137 @@
         <div class="container">
           <div class="page-header my-auto">
             <h3>Interworld Shipping Overseas Limited</h3>
-            <h2>Our Services</h2>
+            <h2>Values</h2>
           </div>
         </div>
       </section>
       <!-- Page Top Section Ends Here -->
 
-      <!-- Our Services Section Starts Here -->
+      <!-- Our Values Section Starts Here -->
       <section class="py-5">
         <div class="container">
-          <div class="row">
-            <div class="col-12 mb-4">
-              <img
-                src="https://isol.com.bd/public/front/assets/img/partner_with_us/our_services.png"
-                alt=""
-                class="p-0 m-0 img-fluid"
-              />
+          <div class="card-title fira-sans-font">
+            <h2>Our Values</h2>
+          </div>
+          <div class="card rounded-0 mb-4">
+            <div class="card-body mission_statement">
+              <ul>
+                <li>
+                  <span
+                    >It is known and been said that Bangladesh seafarers are
+                    some of the best in the world.</span
+                  >
+                </li>
+                <li>
+                  <span>We will help you find your seafarer requirements.</span>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="card rounded-0">
-            <div class="card-body mission_statement">
-              <p>
-                We are a Licensed and MLC Certified International HR Management
-                Service provider. We offer an array of services for Maritime,
-                Oil and Gas Sectors, Cruise Ships, Mega- Yachts, River Cruise,
-                Cargo Shipping, Merchant Navy’s, Hotel &amp; Resorts, Chartered
-                Crew, Offshore and Hospitality Butlers worldwide.
-              </p>
+          <div class="card-title fira-sans-font">
+            <h2>Customer Focus:</h2>
+          </div>
+          <div class="section-title mb-4">
+            <p>
+              Our valued client(s) is / are our key to success, thus we have to
+              ensure that each client(s) who seek our service(s) is/are treated
+              with respect, courtesy and sensitivity. We are committed to
+              meeting the needs of our client(s), and we constantly focus on
+              giving top priority, service and satisfaction.
+            </p>
+            <h4
+              class="fira-sans-font"
+              style="text-decoration: underline; padding-top: 15px"
+            >
+              This is what we do and advise for an applicant:
+            </h4>
+            <p>We are ready to…..</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="mission_statement custom_height_value">
+                <h4 class="fira-sans-font">Help</h4>
+                <div class="section-title">
+                  <p>
+                    We are available 24/7 to attend, listen to and understand
+                    our client’s needs and expectations.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="mission_statement custom_height_value">
+                <h4 class="fira-sans-font">Assist</h4>
+                <div class="section-title">
+                  <p>
+                    Our competent HR Manager will assess the crews’ CV’s and
+                    provide assistance and recommend steps on how to get hired.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="mission_statement custom_height_value">
+                <h4 class="fira-sans-font">Support</h4>
+                <div class="section-title">
+                  <p>
+                    We not only provide you with leads on latest cruise ship
+                    jobs, but also valuable information and support for job
+                    seekers.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="mission_statement custom_height_value">
+                <h4 class="fira-sans-font">Offer Tips</h4>
+                <div class="section-title">
+                  <p>
+                    The best way to get a job is to do your own research and
+                    find out every possible detail about working on a cruise
+                    ship by visiting their websites and then decide if you can
+                    adapt to the job.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="mission_statement custom_height_value">
+                <h4 class="fira-sans-font">Guide</h4>
+                <div class="section-title">
+                  <p>
+                    After visiting our cruise liner website and if you find
+                    something suitable, ensure to update your CV to demonstrate
+                    your suitability for the job. Recruiters have only a few
+                    seconds to look at your CV so make sure you prepare a clear,
+                    brief, informative and well styled CV.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="mission_statement custom_height_value">
+                <h4 class="fira-sans-font">Advice</h4>
+                <div class="section-title">
+                  <p>
+                    Do not apply for positions if you have no or little previous
+                    experience; and do not apply for jobs which require
+                    qualifications you don't hold – you will be only wasting
+                    your time and the recruiter’s time.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Our Services Section Ends Here -->
+      <!-- Our Values Section Ends Here -->
     </main>
     <!-- Main Section Ends Here -->
 
