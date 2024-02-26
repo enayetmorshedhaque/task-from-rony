@@ -58,9 +58,7 @@ a {
 /* Contact Section Wave Homepage */
 .contact_wave {
   position: relative !important;
-  /* padding-top: 80px; */
-  /* padding-bottom: 100px; */
-  /* height: 100vh; */
+  padding-top: 100px;
 }
 
 .wave {
@@ -69,7 +67,7 @@ a {
   padding-top: 12%;
   top: -5px;
   left: 0;
-  /*background-image: url("../img/wave-01.png");*/
+  background-image: url("../../images/wave-01.png");
   background-repeat: repeat-x;
   background-size: 100%;
   -webkit-animation: wave 8s linear infinite;
@@ -83,7 +81,7 @@ a {
   padding-top: 12%;
   top: -5px;
   left: 0;
-  background-image: url("../img/wave-01.png");
+  background-image: url("../../images/wave-01.png");
   background-repeat: repeat-x;
   background-size: 100%;
   opacity: 0.2;
@@ -98,7 +96,7 @@ a {
   padding-top: 12%;
   top: -5px;
   left: 0;
-  background-image: url("../img/wave-01.png");
+  background-image: url("../../images/wave-01.png");
   background-repeat: repeat-x;
   background-size: 100%;
   opacity: 0.8;
