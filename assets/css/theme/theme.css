@@ -58,9 +58,9 @@ a {
 /* Contact Section Wave Homepage */
 .contact_wave {
   position: relative !important;
-  padding-top: 80px;
-  padding-bottom: 100px;
-  height: 100vh;
+  /* padding-top: 80px; */
+  /* padding-bottom: 100px; */
+  /* height: 100vh; */
 }
 
 .wave {
