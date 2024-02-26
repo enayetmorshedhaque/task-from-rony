@@ -49,6 +49,101 @@ a {
   margin-top: 10px;
 }
 
+/* Global Recruitment News Image Slider Homepage */
+.news_img_box {
+  max-height: 430px;
+  width: 100%;
+}
+
+/* Contact Section Wave Homepage */
+.contact_wave {
+  position: relative !important;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  height: 100vh;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  padding-top: 12%;
+  top: -5px;
+  left: 0;
+  /*background-image: url("../img/wave-01.png");*/
+  background-repeat: repeat-x;
+  background-size: 100%;
+  -webkit-animation: wave 8s linear infinite;
+  animation: wave 8s linear infinite;
+}
+
+.wave::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  padding-top: 12%;
+  top: -5px;
+  left: 0;
+  background-image: url("../img/wave-01.png");
+  background-repeat: repeat-x;
+  background-size: 100%;
+  opacity: 0.2;
+  -webkit-animation: background-position-y 8s linear infinite;
+  animation: wave-reverse 8s linear infinite;
+}
+
+.wave::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  padding-top: 12%;
+  top: -5px;
+  left: 0;
+  background-image: url("../img/wave-01.png");
+  background-repeat: repeat-x;
+  background-size: 100%;
+  opacity: 0.8;
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+  -webkit-animation: wave 16s linear infinite;
+  animation: wave 16s linear infinite;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100vw;
+  }
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100vw;
+  }
+}
+
+@-webkit-keyframes wave-reverse {
+  0% {
+    background-position: 100vw;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes wave-reverse {
+  0% {
+    background-position: 100vw;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
 /* Contact Section Homepage */
 .contact .info h4 {
   padding: 0 0 0 60px;

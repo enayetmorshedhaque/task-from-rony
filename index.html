@@ -26,10 +26,142 @@
       href="https://isol.com.bd/public/front/assets/css/middle_header.css"
     />
 
+    <!--    slick slider-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/slick/slick-theme.css"
+    />
+
     <!-- Page Style -->
     <style>
       body {
         background-color: #000000;
+      }
+
+      .testimonial {
+        text-align: center;
+        padding: 35px 20px 20px 10px;
+        margin: 70px 15px 35px;
+        border: 2px solid white;
+        position: relative;
+      }
+
+      .testimonial .description {
+        font-size: 12px;
+        color: white;
+        line-height: 27px;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .testimonial .pic {
+        width: 130px;
+        height: 100px;
+        margin: 0 auto;
+        position: absolute;
+        top: -60px;
+        left: 0;
+        right: 0;
+      }
+
+      .testimonial .pic img {
+        max-width: 90px;
+        margin: 0 auto 17px;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      .testimonial .testimonial-profile {
+        position: relative;
+        margin: 20px 0 10px 0;
+      }
+
+      .testimonial .title {
+        display: inline-block;
+        font-size: 16px;
+        color: #f68c09;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      .testimonial .post {
+        display: inline-block;
+        font-size: 14px;
+        color: #757575;
+        text-transform: capitalize;
+      }
+
+      .testimonial-checked {
+        color: #820a0a;
+      }
+
+      .counter-Txt {
+        color: #07c9fe;
+        font-size: 26px;
+      }
+
+      .counter-value {
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .form_border_reviews {
+        border: 1px solid white;
+      }
+
+      .custom_button_text {
+        background-color: transparent;
+        border: 1px solid white;
+      }
+
+      .custom_button_text:hover {
+        color: #fff;
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+      }
+
+      .slick-next {
+        right: -16px;
+        z-index: 1;
+      }
+
+      .slick-prev {
+        left: -16px;
+        z-index: 1;
+      }
+
+      @media screen and (max-width: 1023px) {
+        .form_border_reviews {
+          padding: 10px;
+        }
+
+        .sign-up-div {
+          padding: 0;
+        }
+
+        .custom_button_text {
+          float: right;
+        }
+      }
+
+      @media screen and (max-width: 1023px) {
+        #testimonial-web-view {
+          display: none !important;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        #testimonial-tablet-mobile-view {
+          display: none !important;
+        }
       }
     </style>
   </head>
@@ -194,134 +326,1112 @@
 
     <!-- Fullview Div Starts Here -->
     <div id="fullview">
-      <!-- Contact Us Section Starts Here -->
-      <section
-        class="container contact"
-        id="contact"
-        style="padding-top: 200px"
-      >
-        <div class="section-title1">
-          <h2 class="fira-sans-font">Contact</h2>
+      <!-- What They Say About Us Section Starts Here -->
+      <section class="container" style="padding-top: 50px">
+        <div class="section-title">
+          <h2 class="fira-sans-font">What They Say About Us</h2>
         </div>
-        <div class="row">
-          <div class="col-lg-5 col-md-12 col-sm-12">
-            <div class="info">
-              <div class="row">
-                <div class="col-lg-12 col-md-4 col-sm-12 mb-3">
-                  <div class="form-group">
-                    <i class="fa-solid fa-location-arrow"></i>
-                    <h4>Location:</h4>
-                    <p>
-                      1093/5A Khilbaritek, Vatara, Gulshan, <br />
-                      Dhaka 1212, Bangladesh
-                    </p>
-                    <br />
-                    <p>
-                      GPO Box 3030
-                      <br />
-                      Dhaka 1000, Bangladesh
-                    </p>
+
+        <!-- Testimonials Carousel Starts Here -->
+        <div class="row mb-2">
+          <div class="col-12">
+            <!-- Testimonials Webview Starts Here -->
+            <div class="testimonails_slider" id="testimonial-web-view">
+              <div class="slider_box">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-lg-12 col-md-4 col-sm-12 mb-3">
-                  <div class="form-group">
-                    <i class="fa-solid fa-at"></i>
-                    <h4>Email:</h4>
-                    <p>info@isol.com.bd</p>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-lg-12 col-md-4 col-sm-12 mb-3">
-                  <div class="form-group">
-                    <i class="fa-solid fa-phone"></i>
-                    <h4>Call:</h4>
-                    <p>+880 1982-547679</p>
-                    <p>+880 28899210</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-7 col-md-12 col-sm-12">
-            <h4>Enquiry</h4>
-            <p>Email us with any questions or inquiries</p>
-            <form action="">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="first_name"
-                      class="form-control"
-                      id="first_name"
-                      placeholder="First Name"
-                      required=""
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="last_name"
-                      id="last_name"
-                      placeholder="Last Name"
-                      required=""
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
-                  <div class="form-group">
-                    <input
-                      type="number"
-                      class="form-control"
-                      name="mobile_number"
-                      id="mobile_number"
-                      placeholder="Mobile Number"
-                      required=""
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email"
-                      placeholder=" Email Address"
-                      required=""
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                  <div class="form-group">
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="5"
-                      placeholder="Message"
-                      required=""
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                  <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Your message has been sent. Thank you!
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="float-end">
-                <button class="btn btn-primary" type="submit">
-                  Send Message
+              <div class="slider_box">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider_box">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider_box">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider_box">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonials Webview Ends Here -->
+
+            <!-- Testimonials Tablet View Starts Here -->
+            <div
+              class="testimonails_slider"
+              id="testimonial-tablet-mobile-view"
+            >
+              <div class="slider_box">
+                <div class="row mb-2">
+                  <div class="col-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider_box">
+                <div class="row mb-2">
+                  <div class="col-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider_box">
+                <div class="row mb-2">
+                  <div class="col-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider_box">
+                <div class="row mb-2">
+                  <div class="col-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider_box">
+                <div class="row mb-2">
+                  <div class="col-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider_box">
+                <div class="row mb-2">
+                  <div class="col-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider_box">
+                <div class="row mb-2">
+                  <div class="col-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider_box">
+                <div class="row mb-2">
+                  <div class="col-12 mb-4">
+                    <div class="testimonial">
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto commodi dolorum earum fugiat, fugit hic
+                        id, ipsum laborum minus nostrum numquam perspiciatis
+                        saepe velit.
+                      </p>
+                      <div class="pic">
+                        <img
+                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                        />
+                      </div>
+                      <div class="testimonial-profile">
+                        <h3 class="title">Crew Name</h3>
+                        <span class="post">Job Title</span>
+                        <div>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span
+                            class="fa-solid fa-star testimonial-checked"
+                          ></span>
+                          <span class="fa-solid fa-star"></span>
+                          <span class="fa-solid fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonials Tablet View Ends Here -->
+          </div>
+        </div>
+        <!-- Testimonials Carousel Ends Here -->
+
+        <!-- Summary Div Starts Here -->
+        <div class="row text-center">
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3 counter-Txt">
+            <div class="d-flex align-items-center justify-content-center">
+              Reviews:- &nbsp; <span class="counter-value">0</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3 counter-Txt">
+            <div class="d-flex align-items-center justify-content-center">
+              Seafarers:- &nbsp; <span class="counter-value">0</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3 counter-Txt">
+            <div class="d-flex align-items-center justify-content-center">
+              Applied:- &nbsp; <span class="counter-value">0</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3 counter-Txt">
+            <div class="d-flex align-items-center justify-content-center">
+              Available Job:- &nbsp; <span class="counter-value">0</span>
+            </div>
+          </div>
+        </div>
+        <!-- Summary Div Ends Here -->
+
+        <!-- Apply Job Div Starts Here -->
+        <div class="col-12 p-3">
+          <h4 class="text-center mb-4">
+            Sign Up to receive our cruise job vacancies
+          </h4>
+          <form action="">
+            <div class="row sign-up-row">
+              <div class="col-lg-11 col-md-12 col-sm-12 mb-4">
+                <div class="row form_border_reviews">
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="row">
+                      <label
+                        for=""
+                        class="col-lg-2 col-md-12 col-sm-12 col-form-label"
+                        >Name:-</label
+                      >
+                      <div class="col-lg-10 col-md-12 col-sm-12">
+                        <input
+                          type="text"
+                          class="form-control cusom_form_control_review bg-transparent border-0 rounded-0"
+                          id=""
+                          value=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="row">
+                      <label
+                        for=""
+                        class="col-lg-4 col-md-12 col-sm-12 col-form-label"
+                        >Whatsapp:-</label
+                      >
+                      <div class="col-lg-8 col-md-12 col-sm-12">
+                        <input
+                          type="text"
+                          class="form-control cusom_form_control_review bg-transparent border-0 rounded-0"
+                          id=""
+                          value=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="row">
+                      <label
+                        for=""
+                        class="col-lg-2 col-md-12 col-sm-12 col-form-label"
+                        >Email:-</label
+                      >
+                      <div class="col-lg-10 col-md-12 col-sm-12">
+                        <input
+                          type="text"
+                          class="form-control cusom_form_control_review bg-transparent border-0 rounded-0"
+                          id=""
+                          value=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-1 col-md-12 col-sm-12 sign-up-div">
+                <button
+                  class="btn btn-primary custom_button_text sign-up-button"
+                  type="button"
+                >
+                  Submit
                 </button>
               </div>
-            </form>
+            </div>
+          </form>
+          <div
+            class="col-12 text-center mt-2 terms_and_conditions_label"
+            style="color: white"
+          >
+            <input id="checkbox" type="checkbox" />
+            &nbsp;
+            <label for="checkbox">
+              I agree to these <a href="#">Terms and Conditions</a>.
+              <span class="text-danger">*</span>
+            </label>
           </div>
+        </div>
+
+        <!-- Apply Job Div Ends Here -->
+      </section>
+      <!-- What They Say About Us Section Ends Here -->
+
+      <!-- Global Recruitment News Section Starts Here -->
+      <section class="container" style="padding-top: 50px">
+        <div class="section-title mb-4">
+          <h2 class="fira-sans-font">Global Recruitment News</h2>
+        </div>
+
+        <!-- Global Recruitment News Image Slider Starts Here -->
+        <div class="row">
+          <div class="col-12">
+            <div class="vacancy_news_slider">
+              <div class="slider_box">
+                <img
+                  src="https://isol.com.bd/public/front/assets/img/news/1.jpg"
+                  class="img-fluid news_img_box"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box">
+                <img
+                  src="https://isol.com.bd/public/front/assets/img/news/2.png"
+                  class="img-fluid news_img_box"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box">
+                <img
+                  src="https://isol.com.bd/public/front/assets/img/news/3.jpg"
+                  class="img-fluid news_img_box"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box">
+                <img
+                  src="https://isol.com.bd/public/front/assets/img/news/4.Jpg"
+                  class="img-fluid news_img_box"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box">
+                <img
+                  src="https://isol.com.bd/public/front/assets/img/news/5.Jpg"
+                  class="img-fluid news_img_box"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Global Recruitment News Image Slider Ends Here -->
+      </section>
+      <!-- Global Recruitment News Section Ends Here -->
+
+      <!-- Contact Us Section Starts Here -->
+      <section class="container contact" id="contact" style="padding-top: 50px">
+        <div class="contact_wave">
+          <div class="section-title1">
+            <h2 class="fira-sans-font">Contact</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12">
+              <div class="info">
+                <div class="row">
+                  <div class="col-lg-12 col-md-4 col-sm-12 mb-3">
+                    <div class="form-group">
+                      <i class="fa-solid fa-location-arrow"></i>
+                      <h4>Location:</h4>
+                      <p>
+                        1093/5A Khilbaritek, Vatara, Gulshan, <br />
+                        Dhaka 1212, Bangladesh
+                      </p>
+                      <br />
+                      <p>
+                        GPO Box 3030
+                        <br />
+                        Dhaka 1000, Bangladesh
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-4 col-sm-12 mb-3">
+                    <div class="form-group">
+                      <i class="fa-solid fa-at"></i>
+                      <h4>Email:</h4>
+                      <p>info@isol.com.bd</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-4 col-sm-12 mb-3">
+                    <div class="form-group">
+                      <i class="fa-solid fa-phone"></i>
+                      <h4>Call:</h4>
+                      <p>+880 1982-547679</p>
+                      <p>+880 28899210</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12">
+              <h4>Enquiry</h4>
+              <p>Email us with any questions or inquiries</p>
+              <form action="">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="first_name"
+                        class="form-control"
+                        id="first_name"
+                        placeholder="First Name"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="last_name"
+                        id="last_name"
+                        placeholder="Last Name"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
+                    <div class="form-group">
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="mobile_number"
+                        id="mobile_number"
+                        placeholder="Mobile Number"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email"
+                        placeholder=" Email Address"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="5"
+                        placeholder="Message"
+                        required=""
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="my-3">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">
+                        Your message has been sent. Thank you!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="float-end">
+                  <button class="btn btn-primary" type="submit">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="wave"></div>
         </div>
       </section>
       <!-- Contact Us Section Ends Here -->
@@ -425,7 +1535,7 @@
       <!-- Footer About Us Section Starts Here -->
       <section class="container" style="padding-top: 50px">
         <div class="row pb-4">
-          <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
             <div class="footer_text_box" style="text-align: justify">
               <h5>About Us</h5>
               <p>
@@ -555,5 +1665,31 @@
 
     <!-- Bootstrap JS File -->
     <script src="./assets/js/bootstrap-5/js/bootstrap.min.js"></script>
+
+    <!-- Slick JS File -->
+    <script
+      src="./assets/js/slick/slick.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
+    <script>
+      $(".testimonails_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: false,
+      });
+
+      $(".vacancy_news_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1500,
+      });
+    </script>
   </body>
 </html>
