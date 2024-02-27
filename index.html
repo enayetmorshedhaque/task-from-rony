@@ -26,6 +26,12 @@
       href="https://isol.com.bd/public/front/assets/css/middle_header.css"
     />
 
+    <!-- Fullview CSS CDN -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://isol.com.bd/public/front/assets/vendor/fullView/fullview.css"
+    /> -->
+
     <!--    slick slider-->
     <link
       rel="stylesheet"
@@ -44,8 +50,87 @@
         background-color: #000000;
       }
 
+      .flip-box {
+        background-color: transparent;
+        width: 100%;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-box-front,
+      .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-box-front {
+        color: black;
+      }
+
+      .flip-box-back {
+        background-color: black;
+        color: white;
+        transform: rotateY(180deg);
+        padding: 20px 10px;
+        display: grid;
+        align-items: center;
+        align-content: center;
+        text-align: justify;
+      }
+
+      .btn-custom {
+        background: none;
+        border: 2px solid #eb9356;
+        color: white;
+      }
+
+      .btn-custom:hover {
+        background: none;
+        border: 2px solid #eb9356;
+        color: white;
+      }
+
+      .modal-content {
+        background-color: black;
+        color: white;
+      }
+
+      .btn-close {
+        background-color: white !important;
+      }
+
+      @media screen and (max-width: 767px) {
+        .flip-box,
+        .flip-box-front img {
+          height: 230px !important;
+        }
+      }
+
+      @media screen and (max-width: 768px) and (max-width: 1023px) {
+        .flip-box,
+        .flip-box-front img {
+          height: 250px !important;
+        }
+      }
+
       .fifth_backimage {
-        height: 290px;
+        height: 320px;
         width: 100%;
       }
 
@@ -57,12 +142,12 @@
       .scene {
         display: inline-block;
         width: 100%;
-        height: 290px;
+        height: 350px;
         perspective: 600px;
       }
 
       .card1 {
-        /* position: relative; */
+        position: relative;
         width: 100%;
         height: 100%;
         cursor: pointer;
@@ -588,88 +673,438 @@
 
     <!-- Fullview Div Starts Here -->
     <div id="fullview">
-      <!-- Benefits Section Starts Here -->
+      <!-- Mission, Vision Section Starts Here -->
       <section class="container mb-5">
-        <div class="scene scene--card mb-5">
-          <div class="card1">
-            <div class="card__face card__face--front">
-              <h3>Welcome On Board</h3>
-              <h5>
-                We are representatives of the most important lines in the
-                shipping industry. Bangladesh's leading cruise ship crew
-                recruitment agency
-              </h5>
-              <div class="row mt-4">
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                  <div
-                    class="d-flex align-items-center justify-content-start fifth_back_box"
-                  >
-                    <img
-                      src="https://isol.com.bd/public/front/assets/img/icon/1.png"
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <p class="mb-0">
-                      Get an excellent economic income. No payment of rent,
-                      water, electricity or transportation. A cruise allows you
-                      to save thanks to its benefits
-                    </p>
-                  </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-transparent border-0 rounded-0 flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img
+                    src="https://isol.com.bd/public/front/assets/img/1_MISSION.jpg"
+                    alt=""
+                    class="p-0"
+                    style="width: 100%; height: 300px"
+                  />
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                  <div
-                    class="d-flex align-items-center justify-content-start fifth_back_box"
-                  >
-                    <img
-                      src="https://isol.com.bd/public/front/assets/img/icon/2.png"
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <p class="mb-0">
-                      The cruise industry is the fastest growing tourism segment
-                      worldwide. Develop your profession in an international
-                      company!
-                    </p>
-                  </div>
+                <div class="flip-box-back">
+                  <p style="font-size: 16px; color: white">We Shall :</p>
+                  <ul style="list-style-type: none">
+                    <li>
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="margin-right: 10px; font-size: 20px"
+                      ></i>
+                      To be the finest provider of Seafarers to the Global
+                      Maritime Industry and ensure the highest quality,
+                      healthcare, safety and work environment.
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="margin-right: 10px; font-size: 20px"
+                      ></i
+                      >To supply a highly trained crew work force with
+                      professionalism and integrity.
+                    </li>
+                  </ul>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                  <div
-                    class="d-flex align-items-center justify-content-start fifth_back_box"
-                  >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-transparent border-0 rounded-0 flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img
                     <img
-                      src="https://isol.com.bd/public/front/assets/img/icon/3.png"
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <p class="mb-0">
-                      We have job offers in various areas and job growth
-                      opportunities are extensive. the sea is the limit
-                    </p>
-                  </div>
+                    src="https://isol.com.bd/public/front/assets/img/VISION_2.jpg"
+                    alt=""
+                    class="p-0"
+                    style="width: 100%; height: 300px"
+                  />
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                  <div
-                    class="d-flex align-items-center justify-content-start fifth_back_box"
-                  >
+                <div class="flip-box-back">
+                  <p style="font-size: 16px; color: white">We Shall :</p>
+                  <ul style="list-style-type: none">
+                    <li>
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="margin-right: 10px; font-size: 20px"
+                      ></i>
+                      To continue as the most innovative, dynamic and passionate
+                      organization within the Global Marine Industry.
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="margin-right: 10px; font-size: 20px"
+                      ></i
+                      >To ensure an unparalleled quality service to the cruise
+                      Industry.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-transparent border-0 rounded-0 flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img
                     <img
-                      src="https://isol.com.bd/public/front/assets/img/icon/4.png"
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <p class="mb-0">
-                      travel and discover exotic countries around the world.
-                      Make friendships that last a lifetime.
-                    </p>
+                    src="https://isol.com.bd/public/front/assets/img/T-4.png"
+                    style="width: 100%; height: 300px"
+                    class="p-0"
+                    alt=""
+                  />
+                </div>
+                <div class="flip-box-back">
+                  <p>
+                    Our valued clients are key to our success, thus we have to
+                    make sure that each client(s) who seek our services is/are
+                    treated with respect, courtesy and sensitivity. We are
+                    committed to meeting the needs of our client(s), and we
+                    constantly focus on giving top priority, service and
+                    satisfaction. This is what we do.
+                  </p>
+                  <div class="d-flex justify-content-around mb-3">
+                    <button
+                      class="btn btn-custom mr-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      Help
+                    </button>
+
+                    <button
+                      class="btn btn-custom mr-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal1"
+                    >
+                      Assistance
+                    </button>
+
+                    <button
+                      class="btn btn-custom mr-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal2"
+                    >
+                      Support
+                    </button>
+                  </div>
+                  <div class="d-flex justify-content-around">
+                    <button
+                      class="btn btn-custom mr-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal3"
+                    >
+                      Tips
+                    </button>
+
+                    <button
+                      class="btn btn-custom mr-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal4"
+                    >
+                      Guidance
+                    </button>
+
+                    <button
+                      class="btn btn-custom mr-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal5"
+                    >
+                      Advice
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card__face card__face--back">
-              <div class="fifth_backimage">
-                <img
-                  src="https://isol.com.bd/public/front/assets/img/w.png"
-                  alt=""
-                />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-transparent border-0 rounded-0 flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img
+                    <img
+                    src="https://isol.com.bd/public/front/assets/img/VALUE_3.jpg"
+                    alt=""
+                    class="p-0"
+                    style="width: 100%; height: 300px"
+                  />
+                </div>
+                <div class="flip-box-back">
+                  <p style="font-size: 16px; color: white">We Shall :</p>
+                  <ul style="list-style-type: none">
+                    <li>
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="margin-right: 10px; font-size: 20px"
+                      ></i>
+                      It's been said that Bangladesh Seafarers are some of the
+                      best in the world.
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="margin-right: 10px; font-size: 20px"
+                      ></i
+                      >We will help you find your requirements.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Mission, Vision Section Ends Here -->
+
+      <!-- Modal Div Starts Here -->
+      <!--                    modal section-->
+      <div
+        class="modal align-middle"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Help</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close btn-close-white"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                We are available 24/7 to attend, listen to and understand our
+                client’s needs and expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal align-middle"
+        id="exampleModal1"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Assistance</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close btn-close-white"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Our highly motivated HR Managers will assess the crews CVs and
+                provide assistance and recommend steps on how to get hired.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal align-middle"
+        id="exampleModal2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Support</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close btn-close-white"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                We not only provide you with leads on latest cruise ship jobs,
+                but also valuable information and support for job seekers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal align-middle"
+        id="exampleModal3"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Tips</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close btn-close-white"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                The best way to get a job, is to do your own research and find
+                out every possible detail about working on cruise ship by
+                visiting their websites and then decide if you can adapt to the
+                job.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal align-middle"
+        id="exampleModal4"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Guidance</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close btn-close-white"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                After visiting the cruise liner websites and if you find
+                something suitable, ensure to update your CV to demonstrate your
+                suitability for the job. Recruiters have only a few seconds to
+                look at your CV so make sure you prepare a clear, brief,
+                informative and well styled CV.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal align-middle"
+        id="exampleModal5"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Advice</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Do not apply for positions if you have no or little previous
+                experience; and do not apply for jobs which require
+                qualifications you don&#39;t hold – you will be only wasting
+                your time and the recruiter’s time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Div Ends Here -->
+
+      <!-- Benefits Section Starts Here -->
+      <section class="container mb-5">
+        <div class="row mb-3">
+          <div class="col-12">
+            <div class="card border-0 rounded-0">
+              <div class="text-center mb-4">
+                <h3>Welcome On Board</h3>
+                <h5>
+                  We are representatives of the most important lines in the
+                  shipping industry. Bangladesh's leading cruise ship crew
+                  recruitment agency
+                </h5>
+              </div>
+
+              <div class="card-body p-0">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="d-flex justify-content-start fifth_back_box">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/icon/1.png"
+                        alt=""
+                      />
+                      <p>
+                        Get an excellent economic income. No payment of rent,
+                        water, electricity or transportation. A cruise allows
+                        you to save thanks to its benefits
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="d-flex justify-content-start fifth_back_box">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/icon/2.png"
+                        alt=""
+                      />
+                      <p>
+                        Get an excellent economic income. No payment of rent,
+                        water, electricity or transportation. A cruise allows
+                        you to save thanks to its benefits
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="d-flex justify-content-start fifth_back_box">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/icon/3.png"
+                        alt=""
+                      />
+                      <p>
+                        Get an excellent economic income. No payment of rent,
+                        water, electricity or transportation. A cruise allows
+                        you to save thanks to its benefits
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="d-flex justify-content-start fifth_back_box">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/icon/4.png"
+                        alt=""
+                      />
+                      <p>
+                        Get an excellent economic income. No payment of rent,
+                        water, electricity or transportation. A cruise allows
+                        you to save thanks to its benefits
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1089,7 +1524,7 @@
           </div>
         </div>
         <div class="row mt-2">
-          <div class="col-6">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
             <button
               type="button"
               class="align-self-end btn custom-btn1 mb-2"
@@ -1102,7 +1537,7 @@
               doorstep
             </p>
           </div>
-          <div class="col-6">
+          <div class="col-lg-6 col-md-6 col-sm-12">
             <button
               type="button"
               class="align-self-end btn custom-btn2 mb-2"
@@ -4043,6 +4478,9 @@
     <!-- Navigation Bar JS Link -->
     <script src="https://isol.com.bd/public/front/assets/js/navik.menu.js"></script>
 
+    <!-- Fullview JS CDN -->
+    <!-- <script src="https://isol.com.bd/public/front/assets/vendor/fullView/fullview.js"></script> -->
+
     <!-- Bootstrap JS File -->
     <script src="./assets/js/bootstrap-5/js/bootstrap.min.js"></script>
 
@@ -4052,6 +4490,48 @@
       type="text/javascript"
       charset="utf-8"
     ></script>
+
+    <!-- Modal JS Script -->
+    <script>
+      $(document).ready(function () {
+        $("#myModalnews").modal("show");
+      });
+    </script>
+
+    <script>
+      // $(document).ready(function () {
+      //   var fv = $("#fullview").fullView({
+      //     //Navigation
+      //     dots: true,
+
+      //     //Scrolling
+      //     easing: "swing",
+      //     backToTop: true,
+
+      //     // Accessibility
+      //     keyboardScrolling: true,
+
+      //     // Callback
+      //     onScrollEnd: function (currentView, preView) {
+      //       console.log("Current", currentView);
+      //       console.log("Previus", preView);
+      //     },
+      //   });
+
+      //   $("#down").click(function () {
+      //     // To Scroll Down 1 Section
+      //     fv.data("fullView").scrollDown();
+
+      //     // To Scroll Up 1 Section
+      //     // fv.data('fullView').scrollDown();
+      //   });
+
+      //   $("#select").change(function () {
+      //     // To Scroll to Specfic Section
+      //     fv.data("fullView").scrollTo($(this).val());
+      //   });
+      // });
+    </script>
 
     <script>
       $(".hiring_process_slider").slick({
