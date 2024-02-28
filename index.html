@@ -50,6 +50,68 @@
         background-color: #000000;
       }
 
+      #why-join-us {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      .why-join-us-img {
+        width: 100%;
+        height: auto;
+        position: relative; /* Change position to relative */
+        z-index: 99;
+      }
+
+      #why-join-us .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(21, 21, 21, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+      }
+
+      .section-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* padding-top: 140px; */
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .section-content {
+          padding: 50px 0;
+        }
+
+        #why-join-us {
+          height: 950px;
+        }
+
+        .why-join-us-img {
+          height: 100%;
+        }
+      }
+
+      .contentt {
+        color: white;
+        text-align: justify;
+      }
+
+      .contentt h3 {
+        color: #8ea9db;
+        font-size: 15px;
+      }
+
+      .third_img {
+        height: 50px;
+        width: 60px;
+        margin-right: 15px;
+      }
+
       .flip-box {
         background-color: transparent;
         width: 100%;
@@ -521,6 +583,12 @@
       }
 
       @media screen and (min-width: 1024px) {
+        /* Fullview Style Customization */
+        #fullview > * {
+          height: 100% !important;
+          overflow: visible;
+        }
+
         #urgent-vacancy-tablet-view,
         #urgent-vacancy-mobile-view,
         #testimonial-tablet-mobile-view {
@@ -690,6 +758,170 @@
 
     <!-- Fullview Div Starts Here -->
     <div id="fullview">
+      <!-- Why Join Us Section Starts Here -->
+      <section class="container-fluid mb-5 p-0" id="why-join-us">
+        <img
+          src="https://isol.com.bd/public/front/assets/img/why.jpg"
+          alt="Picture"
+          class="why-join-us-img"
+        />
+        <div class="overlay">
+          <div class="container">
+            <div class="section-content">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card border-0 rounded-0 p-0 bg-transparent">
+                    <div class="section-title">
+                      <h2 class="mb-3">Why Join Us</h2>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                        <div class="contentt">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              src="https://isol.com.bd/public/front/assets/img/third/4.jpg"
+                              class="third_img"
+                              alt=""
+                            />
+                            <div class="third_content">
+                              <h5>Global CV database reach</h5>
+                              <p>
+                                ISOL, offers talented professionals for our
+                                clientele according to their needs and demands.
+                                We have a talented global resource pull in the
+                                industry and a CV database of job specialized
+                                people. We desire to become the international
+                                recruitment agent in the global shipping
+                                management industry in the near future.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                        <div class="contentt">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              src="https://isol.com.bd/public/front/assets/img/third/5.jpg"
+                              class="third_img"
+                              alt=""
+                            />
+                            <div class="third_content">
+                              <h5>
+                                Trusted by worldwide recognized companies.
+                              </h5>
+                              <p>
+                                We have an excellent track record of inspiring
+                                every stakeholder in the shipping management
+                                industry, with our comprehensive company culture
+                                and employee focused management practice.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                        <div class="contentt">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              src="https://isol.com.bd/public/front/assets/img/third/2.jpg"
+                              class="third_img"
+                              alt=""
+                            />
+                            <div class="third_content">
+                              <h5>
+                                Innovating the highest industry standards.
+                              </h5>
+                              <p>
+                                Interworld Shipping Hospitality Overseas Limited
+                                (ISHOL) is a modern choice for the Crew
+                                Recruitment Agent. In ISOL, we cater to every
+                                micro and macro need of our valued clientele,
+                                whilst keeping an eye and attention to detail of
+                                their desired service.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                        <div class="contentt">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              src="https://isol.com.bd/public/front/assets/img/third/1.jpg"
+                              class="third_img"
+                              alt=""
+                            />
+                            <div class="third_content">
+                              <h5>Best of the best specialists.</h5>
+                              <p>
+                                We believe in a sustainable and mutually
+                                beneficial relationship philosophy.
+                                Professionalism, accountability, transparency
+                                and work excellence are our prime interests that
+                                we maintain at all times to conduct our
+                                business.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                        <div class="contentt">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              src="https://isol.com.bd/public/front/assets/img/third/6.jpg"
+                              class="third_img"
+                              alt=""
+                            />
+                            <div class="third_content">
+                              <h5>
+                                Relationships built on loyalty, knowledge and
+                                reliability.
+                              </h5>
+                              <p>
+                                We are passionate to deliver our services to our
+                                valued clientele, through our loyalty,
+                                transparency and reliability of our crew
+                                recruitment service.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                        <div class="contentt">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              src="https://isol.com.bd/public/front/assets/img/third/24_7.jpg"
+                              class="third_img"
+                              alt=""
+                            />
+                            <div class="third_content">
+                              <h5>24/7 and URGENT response is guaranteed.</h5>
+                              <p>
+                                Inter-World Overseas Shipping Hospitality
+                                Limited (ISHOL) offers 24/7, direct support
+                                service through our rapid communication channel.
+                                Our specialized Human Resources Department will
+                                provide you with a contract, headhunting or any
+                                other customized service at any time.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why Join Us Section Ends Here -->
+
       <!-- Mission, Vision Section Starts Here -->
       <section class="container mb-5">
         <div class="row">
@@ -878,180 +1110,6 @@
         </div>
       </section>
       <!-- Mission, Vision Section Ends Here -->
-
-      <!-- Modal Div Starts Here -->
-      <!--                    modal section-->
-      <div
-        class="modal align-middle"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Help</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close btn-close-white"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <p>
-                We are available 24/7 to attend, listen to and understand our
-                client’s needs and expectations.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal align-middle"
-        id="exampleModal1"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Assistance</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close btn-close-white"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Our highly motivated HR Managers will assess the crews CVs and
-                provide assistance and recommend steps on how to get hired.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal align-middle"
-        id="exampleModal2"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Support</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close btn-close-white"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <p>
-                We not only provide you with leads on latest cruise ship jobs,
-                but also valuable information and support for job seekers
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal align-middle"
-        id="exampleModal3"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Tips</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close btn-close-white"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <p>
-                The best way to get a job, is to do your own research and find
-                out every possible detail about working on cruise ship by
-                visiting their websites and then decide if you can adapt to the
-                job.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal align-middle"
-        id="exampleModal4"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Guidance</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close btn-close-white"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <p>
-                After visiting the cruise liner websites and if you find
-                something suitable, ensure to update your CV to demonstrate your
-                suitability for the job. Recruiters have only a few seconds to
-                look at your CV so make sure you prepare a clear, brief,
-                informative and well styled CV.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal align-middle"
-        id="exampleModal5"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Advice</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Do not apply for positions if you have no or little previous
-                experience; and do not apply for jobs which require
-                qualifications you don&#39;t hold – you will be only wasting
-                your time and the recruiter’s time.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal Div Ends Here -->
 
       <!-- Benefits Section Starts Here -->
       <section class="container mb-5">
@@ -4494,6 +4552,177 @@
     </div>
     <!-- Fullview Div Ends Here -->
 
+    <!-- Modal Div Starts Here -->
+    <div
+      class="modal align-middle"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Help</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close btn-close-white"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              We are available 24/7 to attend, listen to and understand our
+              client’s needs and expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal align-middle"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Assistance</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close btn-close-white"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Our highly motivated HR Managers will assess the crews CVs and
+              provide assistance and recommend steps on how to get hired.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal align-middle"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Support</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close btn-close-white"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              We not only provide you with leads on latest cruise ship jobs, but
+              also valuable information and support for job seekers
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal align-middle"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tips</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close btn-close-white"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              The best way to get a job, is to do your own research and find out
+              every possible detail about working on cruise ship by visiting
+              their websites and then decide if you can adapt to the job.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal align-middle"
+      id="exampleModal4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Guidance</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close btn-close-white"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              After visiting the cruise liner websites and if you find something
+              suitable, ensure to update your CV to demonstrate your suitability
+              for the job. Recruiters have only a few seconds to look at your CV
+              so make sure you prepare a clear, brief, informative and well
+              styled CV.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal align-middle"
+      id="exampleModal5"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Advice</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Do not apply for positions if you have no or little previous
+              experience; and do not apply for jobs which require qualifications
+              you don&#39;t hold – you will be only wasting your time and the
+              recruiter’s time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Div Ends Here -->
+
     <!-- jQuery JS File -->
     <script src="./assets/js/jquery/jquery.min.js"></script>
 
@@ -4520,40 +4749,65 @@
       });
     </script>
 
-    <script>
-      // $(document).ready(function () {
-      //   var fv = $("#fullview").fullView({
-      //     //Navigation
-      //     dots: true,
+    <!-- <script>
+      $(document).ready(function () {
+        const screenWidth = window.innerWidth;
 
-      //     //Scrolling
-      //     easing: "swing",
-      //     backToTop: true,
+        // Set your desired web view size (e.g., 1024)
+        const webViewSize = 1024;
 
-      //     // Accessibility
-      //     keyboardScrolling: true,
+        if (screenWidth >= webViewSize) {
+          var fv = $("#fullview").fullView({
+            //Navigation
+            dots: true,
 
-      //     // Callback
-      //     onScrollEnd: function (currentView, preView) {
-      //       console.log("Current", currentView);
-      //       console.log("Previus", preView);
-      //     },
-      //   });
+            //Scrolling
+            easing: "swing",
+            backToTop: true,
 
-      //   $("#down").click(function () {
-      //     // To Scroll Down 1 Section
-      //     fv.data("fullView").scrollDown();
+            // Accessibility
+            keyboardScrolling: true,
 
-      //     // To Scroll Up 1 Section
-      //     // fv.data('fullView').scrollDown();
-      //   });
+            // Callback
+            onScrollEnd: function (currentView, preView) {
+              console.log("Current", currentView);
+              console.log("Previus", preView);
+            },
+          });
 
-      //   $("#select").change(function () {
-      //     // To Scroll to Specfic Section
-      //     fv.data("fullView").scrollTo($(this).val());
-      //   });
-      // });
-    </script>
+          $("#down").click(function () {
+            // To Scroll Down 1 Section
+            fv.data("fullView").scrollDown();
+
+            // To Scroll Up 1 Section
+            // fv.data('fullView').scrollDown();
+          });
+
+          $("#select").change(function () {
+            // To Scroll to Specfic Section
+            fv.data("fullView").scrollTo($(this).val());
+          });
+
+          $("#down").click(function () {
+            // To Scroll Down 1 Section
+            fv.data("fullView").scrollDown();
+          });
+
+          $("#select").change(function () {
+            // To Scroll to Specific Section
+            fv.data("fullView").scrollTo($(this).val());
+          });
+        }
+      });
+
+      function manuallyScrollToNextSection() {
+        var currentScrollTop = $("#fullview").scrollTop();
+        var windowHeight = window.innerHeight;
+        var newScrollTop = currentScrollTop + windowHeight;
+
+        $("#fullview").animate({ scrollTop: newScrollTop }, 500); // Adjust the duration as needed
+      }
+    </script> -->
 
     <script>
       $(".hiring_process_slider").slick({
@@ -4561,7 +4815,7 @@
         slidesToScroll: 1,
         arrows: false,
         dots: false,
-        autoplay: 50000,
+        autoplay: 5000,
       });
 
       $(".urgent_vacancy_slider").slick({
