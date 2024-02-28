@@ -115,22 +115,26 @@
         background-color: white !important;
       }
 
+      #changeable-height-div {
+        transition: height 0.5s ease-in-out; /* You can adjust the duration and timing function as needed */
+      }
+
       @media screen and (max-width: 767px) {
         .flip-box,
         .flip-box-front img {
-          height: 230px !important;
+          height: 280px !important;
         }
-      }
 
-      @media screen and (max-width: 768px) and (max-width: 1023px) {
-        .flip-box,
-        .flip-box-front img {
-          height: 250px !important;
+        .fifth_backimage img {
+          height: 150px;
+        }
+
+        #changeable-height-div {
+          height: 1020px;
         }
       }
 
       .fifth_backimage {
-        height: 320px;
         width: 100%;
       }
 
@@ -188,15 +192,19 @@
         color: #fffc01;
       }
 
+      .fifth_back_box {
+        display: flex;
+        align-items: center;
+      }
+
       .fifth_back_box img {
-        /* width: 110px; */
-        height: 90px;
-        /* padding-top: 10px;
-        margin-right: 10px; */
+        width: 110px;
       }
 
       .fifth_back_box p {
-        font-size: 12px;
+        text-align: justify;
+        font-size: 18px;
+        padding-left: 10px;
       }
 
       .fifth_text_upper h1 {
@@ -476,12 +484,21 @@
         #urgent-vacancy-tablet-view {
           display: none !important;
         }
+
+        .fifth_back_box {
+          display: grid;
+          justify-items: center;
+        }
       }
 
       @media screen and (min-width: 768px) and (max-width: 1023px) {
         #urgent-vacancy-web-view,
         #urgent-vacancy-mobile-view {
           display: none !important;
+        }
+
+        #changeable-height-div {
+          height: 500px;
         }
       }
 
@@ -676,7 +693,7 @@
       <!-- Mission, Vision Section Starts Here -->
       <section class="container mb-5">
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
             <div class="card bg-transparent border-0 rounded-0 flip-box">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
@@ -712,7 +729,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
             <div class="card bg-transparent border-0 rounded-0 flip-box">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
@@ -748,7 +765,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
             <div class="card bg-transparent border-0 rounded-0 flip-box">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
@@ -823,7 +840,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
             <div class="card bg-transparent border-0 rounded-0 flip-box">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
@@ -1040,69 +1057,74 @@
       <section class="container mb-5">
         <div class="row mb-3">
           <div class="col-12">
-            <div class="card border-0 rounded-0">
-              <div class="text-center mb-4">
-                <h3>Welcome On Board</h3>
-                <h5>
-                  We are representatives of the most important lines in the
-                  shipping industry. Bangladesh's leading cruise ship crew
-                  recruitment agency
-                </h5>
-              </div>
-
-              <div class="card-body p-0">
-                <div class="row">
-                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                    <div class="d-flex justify-content-start fifth_back_box">
-                      <img
-                        src="https://isol.com.bd/public/front/assets/img/icon/1.png"
-                        alt=""
-                      />
-                      <p>
-                        Get an excellent economic income. No payment of rent,
-                        water, electricity or transportation. A cruise allows
-                        you to save thanks to its benefits
-                      </p>
+            <div class="scene scene--card" id="changeable-height-div">
+              <div class="card1">
+                <div class="card__face card__face--front">
+                  <h3>Welcome On Board</h3>
+                  <h5 class="mb-4">
+                    We are representatives of the most important lines in the
+                    shipping industry. Bangladesh's leading cruise ship crew
+                    recruitment agency
+                  </h5>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                      <div class="fifth_back_box">
+                        <img
+                          src="https://isol.com.bd/public/front/assets/img/icon/1.png"
+                          alt=""
+                        />
+                        <p class="mb-0">
+                          Get an excellent economic income. No payment of rent,
+                          water, electricity or transportation. A cruise allows
+                          you to save thanks to its benefits
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                      <div class="fifth_back_box">
+                        <img
+                          src="https://isol.com.bd/public/front/assets/img/icon/2.png"
+                          alt=""
+                        />
+                        <p class="mb-0">
+                          The cruise industry is the fastest growing tourism
+                          segment worldwide. Develop your profession in an
+                          international company!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                      <div class="fifth_back_box">
+                        <img
+                          src="https://isol.com.bd/public/front/assets/img/icon/3.png"
+                          alt=""
+                        />
+                        <p class="mb-0">
+                          We have job offers in various areas and job growth
+                          opportunities are extensive. the sea is the limit
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="fifth_back_box">
+                        <img
+                          src="https://isol.com.bd/public/front/assets/img/icon/4.png"
+                          alt=""
+                        />
+                        <p class="mb-0">
+                          travel and discover exotic countries around the world.
+                          Make friendships that last a lifetime.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                    <div class="d-flex justify-content-start fifth_back_box">
-                      <img
-                        src="https://isol.com.bd/public/front/assets/img/icon/2.png"
-                        alt=""
-                      />
-                      <p>
-                        Get an excellent economic income. No payment of rent,
-                        water, electricity or transportation. A cruise allows
-                        you to save thanks to its benefits
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                    <div class="d-flex justify-content-start fifth_back_box">
-                      <img
-                        src="https://isol.com.bd/public/front/assets/img/icon/3.png"
-                        alt=""
-                      />
-                      <p>
-                        Get an excellent economic income. No payment of rent,
-                        water, electricity or transportation. A cruise allows
-                        you to save thanks to its benefits
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                    <div class="d-flex justify-content-start fifth_back_box">
-                      <img
-                        src="https://isol.com.bd/public/front/assets/img/icon/4.png"
-                        alt=""
-                      />
-                      <p>
-                        Get an excellent economic income. No payment of rent,
-                        water, electricity or transportation. A cruise allows
-                        you to save thanks to its benefits
-                      </p>
-                    </div>
+                </div>
+                <div class="card__face card__face--back">
+                  <div class="fifth_backimage">
+                    <img
+                      src="https://isol.com.bd/public/front/assets/img/w.png"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -1110,8 +1132,8 @@
           </div>
         </div>
 
-        <div class="row" style="position: relative">
-          <div class="col-12 fifth_text_upper mb-4">
+        <div class="row">
+          <div class="col-12 fifth_text_upper mb-4" style="position: relative">
             <h1>BENEFITS TO BE A CREW MEMBER</h1>
             <p>
               Benefits vary by shipping company and position. This information
@@ -4570,12 +4592,55 @@
 
     <script>
       var cards = document.querySelectorAll(".card1");
+      var changable_height_div = document.getElementById(
+        "changeable-height-div"
+      );
+
+      // Use a variable to keep track of the current height state
+      let isWebView = true;
+      let isTabletView = false;
+      let isMobileView = false;
 
       [...cards].forEach((card) => {
         card.addEventListener("click", function () {
           card.classList.toggle("is-flipped");
+          adjustDivHeight(card);
         });
       });
+
+      function adjustDivHeight(card) {
+        const tabletViewHeight = 200;
+        const tabletViewDefaultHeight = 500;
+
+        const mobileViewHeight = 100;
+        const mobileViewDefaultHeight = 1020;
+
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth < 767) {
+          // Toggle between mobile view height and default height
+          if (isMobileView) {
+            changable_height_div.style.height = `${mobileViewDefaultHeight}px`;
+          } else {
+            changable_height_div.style.height = `${mobileViewHeight}px`;
+          }
+
+          // Update the height state for mobile view
+          isMobileView = !isMobileView;
+        }
+
+        if (screenWidth >= 768 && screenWidth < 1024) {
+          // Toggle between tablet view height and default height
+          if (isTabletView) {
+            changable_height_div.style.height = `${tabletViewDefaultHeight}px`;
+          } else {
+            changable_height_div.style.height = `${tabletViewHeight}px`;
+          }
+
+          // Update the height state for tablet view
+          isTabletView = !isTabletView;
+        }
+      }
     </script>
   </body>
 </html>
