@@ -83,15 +83,7 @@
 
       .third_content p {
         font-size: 14px;
-      }
-
-      .section-content {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding-top: 0px;
+        text-align: justify;
       }
 
       @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -553,7 +545,7 @@
         z-index: 1;
       }
 
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 1023px) {
         #why-join-us {
           height: 100vh;
         }
@@ -567,26 +559,29 @@
         }
 
         #why-join-us-slider {
-          position: absolute;
           display: block;
+        }
+
+        .join-us-container {
+          height: 100%;
+          margin: auto;
+          top: 50%;
+        }
+        .mobile-view-grid {
+          display: grid;
+          justify-items: center;
+        }
+
+        .third_content h5 {
+          text-align: center;
         }
       }
 
-      @media screen and (min-width: 426px) and (max-width: 767px) {
-        #why-join-us-web-view {
-          display: none;
-        }
-
-        #why-join-us-slider {
-          display: block;
-        }
-
-        #why-join-us {
-          height: 100vh;
-        }
-
-        .why-join-us-img {
+      @media screen and (min-width: 1024px) {
+        .web-view-flex {
           height: 100%;
+          display: flex !important;
+          padding-top: 0px;
         }
       }
 
@@ -603,10 +598,6 @@
       }
 
       @media screen and (min-width: 768px) and (max-width: 1023px) {
-        #why-join-us-slider {
-          display: none;
-        }
-
         #urgent-vacancy-web-view,
         #urgent-vacancy-mobile-view {
           display: none !important;
@@ -819,7 +810,7 @@
           class="why-join-us-img"
         />
         <div class="overlay">
-          <div class="container">
+          <div class="container join-us-container">
             <div class="section-content">
               <div class="row">
                 <div class="col-12">
@@ -827,328 +818,303 @@
                     <div class="section-title">
                       <h2 class="mb-3">Why Join Us</h2>
                     </div>
-
-                    <!-- Why Join Us Web and Tablet View Div Starts Here -->
-                    <div class="row" id="why-join-us-web-view">
-                      <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-                        <div class="contentt">
-                          <div class="d-flex justify-content-center">
-                            <img
-                              src="https://isol.com.bd/public/front/assets/img/third/4.jpg"
-                              class="third_img"
-                              alt=""
-                            />
-                            <div class="third_content">
-                              <h5>Global CV database reach</h5>
-                              <p>
-                                ISOL, offers talented professionals for our
-                                clientele according to their needs and demands.
-                                We have a talented global resource pull in the
-                                industry and a CV database of job specialized
-                                people. We desire to become the international
-                                recruitment agent in the global shipping
-                                management industry in the near future.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-                        <div class="contentt">
-                          <div class="d-flex justify-content-center">
-                            <img
-                              src="https://isol.com.bd/public/front/assets/img/third/5.jpg"
-                              class="third_img"
-                              alt=""
-                            />
-                            <div class="third_content">
-                              <h5>
-                                Trusted by worldwide recognized companies.
-                              </h5>
-                              <p>
-                                We have an excellent track record of inspiring
-                                every stakeholder in the shipping management
-                                industry, with our comprehensive company culture
-                                and employee focused management practice.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-                        <div class="contentt">
-                          <div class="d-flex justify-content-center">
-                            <img
-                              src="https://isol.com.bd/public/front/assets/img/third/2.jpg"
-                              class="third_img"
-                              alt=""
-                            />
-                            <div class="third_content">
-                              <h5>
-                                Innovating the highest industry standards.
-                              </h5>
-                              <p>
-                                Interworld Shipping Hospitality Overseas Limited
-                                (ISHOL) is a modern choice for the Crew
-                                Recruitment Agent. In ISOL, we cater to every
-                                micro and macro need of our valued clientele,
-                                whilst keeping an eye and attention to detail of
-                                their desired service.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-                        <div class="contentt">
-                          <div class="d-flex justify-content-center">
-                            <img
-                              src="https://isol.com.bd/public/front/assets/img/third/1.jpg"
-                              class="third_img"
-                              alt=""
-                            />
-                            <div class="third_content">
-                              <h5>Best of the best specialists.</h5>
-                              <p>
-                                We believe in a sustainable and mutually
-                                beneficial relationship philosophy.
-                                Professionalism, accountability, transparency
-                                and work excellence are our prime interests that
-                                we maintain at all times to conduct our
-                                business.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-                        <div class="contentt">
-                          <div class="d-flex justify-content-center">
-                            <img
-                              src="https://isol.com.bd/public/front/assets/img/third/6.jpg"
-                              class="third_img"
-                              alt=""
-                            />
-                            <div class="third_content">
-                              <h5>
-                                Relationships built on loyalty, knowledge and
-                                reliability.
-                              </h5>
-                              <p>
-                                We are passionate to deliver our services to our
-                                valued clientele, through our loyalty,
-                                transparency and reliability of our crew
-                                recruitment service.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-                        <div class="contentt">
-                          <div class="d-flex justify-content-center">
-                            <img
-                              src="https://isol.com.bd/public/front/assets/img/third/24_7.jpg"
-                              class="third_img"
-                              alt=""
-                            />
-                            <div class="third_content">
-                              <h5>24/7 and URGENT response is guaranteed.</h5>
-                              <p>
-                                Inter-World Overseas Shipping Hospitality
-                                Limited (ISHOL) offers 24/7, direct support
-                                service through our rapid communication channel.
-                                Our specialized Human Resources Department will
-                                provide you with a contract, headhunting or any
-                                other customized service at any time.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Why Join Us Web and Tablet View Div Ends Here -->
-
-                    <!-- Why Join Us Mobile View Div Starts Here -->
-                    <div class="row" id="why-join-us-slider">
-                      <div class="col-12">
-                        <div class="why_join_us_slider">
-                          <div class="slider_box">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="contentt">
-                                  <div class="d-gird justify-content-center">
-                                    <img
-                                      src="https://isol.com.bd/public/front/assets/img/third/4.jpg"
-                                      class="third_img"
-                                      alt=""
-                                    />
-                                    <div class="third_content">
-                                      <h5>Global CV database reach</h5>
-                                      <p>
-                                        ISOL, offers talented professionals for
-                                        our clientele according to their needs
-                                        and demands. We have a talented global
-                                        resource pull in the industry and a CV
-                                        database of job specialized people. We
-                                        desire to become the international
-                                        recruitment agent in the global shipping
-                                        management industry in the near future.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="slider_box">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="contentt">
-                                  <div class="d-grid justify-content-center">
-                                    <img
-                                      src="https://isol.com.bd/public/front/assets/img/third/5.jpg"
-                                      class="third_img"
-                                      alt=""
-                                    />
-                                    <div class="third_content">
-                                      <h5>
-                                        Trusted by worldwide recognized
-                                        companies.
-                                      </h5>
-                                      <p>
-                                        We have an excellent track record of
-                                        inspiring every stakeholder in the
-                                        shipping management industry, with our
-                                        comprehensive company culture and
-                                        employee focused management practice.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="slider_box">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="contentt">
-                                  <div class="d-grid justify-content-center">
-                                    <img
-                                      src="https://isol.com.bd/public/front/assets/img/third/2.jpg"
-                                      class="third_img"
-                                      alt=""
-                                    />
-                                    <div class="third_content">
-                                      <h5>
-                                        Innovating the highest industry
-                                        standards.
-                                      </h5>
-                                      <p>
-                                        Interworld Shipping Hospitality Overseas
-                                        Limited (ISHOL) is a modern choice for
-                                        the Crew Recruitment Agent. In ISOL, we
-                                        cater to every micro and macro need of
-                                        our valued clientele, whilst keeping an
-                                        eye and attention to detail of their
-                                        desired service.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="slider_box">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="contentt">
-                                  <div class="d-grid justify-content-center">
-                                    <img
-                                      src="https://isol.com.bd/public/front/assets/img/third/1.jpg"
-                                      class="third_img"
-                                      alt=""
-                                    />
-                                    <div class="third_content">
-                                      <h5>Best of the best specialists.</h5>
-                                      <p>
-                                        We believe in a sustainable and mutually
-                                        beneficial relationship philosophy.
-                                        Professionalism, accountability,
-                                        transparency and work excellence are our
-                                        prime interests that we maintain at all
-                                        times to conduct our business.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="slider_box">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="contentt">
-                                  <div class="d-grid justify-content-center">
-                                    <img
-                                      src="https://isol.com.bd/public/front/assets/img/third/6.jpg"
-                                      class="third_img"
-                                      alt=""
-                                    />
-                                    <div class="third_content">
-                                      <h5>
-                                        Relationships built on loyalty,
-                                        knowledge and reliability.
-                                      </h5>
-                                      <p>
-                                        We are passionate to deliver our
-                                        services to our valued clientele,
-                                        through our loyalty, transparency and
-                                        reliability of our crew recruitment
-                                        service.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="slider_box">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="contentt">
-                                  <div class="d-grid justify-content-center">
-                                    <img
-                                      src="https://isol.com.bd/public/front/assets/img/third/24_7.jpg"
-                                      class="third_img"
-                                      alt=""
-                                    />
-                                    <div class="third_content">
-                                      <h5>
-                                        24/7 and URGENT response is guaranteed.
-                                      </h5>
-                                      <p>
-                                        Inter-World Overseas Shipping
-                                        Hospitality Limited (ISHOL) offers 24/7,
-                                        direct support service through our rapid
-                                        communication channel. Our specialized
-                                        Human Resources Department will provide
-                                        you with a contract, headhunting or any
-                                        other customized service at any time.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Why Join Us Mobile View Div Ends Here -->
                   </div>
                 </div>
               </div>
+
+              <!-- Why Join Us Web and Tablet View Div Starts Here -->
+              <div class="row" id="why-join-us-web-view">
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="contentt">
+                    <div class="web-view-flex">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/third/4.jpg"
+                        class="third_img"
+                        alt=""
+                      />
+                      <div class="third_content">
+                        <h5>Global CV database reach</h5>
+                        <p>
+                          ISOL, offers talented professionals for our clientele
+                          according to their needs and demands. We have a
+                          talented global resource pull in the industry and a CV
+                          database of job specialized people. We desire to
+                          become the international recruitment agent in the
+                          global shipping management industry in the near
+                          future.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="contentt">
+                    <div class="web-view-flex">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/third/5.jpg"
+                        class="third_img"
+                        alt=""
+                      />
+                      <div class="third_content">
+                        <h5>Trusted by worldwide recognized companies.</h5>
+                        <p>
+                          We have an excellent track record of inspiring every
+                          stakeholder in the shipping management industry, with
+                          our comprehensive company culture and employee focused
+                          management practice.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="contentt">
+                    <div class="web-view-flex">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/third/2.jpg"
+                        class="third_img"
+                        alt=""
+                      />
+                      <div class="third_content">
+                        <h5>Innovating the highest industry standards.</h5>
+                        <p>
+                          Interworld Shipping Hospitality Overseas Limited
+                          (ISHOL) is a modern choice for the Crew Recruitment
+                          Agent. In ISOL, we cater to every micro and macro need
+                          of our valued clientele, whilst keeping an eye and
+                          attention to detail of their desired service.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="contentt">
+                    <div class="web-view-flex">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/third/1.jpg"
+                        class="third_img"
+                        alt=""
+                      />
+                      <div class="third_content">
+                        <h5>Best of the best specialists.</h5>
+                        <p>
+                          We believe in a sustainable and mutually beneficial
+                          relationship philosophy. Professionalism,
+                          accountability, transparency and work excellence are
+                          our prime interests that we maintain at all times to
+                          conduct our business.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="contentt">
+                    <div class="web-view-flex">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/third/6.jpg"
+                        class="third_img"
+                        alt=""
+                      />
+                      <div class="third_content">
+                        <h5>
+                          Relationships built on loyalty, knowledge and
+                          reliability.
+                        </h5>
+                        <p>
+                          We are passionate to deliver our services to our
+                          valued clientele, through our loyalty, transparency
+                          and reliability of our crew recruitment service.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="contentt">
+                    <div class="web-view-flex">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/third/24_7.jpg"
+                        class="third_img"
+                        alt=""
+                      />
+                      <div class="third_content">
+                        <h5>24/7 and URGENT response is guaranteed.</h5>
+                        <p>
+                          Inter-World Overseas Shipping Hospitality Limited
+                          (ISHOL) offers 24/7, direct support service through
+                          our rapid communication channel. Our specialized Human
+                          Resources Department will provide you with a contract,
+                          headhunting or any other customized service at any
+                          time.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Why Join Us Web and Tablet View Div Ends Here -->
+
+              <!-- Why Join Us Mobile View Div Starts Here -->
+              <div class="why_join_us_slider" id="why-join-us-slider">
+                <div class="slider_box">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="px-4">
+                        <div class="mobile-view-grid">
+                          <img
+                            src="https://isol.com.bd/public/front/assets/img/third/4.jpg"
+                            class="third_img mb-3"
+                            alt=""
+                          />
+                          <div class="third_content">
+                            <h5>Global CV database reach</h5>
+                            <p>
+                              ISOL, offers talented professionals for our
+                              clientele according to their needs and demands. We
+                              have a talented global resource pull in the
+                              industry and a CV database of job specialized
+                              people. We desire to become the international
+                              recruitment agent in the global shipping
+                              management industry in the near future.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider_box">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="px-4">
+                        <div class="mobile-view-grid">
+                          <img
+                            src="https://isol.com.bd/public/front/assets/img/third/5.jpg"
+                            class="third_img mb-3"
+                            alt=""
+                          />
+                          <div class="third_content">
+                            <h5>Trusted by worldwide recognized companies.</h5>
+                            <p>
+                              We have an excellent track record of inspiring
+                              every stakeholder in the shipping management
+                              industry, with our comprehensive company culture
+                              and employee focused management practice.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider_box">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="px-4">
+                        <div class="mobile-view-grid">
+                          <img
+                            src="https://isol.com.bd/public/front/assets/img/third/2.jpg"
+                            class="third_img mb-3"
+                            alt=""
+                          />
+                          <div class="third_content">
+                            <h5>Innovating the highest industry standards.</h5>
+                            <p>
+                              Interworld Shipping Hospitality Overseas Limited
+                              (ISHOL) is a modern choice for the Crew
+                              Recruitment Agent. In ISOL, we cater to every
+                              micro and macro need of our valued clientele,
+                              whilst keeping an eye and attention to detail of
+                              their desired service.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider_box">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="px-4">
+                        <div class="mobile-view-grid">
+                          <img
+                            src="https://isol.com.bd/public/front/assets/img/third/1.jpg"
+                            class="third_img mb-3"
+                            alt=""
+                          />
+                          <div class="third_content">
+                            <h5>Best of the best specialists.</h5>
+                            <p>
+                              We believe in a sustainable and mutually
+                              beneficial relationship philosophy.
+                              Professionalism, accountability, transparency and
+                              work excellence are our prime interests that we
+                              maintain at all times to conduct our business.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider_box">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="px-4">
+                        <div class="mobile-view-grid">
+                          <img
+                            src="https://isol.com.bd/public/front/assets/img/third/6.jpg"
+                            class="third_img mb-3"
+                            alt=""
+                          />
+                          <div class="third_content">
+                            <h5>
+                              Relationships built on loyalty, knowledge and
+                              reliability.
+                            </h5>
+                            <p>
+                              We are passionate to deliver our services to our
+                              valued clientele, through our loyalty,
+                              transparency and reliability of our crew
+                              recruitment service.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider_box">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="px-4">
+                        <div class="mobile-view-grid">
+                          <img
+                            src="https://isol.com.bd/public/front/assets/img/third/24_7.jpg"
+                            class="third_img mb-3"
+                            alt=""
+                          />
+                          <div class="third_content">
+                            <h5>24/7 and URGENT response is guaranteed.</h5>
+                            <p>
+                              Inter-World Overseas Shipping Hospitality Limited
+                              (ISHOL) offers 24/7, direct support service
+                              through our rapid communication channel. Our
+                              specialized Human Resources Department will
+                              provide you with a contract, headhunting or any
+                              other customized service at any time.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Why Join Us Mobile View Div Ends Here -->
             </div>
           </div>
         </div>
@@ -5046,7 +5012,7 @@
       $(".why_join_us_slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         dots: false,
         autoplay: 5000,
       });
