@@ -27,11 +27,11 @@
     />
 
     <!-- Fullview CSS CDN -->
-    <link
+    <!-- <link
       rel="stylesheet"
       id="fullview-css"
       href="https://isol.com.bd/public/front/assets/vendor/fullView/fullview.css"
-    />
+    /> -->
 
     <!--    slick slider-->
     <link
@@ -156,7 +156,7 @@
       }
 
       #sliders .li {
-        float: left;
+        /* float: left; */
         position: relative;
         width: 1000px;
         display: inline-block;
@@ -180,7 +180,7 @@
       }
 
       /*** target hooks ****/
-      @-webkit-keyframes slide-animation1 {
+      @keyframes slide-animation1 {
         0% {
           opacity: 0;
         }
@@ -228,7 +228,7 @@
       }
 
       #sliders .ul {
-        -webkit-animation: slide-animation1 10s infinite;
+        animation: slide-animation1 10s infinite;
       }
 
       /* Job Search Div Form Style */
@@ -619,7 +619,7 @@
 
       @media screen and (min-width: 768px) and (max-width: 1023px) {
         .section-content {
-          padding: 15% 0;
+          padding: 15% 0 0;
         }
 
         #why-join-us {
@@ -639,7 +639,7 @@
         }
 
         .section-content {
-          margin-top: 7%;
+          margin-top: 12%;
         }
       }
     </style>
@@ -1262,7 +1262,7 @@
                 <div class="col-12">
                   <div class="card border-0 rounded-0 p-0 bg-transparent">
                     <div class="section-title">
-                      <h2 class="mb-3">Why Join Us</h2>
+                      <h2 class="mb-3 fira-sans-font">Why Join Us</h2>
                     </div>
                   </div>
                 </div>
@@ -1411,7 +1411,7 @@
                         <div class="mobile-view-grid">
                           <img
                             src="https://isol.com.bd/public/front/assets/img/third/4.jpg"
-                            class="third_img mb-3"
+                            class="third_img mb-2"
                             alt=""
                           />
                           <div class="third_content">
@@ -1438,7 +1438,7 @@
                         <div class="mobile-view-grid">
                           <img
                             src="https://isol.com.bd/public/front/assets/img/third/5.jpg"
-                            class="third_img mb-3"
+                            class="third_img mb-2"
                             alt=""
                           />
                           <div class="third_content">
@@ -1462,7 +1462,7 @@
                         <div class="mobile-view-grid">
                           <img
                             src="https://isol.com.bd/public/front/assets/img/third/2.jpg"
-                            class="third_img mb-3"
+                            class="third_img mb-2"
                             alt=""
                           />
                           <div class="third_content">
@@ -1488,7 +1488,7 @@
                         <div class="mobile-view-grid">
                           <img
                             src="https://isol.com.bd/public/front/assets/img/third/1.jpg"
-                            class="third_img mb-3"
+                            class="third_img mb-2"
                             alt=""
                           />
                           <div class="third_content">
@@ -1513,7 +1513,7 @@
                         <div class="mobile-view-grid">
                           <img
                             src="https://isol.com.bd/public/front/assets/img/third/6.jpg"
-                            class="third_img mb-3"
+                            class="third_img mb-2"
                             alt=""
                           />
                           <div class="third_content">
@@ -1540,7 +1540,7 @@
                         <div class="mobile-view-grid">
                           <img
                             src="https://isol.com.bd/public/front/assets/img/third/24_7.jpg"
-                            class="third_img mb-3"
+                            class="third_img mb-2"
                             alt=""
                           />
                           <div class="third_content">
@@ -1568,7 +1568,10 @@
       <!-- Why Join Us Mobile View Div Ends Here -->
 
       <!-- Mission, Vision Section Starts Here -->
-      <section class="container mt-2">
+      <section
+        class="container mt-2"
+        style="height: 768px !important; background-color: #8ea9db"
+      >
         <div class="row">
           <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
             <div class="card bg-transparent border-0 rounded-0 flip-box">
@@ -1765,10 +1768,10 @@
     <script src="https://isol.com.bd/public/front/assets/js/navik.menu.js"></script>
 
     <!-- Fullview JS CDN -->
-    <script
+    <!-- <script
       id="fullview-js"
       src="https://isol.com.bd/public/front/assets/vendor/fullView/fullview.js"
-    ></script>
+    ></script> -->
 
     <!-- Bootstrap JS File -->
     <script src="./assets/js/bootstrap-5/js/bootstrap.min.js"></script>
@@ -1798,7 +1801,7 @@
 
           //Scrolling
           easing: "swing",
-          backToTop: true,
+          backToTop: false,
 
           // Accessibility
           keyboardScrolling: true,
