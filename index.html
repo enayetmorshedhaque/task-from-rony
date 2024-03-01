@@ -27,10 +27,11 @@
     />
 
     <!-- Fullview CSS CDN -->
-    <!-- <link
+    <link
       rel="stylesheet"
+      id="fullview-css"
       href="https://isol.com.bd/public/front/assets/vendor/fullView/fullview.css"
-    /> -->
+    />
 
     <!--    slick slider-->
     <link
@@ -60,11 +61,31 @@
 
     <!-- Page Style -->
     <style>
-      body {
-        background-color: #000000;
+      /* @font-face {
+        font-family: myFirstFont;
+        src: url("./assets/css/font/chinese.sthupo.ttf");
       }
 
-      @media (min-width: 1268px) {
+      @font-face {
+        font-family: Gardaempty;
+        src: url("./assets/css/font/PhosphateInline.ttf");
+      }
+
+      @font-face {
+        font-family: Minionpro;
+        src: url("./assets/css/font/MinionPro-BoldCapt.otf");
+      }
+
+      @font-face {
+        font-family: Itec;
+        src: url("./assets/css/font/ITCEDSCR.TTF");
+      }
+
+      body {
+        background-color: #000000;
+      } */
+
+      /* @media (min-width: 1268px) {
         .navik-header.center-menu-1.sticky {
           background-color: transparent;
         }
@@ -76,9 +97,13 @@
         .navik-menu ul li.dropdown_menu > a > span::before {
           border-color: white;
         }
-      }
+      } */
 
-      .header_text {
+      /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+      /* .header_text {
         font-size: 50px;
         font-variant: small-caps;
         color: white;
@@ -96,6 +121,13 @@
       .hero-banner {
         width: 100%;
         height: 100vh;
+      } */
+
+      /* @media (max-width: 992px) {
+        .hero-banner {
+          width: 100%;
+          height: 100vh;
+        }
       }
 
       .video_section {
@@ -106,9 +138,9 @@
 
       .contentss {
         position: relative;
-      }
+      } */
 
-      .widgets-container {
+      /* .widgets-container {
         width: 25px;
         height: 80px;
         position: absolute;
@@ -132,20 +164,20 @@
         padding: 0;
         width: 25px;
         height: 25px;
-      }
+      } */
 
       /*text slider*/
 
-      #sliders,
+      /* #sliders,
       .ul {
-        height: 100px;
+        height: 150px;
       }
 
       #sliders {
         overflow: hidden;
         padding: 20px;
         position: relative;
-        width: 100%;
+        width: 1000px;
       }
 
       #sliders .li {
@@ -153,7 +185,7 @@
         position: relative;
         width: 1000px;
         display: inline-block;
-        height: 130px;
+        height: 70px;
         font-family: Itec, serif;
         color: #fff;
         font-size: 50px;
@@ -164,24 +196,25 @@
         position: absolute;
         left: 0;
         top: 0;
+        width: 9000px;
         transition: left 0.2s linear;
         -moz-transition: left 0.2s linear;
         -o-transition: left 0.2s linear;
         -webkit-transition: left 0.2s linear;
         margin-left: -25px;
-      }
+      } */
 
       /*** Content ***/
 
-      .sliders-container {
+      /* .sliders-container {
         margin: 0 auto;
         padding: 0;
-        width: 100%;
-      }
+        width: 950px;
+      } */
 
       /*** target hooks ****/
 
-      @-webkit-keyframes slide-animation1 {
+      /* @-webkit-keyframes slide-animation1 {
         0% {
           opacity: 0;
         }
@@ -230,9 +263,9 @@
 
       #sliders .ul {
         -webkit-animation: slide-animation1 10s infinite;
-      }
+      } */
 
-      .job_ser {
+      /* .job_ser {
         padding: 20px 0 30px 0;
         position: absolute;
         bottom: 0;
@@ -241,17 +274,9 @@
         left: 0;
         right: 0;
         background-color: transparent;
-      }
+      } */
 
-      .section-title-job h2 {
-        font-size: 45px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-        color: white;
-      }
-
-      .custom-form {
+      /* .custom-form {
         border-radius: 15px;
         background-color: transparent;
         border: 2px solid #eb9356;
@@ -323,31 +348,33 @@
       }
 
       .select2-dropdown {
-        /*background-color: transparent !important;*/
-        /*border: 2px solid #eb9356 !important;*/
+        background-color: transparent !important;
+        border: 2px solid #eb9356 !important;
         border-radius: 10px !important;
         color: black;
-      }
+      } */
 
       /*--------------------------------------------------------------
 # Banner Image
 --------------------------------------------------------------*/
 
-      .second_first_Section {
+      /* .second_first_Section {
         width: 100%;
-        height: 80vh;
+        height: 70vh;
         position: relative;
-      }
+      } */
 
-      .second_first_Section_text {
+      /* .second_first_Section_text {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         text-align: center;
-      }
+      } */
 
-      #sliders-second-section,
+      /*text slider*/
+
+      /* #sliders-second-section,
       .ul {
         height: 60px;
       }
@@ -360,7 +387,7 @@
       }
 
       #sliders-second-section .li {
-        /* float: left; */
+        float: left;
         position: relative;
         width: 1400px;
         display: inline-block;
@@ -370,14 +397,14 @@
         color: #fff;
         font-size: 40px;
         text-align: center;
-      }
+      } */
 
       #sliders-second-section .ul {
         list-style: none;
         position: absolute;
         left: 0;
         top: 0;
-        /* width: 100%; */
+        width: 12000px;
         transition: left 0.2s linear;
         -moz-transition: left 0.2s linear;
         -o-transition: left 0.2s linear;
@@ -477,9 +504,18 @@
         font-weight: bold;
       }
 
-      .banner_img img {
+      /* .banner_img img {
         width: 100%;
-        height: 80vh;
+        height: 70vh;
+      } */
+
+      /*--------------------------------------------------------------
+# Category
+--------------------------------------------------------------*/
+
+      /* .category_section {
+        padding-top: 20px;
+        height: 30vh;
       }
 
       .category_box .card {
@@ -487,10 +523,11 @@
       }
 
       .category_box {
+        width: 100%;
         background-color: #f8cbad;
         border: 1px solid black;
+        padding: 10px;
         cursor: pointer;
-        padding: 5px;
         border-radius: 10px;
         transition: transform 0.5s, box-shadow 1s;
       }
@@ -500,7 +537,7 @@
       }
 
       .category_box img {
-        height: 50px;
+        height: 40px;
         width: auto;
       }
 
@@ -513,15 +550,38 @@
       .category_box:hover {
         transform: scale(1.1) perspective(0px);
         box-shadow: -1px 0px 22px 5px rgb(120, 120, 120);
-      }
+      } */
 
-      @media screen and (min-width: 1024px) {
-        .custom-padding-web {
-          padding: 0 5px;
+      /* @media (max-width: 992px) {
+        .category_box {
+          width: 160px;
         }
+      } */
+
+      /* .contentt {
+        color: white;
       }
 
-      .news {
+      .contentt h3 {
+        color: #8ea9db;
+        font-size: 15px;
+      }
+
+      .third_img {
+        height: 50px;
+        width: 60px;
+        margin-right: 15px;
+      }
+
+      .third_content h5 {
+        font-size: 16px;
+      }
+
+      .third_content p {
+        font-size: 14px;
+      } */
+
+      /* .news {
         width: 160px;
       }
 
@@ -537,8 +597,6 @@
       .special {
         background-color: transparent;
         color: white;
-        /*border:2px solid #F88A04FF;*/
-        /*border-radius: 15px;*/
       }
 
       .dot {
@@ -550,9 +608,9 @@
         background-color: white;
         border-radius: 50%;
         display: inline-block;
-      }
+      } */
 
-      #why-join-us {
+      /* #why-join-us {
         width: 100%;
         height: auto;
         position: relative;
@@ -561,7 +619,7 @@
       .why-join-us-img {
         width: 100%;
         height: auto;
-        position: relative; /* Change position to relative */
+        position: relative;
         z-index: 999;
       }
 
@@ -586,9 +644,9 @@
       .third_content p {
         font-size: 14px;
         text-align: justify;
-      }
+      } */
 
-      @media screen and (min-width: 768px) and (max-width: 1023px) {
+      /* @media screen and (min-width: 768px) and (max-width: 1023px) {
         .section-content {
           padding: 15% 0;
         }
@@ -600,7 +658,7 @@
         .why-join-us-img {
           height: 100%;
         }
-      }
+      } */
 
       .contentt {
         color: white;
@@ -1052,6 +1110,13 @@
       }
 
       @media screen and (max-width: 1023px) {
+        .banner_img img,
+        .second_first_Section {
+          height: 40vh !important;
+        }
+        .category_section {
+          height: 100% !important;
+        }
         #why-join-us {
           height: 100vh;
         }
@@ -1083,13 +1148,17 @@
         }
       }
 
-      @media screen and (min-width: 1024px) {
+      /* @media screen and (min-width: 1024px) {
         .web-view-flex {
           height: 100%;
           display: flex !important;
           padding-top: 0px;
         }
-      }
+
+        .section-content {
+          margin-top: 13%;
+        }
+      } */
 
       @media screen and (max-width: 767px) {
         #urgent-vacancy-web-view,
@@ -1324,22 +1393,26 @@
         <!-- ======= Job Search Section ======= -->
         <div class="job_ser">
           <div class="container">
-            <!--                    <div class="section-title-job sliding_text">-->
-            <!--                        <h2 class="item-1">Turn Your Passion Into Your Profession</h2>-->
-            <!--                        <h2 class="item-2">Your Attitude Detiremines Your Direction</h2>-->
-            <!--                        <h2 class="item-3">Love Your Career</h2>-->
-            <!--                    </div>-->
-
             <div id="sliders">
               <ul class="ul">
                 <li class="li">
                   <div class="slider-container">
-                    <p>Turn Your Passion Into Your Profession</p>
+                    <p>
+                      Turn Your Passion <br />
+                      <span style="padding-left: 1.5em; text-indent: -1.5em"
+                        >Into Your Profession</span
+                      >
+                    </p>
                   </div>
                 </li>
                 <li class="li">
                   <div class="slider-container">
-                    <p>Your Attitude Determines Your Direction</p>
+                    <p>
+                      Your Attitude <br />
+                      <span style="padding-left: 1.5em; text-indent: -1.5em">
+                        Determines Your Direction
+                      </span>
+                    </p>
                   </div>
                 </li>
                 <li class="li">
@@ -1402,9 +1475,6 @@
                       PORT-MEANING SERVICES
                     </option>
                   </select>
-
-                  <!--                                <input type="text" name="name" class="form-control custom-form" id="name"-->
-                  <!--                                       placeholder="Job Title" required="">-->
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-12 form-group mb-2">
@@ -1415,9 +1485,6 @@
                   >
                     <option value="">Select a Department</option>
                   </select>
-
-                  <!--                                <input type="text" name="name" class="form-control custom-form" id="name"-->
-                  <!--                                       placeholder="Department" required="">-->
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-12 form-group mb-2">
@@ -1428,9 +1495,6 @@
                   >
                     <option value="">Select Job Title</option>
                   </select>
-
-                  <!--                                <input type="text" name="name" class="form-control custom-form" id="name"-->
-                  <!--                                       placeholder="Choose a Category" required="">-->
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-12">
@@ -1448,75 +1512,113 @@
             </form>
           </div>
         </div>
+
+        <div class="widgets-container">
+          <div class="widget-item">
+            <div class="widget-icon">
+              <a
+                href="https://www.linkedin.com/company/interworld-shipping-overseas-limited-isol/?viewAsMember=true"
+                target="_blank"
+                ><img
+                  src="https://isol.com.bd/public/front/assets/img/social_icon/linkeden.png"
+                  class="imge"
+                  alt=""
+              /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100095457271998"
+                target="_blank"
+                ><img
+                  src="https://isol.com.bd/public/front/assets/img/social_icon/facebook.png"
+                  class="imge"
+                  alt=""
+              /></a>
+              <a
+                href="https://www.youtube.com/@ManningAgent/featured"
+                target="_blank"
+                ><img
+                  src="https://isol.com.bd/public/front/assets/img/social_icon/youtube.png"
+                  class="imge"
+                  alt=""
+              /></a>
+              <a href="https://g.page/r/CcKGtJQjvbksEB0/review" target="_blank"
+                ><img
+                  src="https://isol.com.bd/public/front/assets/img/social_icon/google.png"
+                  class="imge"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Hero Image Section Ends Here -->
 
       <!-- Banner Image Section Starts Here -->
-      <section class="container-fluid mb-5">
-        <div class="row mb-3">
-          <div class="col-12 p-0">
-            <div class="second_first_Section">
-              <div class="slider SecondDivSliderNav">
-                <div class="slider_box banner_img">
-                  <img
-                    class="img-fluid"
-                    src="https://isol.com.bd/public/front/assets/img/second_slider/1.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="slider_box banner_img">
-                  <img
-                    class="img-fluid"
-                    src="https://isol.com.bd/public/front/assets/img/second_slider/2.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="slider_box banner_img">
-                  <img
-                    class="img-fluid"
-                    src="https://isol.com.bd/public/front/assets/img/second_slider/3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="slider_box banner_img">
-                  <img
-                    class="img-fluid"
-                    src="https://isol.com.bd/public/front/assets/img/second_slider/4.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="slider_box banner_img">
-                  <img
-                    class="img-fluid"
-                    src="https://isol.com.bd/public/front/assets/img/second_slider/5.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="slider_box banner_img">
-                  <img
-                    class="img-fluid"
-                    src="https://isol.com.bd/public/front/assets/img/second_slider/6.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="slider_box banner_img">
-                  <img
-                    class="img-fluid"
-                    src="https://isol.com.bd/public/front/assets/img/second_slider/8.jpg"
-                    alt=""
-                  />
-                </div>
+      <section class="container-fluid p-0 mb-4">
+        <!-- ======= Banner Section ======= -->
+
+        <div class="container-fluid p-0">
+          <div class="second_first_Section">
+            <div class="slider SecondDivSliderNav">
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/8.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
+        <!-- End Banner Section -->
 
-        <!-- Category Div Starts Here -->
-        <div class="container">
+        <!-- ======= Category Section ======= -->
+        <div class="container-fluid category_section">
           <div class="row">
             <div class="col-6 mb-3">
               <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 custom-padding-web mb-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div
                     class="card category_box"
                     onclick="window.location.href = 'https://isol.com.bd/cruiseship';"
@@ -1531,7 +1633,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 custom-padding-web mb-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div
                     class="card category_box"
                     onclick="window.location.href = 'https://isol.com.bd/megayacht';"
@@ -1546,7 +1648,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 custom-padding-web mb-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div
                     class="card category_box"
                     onclick="window.location.href = 'https://isol.com.bd/river_cruise';"
@@ -1561,7 +1663,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 custom-padding-web">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div
                     class="card category_box"
                     onclick="window.location.href = 'https://isol.com.bd/merchant_navy';"
@@ -1580,7 +1682,7 @@
             </div>
             <div class="col-6 mb-3">
               <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-3 custom-padding-web">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
                   <div
                     class="card category_box"
                     onclick="window.location.href = 'https://isol.com.bd/hotel_ressort';"
@@ -1595,7 +1697,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-3 custom-padding-web">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
                   <div
                     class="card category_box"
                     onclick="window.location.href = 'https://isol.com.bd/private_jets';"
@@ -1610,7 +1712,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-3 custom-padding-web">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
                   <div
                     class="card category_box"
                     onclick="window.location.href = 'https://isol.com.bd/offshore';"
@@ -1625,7 +1727,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 custom-padding-web">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div
                     class="card category_box"
                     onclick="window.location.href = 'https://isol.com.bd/world_butler';"
@@ -1643,53 +1745,52 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- Category Div Starts Here -->
 
-        <!-- News Slider Div Starts Here -->
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div
-                class="d-flex justify-content-between align-items-center breaking-news"
-                style="margin-left: -30px"
-              >
+          <!--        news slider-->
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
                 <div
-                  class="d-flex flex-row flex-grow-1 flex-fill justify-content-center special py-2 px-1 news"
+                  class="d-flex justify-content-between align-items-center breaking-news"
+                  style="margin-left: -25px"
                 >
-                  <span
-                    class="d-flex align-items-center"
-                    style="font-weight: bold; color: yellow"
-                    >&nbsp;IMPORTANT</span
+                  <div
+                    class="d-flex flex-row flex-grow-1 flex-fill justify-content-center special py-2 px-1 news"
                   >
+                    <span
+                      class="d-flex align-items-center"
+                      style="font-weight: bold; color: yellow"
+                      >&nbsp;IMPORTANT</span
+                    >
+                  </div>
+                  <marquee
+                    class="news-scroll"
+                    behavior="scroll"
+                    direction="left"
+                    onmouseover="this.stop();"
+                    onmouseout="this.start();"
+                  >
+                    <a href="#" class="me-3 ms-3"
+                      >[[ Candidates without relevant experience are requested
+                      not to apply ]]</a
+                    >
+                    <span class="dot"></span>
+                    <a href="#" class="me-3 ms-3"
+                      >[[ We can only reply to those who meet the requirements,
+                      in case we have a position available ]]</a
+                    >
+                    <span class="dot"></span>
+                    <a href="#" class="me-3 ms-3"
+                      >[[ If you match one of our positions, we will contact you
+                      by email to schedule an online interview ]]</a
+                    >
+                  </marquee>
                 </div>
-                <marquee
-                  class="news-scroll"
-                  behavior="scroll"
-                  direction="left"
-                  onmouseover="this.stop();"
-                  onmouseout="this.start();"
-                >
-                  <a href="#" class="me-3 ms-3"
-                    >[[ Candidates without relevant experience are requested not
-                    to apply ]]</a
-                  >
-                  <span class="dot"></span>
-                  <a href="#" class="me-3 ms-3"
-                    >[[ We can only reply to those who meet the requirements, in
-                    case we have a position available ]]</a
-                  >
-                  <span class="dot"></span>
-                  <a href="#" class="me-3 ms-3"
-                    >[[ If you match one of our positions, we will contact you
-                    by email to schedule an online interview ]]</a
-                  >
-                </marquee>
               </div>
             </div>
           </div>
         </div>
-        <!-- News Slider Div Ends Here -->
+        <!-- End Category Section -->
       </section>
       <!-- Banner Image Section Ends Here -->
 
@@ -2423,7 +2524,7 @@
           <div class="col-12">
             <div class="sixBelow">
               <h2>WE SPECIALIZES IN</h2>
-              <div class="row">
+              <div class="row mb-4">
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                   <div class="flip-card1">
                     <div class="flip-card-inner1">
@@ -5820,7 +5921,10 @@
     <script src="https://isol.com.bd/public/front/assets/js/navik.menu.js"></script>
 
     <!-- Fullview JS CDN -->
-    <!-- <script src="https://isol.com.bd/public/front/assets/vendor/fullView/fullview.js"></script> -->
+    <script
+      id="fullview-js"
+      src="https://isol.com.bd/public/front/assets/vendor/fullView/fullview.js"
+    ></script>
 
     <!-- Bootstrap JS File -->
     <script src="./assets/js/bootstrap-5/js/bootstrap.min.js"></script>
@@ -5842,65 +5946,89 @@
       });
     </script>
 
-    <!-- <script>
+    <script>
       $(document).ready(function () {
-        const screenWidth = window.innerWidth;
+        var fv = $("#fullview").fullView({
+          //Navigation
+          dots: true,
 
-        // Set your desired web view size (e.g., 1024)
-        const webViewSize = 1024;
+          //Scrolling
+          easing: "swing",
+          backToTop: false,
 
-        if (screenWidth >= webViewSize) {
-          var fv = $("#fullview").fullView({
-            //Navigation
-            dots: true,
+          // Accessibility
+          keyboardScrolling: true,
 
-            //Scrolling
-            easing: "swing",
-            backToTop: true,
+          // Callback
+          onScrollEnd: function (currentView, preView) {
+            // console.log("Current", currentView);
+            // console.log("Previus", preView);
 
-            // Accessibility
-            keyboardScrolling: true,
+            checkScrollStatus(currentView);
 
-            // Callback
-            onScrollEnd: function (currentView, preView) {
-              console.log("Current", currentView);
-              console.log("Previus", preView);
-            },
-          });
+            // Get the active element by its class
+            var activeElement = document.querySelector(".active");
 
-          $("#down").click(function () {
-            // To Scroll Down 1 Section
-            fv.data("fullView").scrollDown();
+            // Check if the active element exists
+            if (activeElement) {
+              // Get the height of the active element
+              var activeElementHeight = activeElement.clientHeight;
 
-            // To Scroll Up 1 Section
-            // fv.data('fullView').scrollDown();
-          });
+              // Log or use the height as needed
+              console.log("Height of active element:", activeElementHeight);
 
-          $("#select").change(function () {
-            // To Scroll to Specfic Section
-            fv.data("fullView").scrollTo($(this).val());
-          });
+              var screenHeight = window.innerHeight;
+              console.log("Current screen height: " + screenHeight + " pixels");
+            } else {
+              console.log('No element with the class "active" found');
+            }
+          },
+        });
 
-          $("#down").click(function () {
-            // To Scroll Down 1 Section
-            fv.data("fullView").scrollDown();
-          });
+        $("#down").click(function () {
+          customScrollDown();
+        });
 
-          $("#select").change(function () {
-            // To Scroll to Specific Section
-            fv.data("fullView").scrollTo($(this).val());
-          });
+        $("#select").change(function () {
+          // To Scroll to Specfic Section
+          fv.data("fullView").scrollTo($(this).val());
+        });
+
+        function checkScrollStatus(currentView) {
+          var activeSection = $(".active");
+          var activeSectionHeight = activeSection[0].scrollHeight;
+          var screenHeight = window.innerHeight;
+
+          console.log(
+            "Active Section Height: " + activeSectionHeight + " pixels"
+          );
+          console.log("Current Screen Height: " + screenHeight + " pixels");
+
+          // Check if the screen has reached the bottom of the active section
+          if (screenHeight + activeSection.scrollTop() >= activeSectionHeight) {
+            console.log("Scrolling down...");
+            customScrollDown();
+          }
+        }
+
+        function customScrollDown() {
+          var activeSection = $(".active"); // Adjust this selector based on your actual active section class
+          var activeSectionHeight = activeSection[0].scrollHeight;
+          var screenHeight = window.innerHeight;
+
+          // Check if there's an active section
+          if (activeSection.length > 0) {
+            // Scroll to the top of the next section (considering the next active section height will start from 0)
+            $("html, body").animate(
+              { scrollTop: activeSection.offset().top + activeSectionHeight },
+              "slow"
+            );
+          } else {
+            console.log("No active section found");
+          }
         }
       });
-
-      function manuallyScrollToNextSection() {
-        var currentScrollTop = $("#fullview").scrollTop();
-        var windowHeight = window.innerHeight;
-        var newScrollTop = currentScrollTop + windowHeight;
-
-        $("#fullview").animate({ scrollTop: newScrollTop }, 500); // Adjust the duration as needed
-      }
-    </script> -->
+    </script>
 
     <script>
       $(".SecondDivSliderNav").slick({

@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISOL</title>
+
+    <!-- Bootstrap CSS File -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/bootstrap-5/css/bootstrap.min.css"
+    />
+
+    <!-- Fontawesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/86bc96ac49.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme/theme.css" />
+
+    <!-- Navigation Bar CSS Link -->
+    <link
+      rel="stylesheet"
+      href="https://isol.com.bd/public/front/assets/css/middle_header.css"
+    />
+
+    <!-- Fullview CSS CDN -->
+    <link
+      rel="stylesheet"
+      id="fullview-css"
+      href="https://isol.com.bd/public/front/assets/vendor/fullView/fullview.css"
+    />
+
+    <!--    slick slider-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/slick/slick-theme.css"
+    />
+
+    <!-- Select2 CSS Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Page Style -->
+    <style>
+      /* Importing Fonts */
+      @font-face {
+        font-family: myFirstFont;
+        src: url("./assets/css/font/chinese.sthupo.ttf");
+      }
+
+      @font-face {
+        font-family: Gardaempty;
+        src: url("./assets/css/font/PhosphateInline.ttf");
+      }
+
+      @font-face {
+        font-family: Minionpro;
+        src: url("./assets/css/font/MinionPro-BoldCapt.otf");
+      }
+
+      @font-face {
+        font-family: Itec;
+        src: url("./assets/css/font/ITCEDSCR.TTF");
+      }
+
+      /* Common Style */
+      body {
+        font-family: "Montserrat", sans-serif;
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.42857143;
+        color: #a3a3a3;
+        background-color: #000000;
+      }
+
+      /* Header Section Style */
+      .header_text {
+        font-size: 50px;
+        font-variant: small-caps;
+        color: white;
+        font-family: myFirstFont, serif;
+        font-weight: bold;
+        letter-spacing: 3px;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+      }
+
+      .header_text span {
+        color: darkorange;
+      }
+
+      .hero-banner {
+        width: 100%;
+        height: 100vh;
+      }
+
+      /* Hero Image Video Section */
+      .contentss {
+        position: relative;
+      }
+
+      .hero-banner {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .video_section {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      /* Job Search Div */
+      .job_ser {
+        padding: 20px 0 30px 0;
+        position: absolute;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        background-color: transparent;
+      }
+
+      /* Job Search Div Text Sliders */
+      #sliders,
+      .ul {
+        height: 150px;
+      }
+
+      #sliders {
+        overflow: hidden;
+        padding: 20px;
+        position: relative;
+        width: 1000px;
+      }
+
+      #sliders .li {
+        float: left;
+        position: relative;
+        width: 1000px;
+        display: inline-block;
+        height: 70px;
+        font-family: Itec, serif;
+        color: #fff;
+        font-size: 50px;
+      }
+
+      #sliders .ul {
+        list-style: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 9000px;
+        transition: left 0.2s linear;
+        -moz-transition: left 0.2s linear;
+        -o-transition: left 0.2s linear;
+        -webkit-transition: left 0.2s linear;
+        margin-left: -25px;
+      }
+
+      /*** target hooks ****/
+      @-webkit-keyframes slide-animation1 {
+        0% {
+          opacity: 0;
+        }
+        2% {
+          opacity: 1;
+        }
+        30% {
+          left: 0px;
+          opacity: 1;
+        }
+        32.5% {
+          opacity: 0.6;
+        }
+        35% {
+          left: -1000px;
+          opacity: 1;
+        }
+        55% {
+          left: -1000px;
+          opacity: 1;
+        }
+        57.5% {
+          opacity: 0.6;
+        }
+        60% {
+          left: -2000px;
+          opacity: 1;
+        }
+        80% {
+          left: -2000px;
+          opacity: 1;
+        }
+
+        95% {
+          opacity: 1;
+        }
+        98% {
+          left: -3000px;
+          opacity: 0;
+        }
+        100% {
+          left: 0px;
+          opacity: 0;
+        }
+      }
+
+      #sliders .ul {
+        -webkit-animation: slide-animation1 10s infinite;
+      }
+
+      /* Job Search Div Form Style */
+      .custom-form {
+        border-radius: 15px;
+        background-color: transparent;
+        border: 2px solid #eb9356;
+        height: 45px;
+        color: white;
+      }
+
+      .custom-form:focus {
+        background-color: transparent !important;
+        border: 2px solid #eb9356 !important;
+        color: white;
+      }
+
+      .form-control::-webkit-input-placeholder {
+        color: white;
+      }
+
+      .custom_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        background-color: transparent;
+        border: 2px solid #eb9356;
+        height: 45px;
+        color: white;
+        font-weight: bold;
+        line-height: 1;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.5s, box-shadow 1s;
+      }
+
+      .custom_btn:hover {
+        transform: scale(1.1) perspective(0px);
+        box-shadow: -1px 0px 22px 5px rgb(120, 120, 120);
+      }
+
+      .custom_btn i {
+        font-size: 24px;
+        position: relative;
+        left: 35px;
+      }
+
+      .select2-container {
+        width: 100% !important;
+      }
+
+      .select2-container--default
+        .select2-selection--single
+        .select2-selection__rendered {
+        color: white !important;
+        line-height: 40px !important;
+      }
+
+      .select2-container--default .select2-selection--single {
+        border-radius: 15px !important;
+        background-color: transparent !important;
+        border: 2px solid #eb9356 !important;
+        height: 45px !important;
+      }
+
+      .select2-container--default
+        .select2-selection--single
+        .select2-selection__arrow {
+        top: 8px !important;
+        right: 4px !important;
+      }
+
+      .select2-dropdown {
+        /*background-color: transparent !important;*/
+        /*border: 2px solid #eb9356 !important;*/
+        border-radius: 10px !important;
+        color: black;
+      }
+
+      /* Social Media Widgets Div Style */
+      .widgets-container {
+        width: 25px;
+        height: 80px;
+        position: absolute;
+        left: 0;
+        bottom: 50px;
+        margin: auto 0;
+        z-index: 99;
+      }
+
+      .widget-icon {
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        background-size: 100% auto;
+        position: relative;
+        display: block;
+      }
+
+      .widget-icon .imge {
+        margin: 0;
+        padding: 0;
+        width: 25px;
+        height: 25px;
+      }
+
+      /* Banner Section Style */
+      .second_first_Section {
+        width: 100%;
+        height: 70vh;
+        position: relative;
+      }
+
+      .second_first_Section_text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+
+      /* Banner Section Static Text */
+      .second_first_Section_text h4 {
+        font-size: 20px;
+        line-height: 1;
+        color: white;
+        font-family: Minionpro, serif;
+        text-transform: uppercase;
+        transform: scale(2, 1.3);
+      }
+
+      .second_first_Section_text h1 {
+        font-family: Gardaempty, serif;
+        font-size: 120px;
+        color: white;
+        padding: 0;
+        margin: 0;
+        line-height: 0.8;
+        transform: scale(1, 0.8);
+        letter-spacing: 5px;
+      }
+
+      .second_first_Section_text .last_text {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 45px;
+        color: white;
+        padding: 0;
+        margin: 0;
+        line-height: 0.8;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+      }
+
+      .banner_img img {
+        width: 100%;
+        height: 70vh;
+      }
+
+      #sliders-second-section p {
+        position: relative;
+        height: 50px;
+        font-family: Minionpro, serif;
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+      }
+
+      /* Category Section Div Style */
+      .category_section {
+        padding-top: 30px;
+        height: 30vh;
+      }
+
+      .category_box .card {
+        padding: 0;
+      }
+
+      .category_box {
+        width: 100%;
+        background-color: #f8cbad;
+        border: 1px solid black;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: transform 0.5s, box-shadow 1s;
+      }
+
+      .category_box .d-grid {
+        justify-items: center !important;
+      }
+
+      .category_box img {
+        height: 40px;
+        width: auto;
+      }
+
+      .category_box h3 {
+        color: #c55a11;
+        font-size: 12px;
+        font-family: "Merriweather", serif;
+      }
+
+      .category_box:hover {
+        transform: scale(1.1) perspective(0px);
+        box-shadow: -1px 0px 22px 5px rgb(120, 120, 120);
+      }
+
+      /* News Slider */
+      .news {
+        width: 160px;
+      }
+
+      .breaking-news {
+        background-color: transparent;
+      }
+
+      .news-scroll a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .special {
+        background-color: transparent;
+        color: white;
+      }
+
+      .dot {
+        height: 6px;
+        width: 6px;
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-top: 2px !important;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      /* Why Join Us Section Style */
+      #why-join-us {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+      }
+
+      .why-join-us-img {
+        width: 100%;
+        height: 100vh;
+        position: relative; /* Change position to relative */
+        z-index: 999;
+      }
+
+      #why-join-us .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(21, 21, 21, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+      }
+
+      #why-join-us-slider {
+        display: none;
+      }
+
+      .third_content h5 {
+        font-size: 16px;
+      }
+
+      .third_content p {
+        font-size: 14px;
+        text-align: justify;
+      }
+
+      .contentt {
+        color: white;
+      }
+
+      .contentt h3 {
+        color: #8ea9db;
+        font-size: 15px;
+      }
+
+      .third_img {
+        height: 50px;
+        width: 60px;
+        margin-right: 15px;
+      }
+
+      /* Mission, Vision Section Style */
+      .flip-box {
+        background-color: transparent;
+        width: 100%;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-box-front,
+      .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-box-front {
+        color: black;
+      }
+
+      .flip-box-back {
+        background-color: black;
+        color: white;
+        transform: rotateY(180deg);
+        padding: 20px 10px;
+        display: grid;
+        align-items: center;
+        align-content: center;
+        text-align: justify;
+      }
+
+      .btn-custom {
+        background: none;
+        border: 2px solid #eb9356;
+        color: white;
+      }
+
+      .btn-custom:hover {
+        background: none;
+        border: 2px solid #eb9356;
+        color: white;
+      }
+
+      .modal-content {
+        background-color: black;
+        color: white;
+      }
+
+      .btn-close {
+        background-color: white !important;
+      }
+
+      #changeable-height-div {
+        transition: height 0.5s ease-in-out; /* You can adjust the duration and timing function as needed */
+      }
+
+      /* Media Query */
+      @media (max-width: 992px) {
+        .hero-banner {
+          width: 100%;
+          height: 100vh;
+        }
+
+        .category_box {
+          width: 160px;
+        }
+      }
+
+      @media (min-width: 1268px) {
+        .navik-header.center-menu-1.sticky {
+          background-color: transparent;
+        }
+
+        .navik-menu > ul > li > a {
+          color: white;
+        }
+
+        .navik-menu ul li.dropdown_menu > a > span::before {
+          border-color: white;
+        }
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .section-content {
+          padding: 15% 0;
+        }
+
+        #why-join-us {
+          height: 100vh;
+        }
+
+        .why-join-us-img {
+          height: 100%;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .web-view-flex {
+          height: 100%;
+          display: flex !important;
+          padding-top: 0px;
+        }
+
+        .section-content {
+          margin-top: 7%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar Starts Here -->
+    <div class="navik-header header-shadow center-menu-1 header-opacity">
+      <div class="container-fluid">
+        <div class="d-none d-lg-block text-center">
+          <h1 class="header_text">
+            <span>I</span>nterworld <span>S</span>hipping <span>O</span>verseas
+            <span>L</span>imited
+          </h1>
+        </div>
+
+        <!-- Navik header -->
+        <div class="navik-header-container">
+          <!--Logo-->
+          <div
+            class="logo"
+            data-mobile-logo="https://isol.com.bd/public/front/assets/img/logo.png"
+            data-sticky-logo="https://isol.com.bd/assets/img/logo.png"
+          >
+            <a href="index.html"
+              ><img
+                src="https://isol.com.bd/public/front/assets/img/logo.png"
+                alt="logo"
+            /></a>
+          </div>
+
+          <!-- Burger menu -->
+          <div class="burger-menu">
+            <div class="line-menu line-half first-line"></div>
+            <div class="line-menu"></div>
+            <div class="line-menu line-half last-line"></div>
+          </div>
+
+          <!--Navigation menu-->
+          <nav class="navik-menu menu-caret submenu-top-border submenu-scale">
+            <ul>
+              <li>
+                <a href="index.html" class="other_button">
+                  <span class="home_box">H</span>ome</a
+                >
+              </li>
+              <li>
+                <a href="how_it_work.html" class="other_button">How It Works</a>
+              </li>
+              <li>
+                <a href="#" class="other_button">Why Us</a>
+                <ul>
+                  <li><a href="mission.html">Mission</a></li>
+                  <li><a href="vision.html">Vision</a></li>
+                  <li><a href="values.html">Values</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="other_button">About ISOL</a>
+                <ul>
+                  <li>
+                    <a href="our_expertises.html">Expertise</a>
+                  </li>
+                  <li>
+                    <a href="our_services.html">Service</a>
+                  </li>
+                  <li>
+                    <a href="our_accreditations.html">Accreditations</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="other_button">Employer</a>
+                <ul>
+                  <li>
+                    <a href="post_a_job.html">Partner with us</a>
+                  </li>
+                  <li>
+                    <a href="crew_cv_searching.html">Crew cv searching</a>
+                  </li>
+                  <li>
+                    <a href="top_notch.html">Top notch candidate</a>
+                  </li>
+                  <li><a href="hierarchy.html">Hierarchy</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#" class="other_button">Crew Portal</a>
+                <ul>
+                  <li><a href="crew_login.html">Login</a></li>
+                  <li><a href="help24_7.html">Help 24/7</a></li>
+                  <li>
+                    <a href="urgent_vacancy.html">Urgent Vacancy</a>
+                  </li>
+                  <li>
+                    <a href="hiring_process.html">Hiring Process</a>
+                  </li>
+                  <li>
+                    <a href="career_navigation.html">Career Navigation</a>
+                  </li>
+                  <li>
+                    <a href="#">Find Job</a>
+                    <ul>
+                      <li>
+                        <a href="cruiseship.html">Cruiseship</a>
+                      </li>
+                      <li>
+                        <a href="megayacht.html">Megayacht</a>
+                      </li>
+                      <li>
+                        <a href="river_cruise.html">River Cruise</a>
+                      </li>
+                      <li>
+                        <a href="private_jets.html">Private Jets</a>
+                      </li>
+                      <li>
+                        <a href="hotel_ressort.html">Hotel & Resort</a>
+                      </li>
+                      <li>
+                        <a href="merchant_navy.html">Merchant Navy</a>
+                      </li>
+                      <li>
+                        <a href="offshore.html">Offshore</a>
+                      </li>
+                      <li>
+                        <a href="world_butler.html">World Butler</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="other_button">Insight</a>
+                <ul>
+                  <li><a href="event.html">Event</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="other_button">Contact</a>
+                <ul>
+                  <li><a href="#">Interview Appointment</a></li>
+                  <li><a href="#">Enquiry</a></li>
+                  <li><a href="#">Complain</a></li>
+                  <li><a href="#">Survey</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="crew_login.html" class="other_button">Hire Employee</a>
+              </li>
+              <li>
+                <a href="crew_login.html" class="other_button">CV Register</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation Bar Ends Here -->
+
+    <!-- Fullview Div Starts Here -->
+    <div id="fullview">
+      <!-- Hero Image Video Section Starts Here -->
+      <section class="contentss">
+        <!-- Hero Image Banner Video Starts Here -->
+        <div class="hero-banner">
+          <video loop="true" autoplay="autoplay" muted class="video_section">
+            <source
+              src="https://isol.com.bd/public/front/assets/img/video/Untitled.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <!-- Hero Image Banner Video Ends Here -->
+
+        <!-- Job Search Section Starts Here -->
+        <div class="job_ser">
+          <div class="container">
+            <div id="sliders">
+              <ul class="ul">
+                <li class="li">
+                  <div class="slider-container">
+                    <p>
+                      Turn Your Passion <br />
+                      <span style="padding-left: 1.5em; text-indent: -1.5em"
+                        >Into Your Profession</span
+                      >
+                    </p>
+                  </div>
+                </li>
+                <li class="li">
+                  <div class="slider-container">
+                    <p>
+                      Your Attitude <br />
+                      <span style="padding-left: 1.5em; text-indent: -1.5em">
+                        Determines Your Direction
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="li">
+                  <div class="slider-container">
+                    <p>Love Your Career</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <form class="form-inline" role="form" id="filter_form">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 form-group mb-2">
+                  <select
+                    class="js-example-basic-single form-control custom-form"
+                    id="job_cat"
+                  >
+                    <option value="">Select a Category</option>
+                    <option value="CRUISESHIP">CRUISESHIP</option>
+                    <option value="MEGAYACHT">MEGAYACHT</option>
+                    <option value="RIVER CRUISE">RIVER CRUISE</option>
+                    <option value="MARCHANT NAVY">MARCHANT NAVY</option>
+                    <option value="OFFSHORE">OFFSHORE</option>
+                    <option value="HOTEL &amp; RESORT">
+                      HOTEL &amp; RESORT
+                    </option>
+                    <option value="CHARTERED CREW">CHARTERED CREW</option>
+                    <option value="HOUSEHOLD BUTLER">HOUSEHOLD BUTLER</option>
+                    <option value="Chamical Tanker">Chamical Tanker</option>
+                    <option value="Container SHIP">Container SHIP</option>
+                    <option value="Crewboat">Crewboat</option>
+                    <option value="General Cargo">General Cargo</option>
+                    <option value="Tugboat">Tugboat</option>
+                    <option value="Bulk Carrier">Bulk Carrier</option>
+                    <option value="High Speed Craft">High Speed Craft</option>
+                    <option value="LPG Carrier">LPG Carrier</option>
+                    <option value="Tanker-Crude">Tanker-Crude</option>
+                    <option value="Tanker-Product">Tanker-Product</option>
+                    <option value="Tanker-VLCC / ULCC">
+                      Tanker-VLCC / ULCC
+                    </option>
+                    <option value="Vehicle Carrier">Vehicle Carrier</option>
+                    <option value="Pasenger Ferry">Pasenger Ferry</option>
+                    <option value="Pasenger Ship">Pasenger Ship</option>
+                    <option value="Offshore Support Vessel">
+                      Offshore Support Vessel
+                    </option>
+                    <option value="SHIPYARD">SHIPYARD</option>
+                    <option value="CORPORATE / LAND BASED JOBS">
+                      CORPORATE / LAND BASED JOBS
+                    </option>
+                    <option value="Scrapship For Sale">
+                      Scrapship For Sale
+                    </option>
+                    <option value="CHARTERED SHIP">CHARTERED SHIP</option>
+                    <option value="CHARTERED PRIVATE JET">
+                      CHARTERED PRIVATE JET
+                    </option>
+                    <option value="PORT-MEANING SERVICES">
+                      PORT-MEANING SERVICES
+                    </option>
+                  </select>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 form-group mb-2">
+                  <select
+                    class="js-example-basic-single1 form-control custom-form"
+                    name="state"
+                    id="dp_name"
+                  >
+                    <option value="">Select a Department</option>
+                  </select>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 form-group mb-2">
+                  <select
+                    class="js-example-basic-single2 form-control custom-form"
+                    name="state"
+                    id="job_title_name"
+                  >
+                    <option value="">Select Job Title</option>
+                  </select>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="custom_btn">
+                    <span class="text"
+                      >Job Search <br />
+                      <span style="font-size: 10px; font-weight: normal">
+                        Your Gateway to the world
+                      </span>
+                    </span>
+                    <i class="fa-solid fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Job Search Section Ends Here -->
+
+        <!-- Social Media Widget Div Starts Here -->
+        <div class="widgets-container">
+          <div class="widget-item">
+            <div class="widget-icon">
+              <a
+                href="https://www.linkedin.com/company/interworld-shipping-overseas-limited-isol/?viewAsMember=true"
+                target="_blank"
+                ><img
+                  src="https://isol.com.bd/public/front/assets/img/social_icon/linkeden.png"
+                  class="imge"
+                  alt=""
+              /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100095457271998"
+                target="_blank"
+                ><img
+                  src="https://isol.com.bd/public/front/assets/img/social_icon/facebook.png"
+                  class="imge"
+                  alt=""
+              /></a>
+              <a
+                href="https://www.youtube.com/@ManningAgent/featured"
+                target="_blank"
+                ><img
+                  src="https://isol.com.bd/public/front/assets/img/social_icon/youtube.png"
+                  class="imge"
+                  alt=""
+              /></a>
+              <a href="https://g.page/r/CcKGtJQjvbksEB0/review" target="_blank"
+                ><img
+                  src="https://isol.com.bd/public/front/assets/img/social_icon/google.png"
+                  class="imge"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <!-- Social Media Widget Div Ends Here -->
+      </section>
+      <!-- Hero Image Video Section Ends Here -->
+
+      <!-- Banner Section Starts Here -->
+      <div class="section">
+        <!-- Banner Section Image Slider Starts Here -->
+        <div class="container-fluid p-0">
+          <div class="second_first_Section">
+            <div class="slider SecondDivSliderNav">
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider_box banner_img">
+                <img
+                  class="img-fluid"
+                  src="https://isol.com.bd/public/front/assets/img/second_slider/8.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="second_first_Section_text">
+              <div class="container">
+                <div class="slider_second_section" id="sliders-second-section">
+                  <div class="slider_box">
+                    <p>Discover Your Next Opportunities</p>
+                  </div>
+                  <div class="slider_box">
+                    <p>What Career Are You Interested In</p>
+                  </div>
+                  <div class="slider_box">
+                    <p>Connecting The Best Crew With The Maritime Industry's</p>
+                  </div>
+                </div>
+              </div>
+
+              <h1>CREW ON CALL</h1>
+              <p class="last_text">
+                job vacancy openings! Click here for details!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Banner Section Image Slider Ends Here -->
+
+        <!-- Category and Important News Div Starts Here -->
+        <div class="container-fluid category_section">
+          <!-- Category Div Starts Here -->
+          <div class="row">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div
+                    class="card category_box"
+                    onclick="window.location.href = 'https://isol.com.bd/cruiseship';"
+                  >
+                    <div class="d-grid justify-content-center">
+                      <img
+                        class="img-fluid mb-1"
+                        src="https://isol.com.bd/public/front/assets/img/category/1.png"
+                        alt=""
+                      />
+                      <h3 class="text-center text-uppercase">CRUISESHIP</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div
+                    class="card category_box"
+                    onclick="window.location.href = 'https://isol.com.bd/megayacht';"
+                  >
+                    <div class="d-grid justify-items-center">
+                      <img
+                        class="img-fluid mb-1"
+                        src="https://isol.com.bd/public/front/assets/img/category/2.png"
+                        alt=""
+                      />
+                      <h3 class="text-center text-uppercase">MEGAYACHT</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div
+                    class="card category_box"
+                    onclick="window.location.href = 'https://isol.com.bd/river_cruise';"
+                  >
+                    <div class="d-grid justify-content-center">
+                      <img
+                        class="img-fluid mb-1"
+                        src="https://isol.com.bd/public/front/assets/img/category/river_cr.png"
+                        alt=""
+                      />
+                      <h3 class="text-center text-uppercase">RIVER CRUISE</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div
+                    class="card category_box"
+                    onclick="window.location.href = 'https://isol.com.bd/merchant_navy';"
+                  >
+                    <div class="d-grid justify-content-center">
+                      <img
+                        class="img-fluid mb-1"
+                        src="https://isol.com.bd/public/front/assets/img/category/5.png"
+                        alt=""
+                      />
+                      <h3 class="text-center text-uppercase">Merchant Navy</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                  <div
+                    class="card category_box"
+                    onclick="window.location.href = 'https://isol.com.bd/hotel_ressort';"
+                  >
+                    <div class="d-grid justify-content-center">
+                      <img
+                        class="img-fluid mb-1"
+                        src="https://isol.com.bd/public/front/assets/img/category/3.png"
+                        alt=""
+                      />
+                      <h3 class="text-center text-uppercase">HOTEL RESORT</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                  <div
+                    class="card category_box"
+                    onclick="window.location.href = 'https://isol.com.bd/private_jets';"
+                  >
+                    <div class="d-grid justify-content-center">
+                      <img
+                        class="img-fluid mb-1"
+                        src="https://isol.com.bd/public/front/assets/img/category/6.png"
+                        alt=""
+                      />
+                      <h3 class="text-center text-uppercase">CHARTERED CREW</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                  <div
+                    class="card category_box"
+                    onclick="window.location.href = 'https://isol.com.bd/offshore';"
+                  >
+                    <div class="d-grid justify-content-center">
+                      <img
+                        class="img-fluid mb-1"
+                        src="https://isol.com.bd/public/front/assets/img/category/7.png"
+                        alt=""
+                      />
+                      <h3 class="text-center text-uppercase">offshore</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div
+                    class="card category_box"
+                    onclick="window.location.href = 'https://isol.com.bd/world_butler';"
+                  >
+                    <div class="d-grid justify-content-center">
+                      <img
+                        class="img-fluid mb-1"
+                        src="https://isol.com.bd/public/front/assets/img/category/8.png"
+                        alt=""
+                      />
+                      <h3 class="text-center text-uppercase">the butler</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Category Div Starts Here -->
+
+          <!-- Important News Slider Starts Here -->
+          <div class="container mb-3">
+            <div class="row">
+              <div class="col-md-12">
+                <div
+                  class="d-flex justify-content-between align-items-center breaking-news"
+                  style="margin-left: -25px"
+                >
+                  <div
+                    class="d-flex flex-row flex-grow-1 flex-fill justify-content-center special py-2 px-1 news"
+                  >
+                    <span
+                      class="d-flex align-items-center"
+                      style="font-weight: bold; color: yellow"
+                      >&nbsp;IMPORTANT</span
+                    >
+                  </div>
+                  <marquee
+                    class="news-scroll"
+                    behavior="scroll"
+                    direction="left"
+                    onmouseover="this.stop();"
+                    onmouseout="this.start();"
+                  >
+                    <a href="#" class="me-3 ms-3"
+                      >[[ Candidates without relevant experience are requested
+                      not to apply ]]</a
+                    >
+                    <span class="dot"></span>
+                    <a href="#" class="me-3 ms-3"
+                      >[[ We can only reply to those who meet the requirements,
+                      in case we have a position available ]]</a
+                    >
+                    <span class="dot"></span>
+                    <a href="#" class="me-3 ms-3"
+                      >[[ If you match one of our positions, we will contact you
+                      by email to schedule an online interview ]]</a
+                    >
+                  </marquee>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Important News Slider Ends Here -->
+        </div>
+        <!-- Category and Important News Div Ends Here -->
+      </div>
+      <!-- Banner Section Ends Here -->
+
+      <!-- Why Join Us Mobile View Div Starts Here -->
+      <section class="container-fluid p-0" id="why-join-us">
+        <img
+          src="https://isol.com.bd/public/front/assets/img/why.jpg"
+          alt="Picture"
+          class="why-join-us-img"
+        />
+        <div class="overlay">
+          <div class="container join-us-container">
+            <div class="section-content">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card border-0 rounded-0 p-0 bg-transparent">
+                    <div class="section-title">
+                      <h2 class="mb-3">Why Join Us</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Why Join Us Web and Tablet View Div Starts Here -->
+              <div class="row" id="why-join-us-web-view">
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="contentt">
+                    <div class="web-view-flex">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/third/4.jpg"
+                        class="third_img"
+                        alt=""
+                      />
+                      <div class="third_content">
+                        <h5>Global CV database reach</h5>
+                        <p>
+                          ISOL, offers talented professionals for our clientele
+                          according to their needs and demands. We have a
+                          talented global resource pull in the industry and a CV
+                          database of job specialized people. We desire to
+                          become the international recruitment agent in the
+                          global shipping management industry in the near
+                          future.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="contentt">
+                    <div class="web-view-flex">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/third/5.jpg"
+                        class="third_img"
+                        alt=""
+                      />
+                      <div class="third_content">
+                        <h5>Trusted by worldwide recognized companies.</h5>
+                        <p>
+                          We have an excellent track record of inspiring every
+                          stakeholder in the shipping management industry, with
+                          our comprehensive company culture and employee focused
+                          management practice.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="contentt">
+                    <div class="web-view-flex">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/third/2.jpg"
+                        class="third_img"
+                        alt=""
+                      />
+                      <div class="third_content">
+                        <h5>Innovating the highest industry standards.</h5>
+                        <p>
+                          Interworld Shipping Hospitality Overseas Limited
+                          (ISHOL) is a modern choice for the Crew Recruitment
+                          Agent. In ISOL, we cater to every micro and macro need
+                          of our valued clientele, whilst keeping an eye and
+                          attention to detail of their desired service.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="contentt">
+                    <div class="web-view-flex">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/third/1.jpg"
+                        class="third_img"
+                        alt=""
+                      />
+                      <div class="third_content">
+                        <h5>Best of the best specialists.</h5>
+                        <p>
+                          We believe in a sustainable and mutually beneficial
+                          relationship philosophy. Professionalism,
+                          accountability, transparency and work excellence are
+                          our prime interests that we maintain at all times to
+                          conduct our business.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="contentt">
+                    <div class="web-view-flex">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/third/6.jpg"
+                        class="third_img"
+                        alt=""
+                      />
+                      <div class="third_content">
+                        <h5>
+                          Relationships built on loyalty, knowledge and
+                          reliability.
+                        </h5>
+                        <p>
+                          We are passionate to deliver our services to our
+                          valued clientele, through our loyalty, transparency
+                          and reliability of our crew recruitment service.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <div class="contentt">
+                    <div class="web-view-flex">
+                      <img
+                        src="https://isol.com.bd/public/front/assets/img/third/24_7.jpg"
+                        class="third_img"
+                        alt=""
+                      />
+                      <div class="third_content">
+                        <h5>24/7 and URGENT response is guaranteed.</h5>
+                        <p>
+                          Inter-World Overseas Shipping Hospitality Limited
+                          (ISHOL) offers 24/7, direct support service through
+                          our rapid communication channel. Our specialized Human
+                          Resources Department will provide you with a contract,
+                          headhunting or any other customized service at any
+                          time.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Why Join Us Web and Tablet View Div Ends Here -->
+
+              <!-- Why Join Us Mobile View Div Starts Here -->
+              <div class="why_join_us_slider" id="why-join-us-slider">
+                <div class="slider_box">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="px-4">
+                        <div class="mobile-view-grid">
+                          <img
+                            src="https://isol.com.bd/public/front/assets/img/third/4.jpg"
+                            class="third_img mb-3"
+                            alt=""
+                          />
+                          <div class="third_content">
+                            <h5>Global CV database reach</h5>
+                            <p>
+                              ISOL, offers talented professionals for our
+                              clientele according to their needs and demands. We
+                              have a talented global resource pull in the
+                              industry and a CV database of job specialized
+                              people. We desire to become the international
+                              recruitment agent in the global shipping
+                              management industry in the near future.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider_box">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="px-4">
+                        <div class="mobile-view-grid">
+                          <img
+                            src="https://isol.com.bd/public/front/assets/img/third/5.jpg"
+                            class="third_img mb-3"
+                            alt=""
+                          />
+                          <div class="third_content">
+                            <h5>Trusted by worldwide recognized companies.</h5>
+                            <p>
+                              We have an excellent track record of inspiring
+                              every stakeholder in the shipping management
+                              industry, with our comprehensive company culture
+                              and employee focused management practice.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider_box">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="px-4">
+                        <div class="mobile-view-grid">
+                          <img
+                            src="https://isol.com.bd/public/front/assets/img/third/2.jpg"
+                            class="third_img mb-3"
+                            alt=""
+                          />
+                          <div class="third_content">
+                            <h5>Innovating the highest industry standards.</h5>
+                            <p>
+                              Interworld Shipping Hospitality Overseas Limited
+                              (ISHOL) is a modern choice for the Crew
+                              Recruitment Agent. In ISOL, we cater to every
+                              micro and macro need of our valued clientele,
+                              whilst keeping an eye and attention to detail of
+                              their desired service.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider_box">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="px-4">
+                        <div class="mobile-view-grid">
+                          <img
+                            src="https://isol.com.bd/public/front/assets/img/third/1.jpg"
+                            class="third_img mb-3"
+                            alt=""
+                          />
+                          <div class="third_content">
+                            <h5>Best of the best specialists.</h5>
+                            <p>
+                              We believe in a sustainable and mutually
+                              beneficial relationship philosophy.
+                              Professionalism, accountability, transparency and
+                              work excellence are our prime interests that we
+                              maintain at all times to conduct our business.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider_box">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="px-4">
+                        <div class="mobile-view-grid">
+                          <img
+                            src="https://isol.com.bd/public/front/assets/img/third/6.jpg"
+                            class="third_img mb-3"
+                            alt=""
+                          />
+                          <div class="third_content">
+                            <h5>
+                              Relationships built on loyalty, knowledge and
+                              reliability.
+                            </h5>
+                            <p>
+                              We are passionate to deliver our services to our
+                              valued clientele, through our loyalty,
+                              transparency and reliability of our crew
+                              recruitment service.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider_box">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="px-4">
+                        <div class="mobile-view-grid">
+                          <img
+                            src="https://isol.com.bd/public/front/assets/img/third/24_7.jpg"
+                            class="third_img mb-3"
+                            alt=""
+                          />
+                          <div class="third_content">
+                            <h5>24/7 and URGENT response is guaranteed.</h5>
+                            <p>
+                              Inter-World Overseas Shipping Hospitality Limited
+                              (ISHOL) offers 24/7, direct support service
+                              through our rapid communication channel. Our
+                              specialized Human Resources Department will
+                              provide you with a contract, headhunting or any
+                              other customized service at any time.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Why Join Us Mobile View Div Ends Here -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why Join Us Mobile View Div Ends Here -->
+
+      <!-- Mission, Vision Section Starts Here -->
+      <section class="container mt-2">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+            <div class="card bg-transparent border-0 rounded-0 flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img
+                    src="https://isol.com.bd/public/front/assets/img/1_MISSION.jpg"
+                    alt=""
+                    class="p-0"
+                    style="width: 100%; height: 260px"
+                  />
+                </div>
+                <div class="flip-box-back">
+                  <p style="font-size: 16px; color: white">We Shall :</p>
+                  <ul style="list-style-type: none">
+                    <li>
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="margin-right: 10px; font-size: 20px"
+                      ></i>
+                      To be the finest provider of Seafarers to the Global
+                      Maritime Industry and ensure the highest quality,
+                      healthcare, safety and work environment.
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="margin-right: 10px; font-size: 20px"
+                      ></i
+                      >To supply a highly trained crew work force with
+                      professionalism and integrity.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+            <div class="card bg-transparent border-0 rounded-0 flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img
+                    <img
+                    src="https://isol.com.bd/public/front/assets/img/VISION_2.jpg"
+                    alt=""
+                    class="p-0"
+                    style="width: 100%; height: 260px"
+                  />
+                </div>
+                <div class="flip-box-back">
+                  <p style="font-size: 16px; color: white">We Shall :</p>
+                  <ul style="list-style-type: none">
+                    <li>
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="margin-right: 10px; font-size: 20px"
+                      ></i>
+                      To continue as the most innovative, dynamic and passionate
+                      organization within the Global Marine Industry.
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="margin-right: 10px; font-size: 20px"
+                      ></i
+                      >To ensure an unparalleled quality service to the cruise
+                      Industry.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+            <div class="card bg-transparent border-0 rounded-0 flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img
+                    <img
+                    src="https://isol.com.bd/public/front/assets/img/T-4.png"
+                    style="width: 100%; height: 260px"
+                    class="p-0"
+                    alt=""
+                  />
+                </div>
+                <div class="flip-box-back">
+                  <p>
+                    Our valued clients are key to our success, thus we have to
+                    make sure that each client(s) who seek our services is/are
+                    treated with respect, courtesy and sensitivity. We are
+                    committed to meeting the needs of our client(s), and we
+                    constantly focus on giving top priority, service and
+                    satisfaction. This is what we do.
+                  </p>
+                  <div class="d-flex justify-content-around mb-3">
+                    <button
+                      class="btn btn-custom mr-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      Help
+                    </button>
+
+                    <button
+                      class="btn btn-custom mr-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal1"
+                    >
+                      Assistance
+                    </button>
+
+                    <button
+                      class="btn btn-custom mr-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal2"
+                    >
+                      Support
+                    </button>
+                  </div>
+                  <div class="d-flex justify-content-around">
+                    <button
+                      class="btn btn-custom mr-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal3"
+                    >
+                      Tips
+                    </button>
+
+                    <button
+                      class="btn btn-custom mr-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal4"
+                    >
+                      Guidance
+                    </button>
+
+                    <button
+                      class="btn btn-custom mr-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal5"
+                    >
+                      Advice
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+            <div class="card bg-transparent border-0 rounded-0 flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img
+                    <img
+                    src="https://isol.com.bd/public/front/assets/img/VALUE_3.jpg"
+                    alt=""
+                    class="p-0"
+                    style="width: 100%; height: 260px"
+                  />
+                </div>
+                <div class="flip-box-back">
+                  <p style="font-size: 16px; color: white">We Shall :</p>
+                  <ul style="list-style-type: none">
+                    <li>
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="margin-right: 10px; font-size: 20px"
+                      ></i>
+                      It's been said that Bangladesh Seafarers are some of the
+                      best in the world.
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="margin-right: 10px; font-size: 20px"
+                      ></i
+                      >We will help you find your requirements.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Mission, Vision Section Ends Here -->
+    </div>
+    <!-- Fullview Div Ends Here -->
+
+    <!-- jQuery JS File -->
+    <script src="./assets/js/jquery/jquery.min.js"></script>
+
+    <!-- Navigation Bar JS Link -->
+    <script src="https://isol.com.bd/public/front/assets/js/navik.menu.js"></script>
+
+    <!-- Fullview JS CDN -->
+    <script
+      id="fullview-js"
+      src="https://isol.com.bd/public/front/assets/vendor/fullView/fullview.js"
+    ></script>
+
+    <!-- Bootstrap JS File -->
+    <script src="./assets/js/bootstrap-5/js/bootstrap.min.js"></script>
+
+    <!-- Slick JS File -->
+    <script
+      src="./assets/js/slick/slick.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
+    <!-- Select2 JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- Modal JS Script -->
+    <script>
+      $(document).ready(function () {
+        $("#myModalnews").modal("show");
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        var fv = $("#fullview").fullView({
+          //Navigation
+          dots: true,
+
+          //Scrolling
+          easing: "swing",
+          backToTop: true,
+
+          // Accessibility
+          keyboardScrolling: true,
+
+          // Callback
+          onScrollEnd: function (currentView, preView) {
+            console.log("Current", currentView);
+            console.log("Previus", preView);
+          },
+        });
+
+        $("#down").click(function () {
+          // To Scroll Down 1 Section
+          fv.data("fullView").scrollDown();
+
+          // To Scroll Up 1 Section
+          // fv.data('fullView').scrollDown();
+        });
+
+        $("#select").change(function () {
+          // To Scroll to Specfic Section
+          fv.data("fullView").scrollTo($(this).val());
+        });
+      });
+    </script>
+
+    <script>
+      $(".slider_second_section").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+      });
+
+      $(".SecondDivSliderNav").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+
+      $(".why_join_us_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: 5000,
+      });
+
+      $(".hiring_process_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: 5000,
+      });
+
+      $(".urgent_vacancy_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: false,
+      });
+
+      $(".testimonials_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: false,
+      });
+
+      $(".vacancy_news_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1500,
+      });
+    </script>
+
+    <script>
+      var cards = document.querySelectorAll(".card1");
+      var changable_height_div = document.getElementById(
+        "changeable-height-div"
+      );
+
+      // Use a variable to keep track of the current height state
+      let isWebView = true;
+      let isTabletView = false;
+      let isMobileView = false;
+
+      [...cards].forEach((card) => {
+        card.addEventListener("click", function () {
+          card.classList.toggle("is-flipped");
+          adjustDivHeight(card);
+        });
+      });
+
+      function adjustDivHeight(card) {
+        const tabletViewHeight = 200;
+        const tabletViewDefaultHeight = 500;
+
+        const mobileViewHeight = 100;
+        const mobileViewDefaultHeight = 1020;
+
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth < 767) {
+          // Toggle between mobile view height and default height
+          if (isMobileView) {
+            changable_height_div.style.height = `${mobileViewDefaultHeight}px`;
+          } else {
+            changable_height_div.style.height = `${mobileViewHeight}px`;
+          }
+
+          // Update the height state for mobile view
+          isMobileView = !isMobileView;
+        }
+
+        if (screenWidth >= 768 && screenWidth < 1024) {
+          // Toggle between tablet view height and default height
+          if (isTabletView) {
+            changable_height_div.style.height = `${tabletViewDefaultHeight}px`;
+          } else {
+            changable_height_div.style.height = `${tabletViewHeight}px`;
+          }
+
+          // Update the height state for tablet view
+          isTabletView = !isTabletView;
+        }
+      }
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".js-example-basic-single").select2();
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".js-example-basic-single1").select2();
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".js-example-basic-single2").select2();
+      });
+    </script>
+  </body>
+</html>
