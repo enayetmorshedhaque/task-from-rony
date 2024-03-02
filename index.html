@@ -961,11 +961,16 @@
       /* Media Query */
       @media screen and (max-width: 767px) {
         #sliders {
-          height: 100px;
+          height: 130px;
+          padding: 10px 0;
+        }
+
+        .job_ser {
+          bottom: 20px;
         }
 
         #sliders-job-search-section p {
-          font-size: 25px;
+          font-size: 33px;
         }
 
         #sliders-second-section p {
@@ -982,9 +987,31 @@
           font-size: 12px;
         }
 
+        .category_box {
+          width: 100% !important;
+          padding: 20px;
+        }
+
+        #mission-vision-section {
+          display: grid !important;
+        }
+
+        .w-100 {
+          width: initial !important;
+        }
+
+        .flip-box-front,
+        .flip-box-back {
+          height: 300px !important;
+        }
+
         .flip-box,
         .flip-box-front img {
-          height: 280px !important;
+          height: 300px !important;
+        }
+
+        .flip-box-back {
+          padding: 15px !important;
         }
 
         .section-content {
@@ -1053,8 +1080,13 @@
 
         .terms_and_conditions_label {
           display: flex;
-          float: left;
+          justify-content: center;
+          align-items: center;
           margin-bottom: 1.5rem;
+        }
+
+        .terms_and_conditions_label label {
+          font-size: 12px;
         }
 
         .vacancy_news_slider {
@@ -2151,7 +2183,10 @@
       <!-- Why Join Us Mobile View Div Ends Here -->
 
       <!-- Mission, Vision Section Starts Here -->
-      <section class="container d-flex align-items-center">
+      <section
+        class="container d-flex align-items-center"
+        id="mission-vision-section"
+      >
         <div class="row w-100 my-5">
           <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
             <div class="card bg-transparent border-0 rounded-0 flip-box">
