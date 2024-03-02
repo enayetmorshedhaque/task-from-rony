@@ -61,8 +61,7 @@
 
     <!-- Page Style -->
     <style>
-      /* Importing Fonts */
-      @font-face {
+      /* @font-face {
         font-family: myFirstFont;
         src: url("./assets/css/font/chinese.sthupo.ttf");
       }
@@ -82,19 +81,29 @@
         src: url("./assets/css/font/ITCEDSCR.TTF");
       }
 
-      /* Common Style */
       body {
-        font-family: "Montserrat", sans-serif;
-        padding: 0;
-        margin: 0;
-        font-size: 15px;
-        line-height: 1.42857143;
-        color: #a3a3a3;
         background-color: #000000;
-      }
+      } */
 
-      /* Header Section Style */
-      .header_text {
+      /* @media (min-width: 1268px) {
+        .navik-header.center-menu-1.sticky {
+          background-color: transparent;
+        }
+
+        .navik-menu > ul > li > a {
+          color: white;
+        }
+
+        .navik-menu ul li.dropdown_menu > a > span::before {
+          border-color: white;
+        }
+      } */
+
+      /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+      /* .header_text {
         font-size: 50px;
         font-variant: small-caps;
         color: white;
@@ -112,16 +121,13 @@
       .hero-banner {
         width: 100%;
         height: 100vh;
-      }
+      } */
 
-      /* Hero Image Video Section */
-      .contentss {
-        position: relative;
-      }
-
-      .hero-banner {
-        width: 100%;
-        height: 100vh;
+      /* @media (max-width: 992px) {
+        .hero-banner {
+          width: 100%;
+          height: 100vh;
+        }
       }
 
       .video_section {
@@ -130,8 +136,136 @@
         object-fit: cover;
       }
 
-      /* Job Search Div */
-      .job_ser {
+      .contentss {
+        position: relative;
+      } */
+
+      /* .widgets-container {
+        width: 25px;
+        height: 80px;
+        position: absolute;
+        left: 0;
+        bottom: 50px;
+        margin: auto 0;
+        z-index: 99;
+      }
+
+      .widget-icon {
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        background-size: 100% auto;
+        position: relative;
+        display: block;
+      }
+
+      .widget-icon .imge {
+        margin: 0;
+        padding: 0;
+        width: 25px;
+        height: 25px;
+      } */
+
+      /*text slider*/
+
+      /* #sliders,
+      .ul {
+        height: 150px;
+      }
+
+      #sliders {
+        overflow: hidden;
+        padding: 20px;
+        position: relative;
+        width: 1000px;
+      }
+
+      #sliders .li {
+        float: left;
+        position: relative;
+        width: 1000px;
+        display: inline-block;
+        height: 70px;
+        font-family: Itec, serif;
+        color: #fff;
+        font-size: 50px;
+      }
+
+      #sliders .ul {
+        list-style: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 9000px;
+        transition: left 0.2s linear;
+        -moz-transition: left 0.2s linear;
+        -o-transition: left 0.2s linear;
+        -webkit-transition: left 0.2s linear;
+        margin-left: -25px;
+      } */
+
+      /*** Content ***/
+
+      /* .sliders-container {
+        margin: 0 auto;
+        padding: 0;
+        width: 950px;
+      } */
+
+      /*** target hooks ****/
+
+      /* @-webkit-keyframes slide-animation1 {
+        0% {
+          opacity: 0;
+        }
+        2% {
+          opacity: 1;
+        }
+        30% {
+          left: 0px;
+          opacity: 1;
+        }
+        32.5% {
+          opacity: 0.6;
+        }
+        35% {
+          left: -1000px;
+          opacity: 1;
+        }
+        55% {
+          left: -1000px;
+          opacity: 1;
+        }
+        57.5% {
+          opacity: 0.6;
+        }
+        60% {
+          left: -2000px;
+          opacity: 1;
+        }
+        80% {
+          left: -2000px;
+          opacity: 1;
+        }
+
+        95% {
+          opacity: 1;
+        }
+        98% {
+          left: -3000px;
+          opacity: 0;
+        }
+        100% {
+          left: 0px;
+          opacity: 0;
+        }
+      }
+
+      #sliders .ul {
+        -webkit-animation: slide-animation1 10s infinite;
+      } */
+
+      /* .job_ser {
         padding: 20px 0 30px 0;
         position: absolute;
         bottom: 0;
@@ -140,27 +274,9 @@
         left: 0;
         right: 0;
         background-color: transparent;
-      }
+      } */
 
-      /* Job Search Div Text Sliders */
-      #sliders {
-        height: 200px;
-        overflow: hidden;
-        padding: 20px;
-        position: relative;
-      }
-
-      #sliders-job-search-section p {
-        /* float: left; */
-        position: relative;
-        height: 70px;
-        font-family: Itec, serif;
-        color: #fff;
-        font-size: 50px;
-      }
-
-      /* Job Search Div Form Style */
-      .custom-form {
+      /* .custom-form {
         border-radius: 15px;
         background-color: transparent;
         border: 2px solid #eb9356;
@@ -232,55 +348,131 @@
       }
 
       .select2-dropdown {
-        /*background-color: transparent !important;*/
-        /*border: 2px solid #eb9356 !important;*/
+        background-color: transparent !important;
+        border: 2px solid #eb9356 !important;
         border-radius: 10px !important;
         color: black;
-      }
+      } */
 
-      /* Social Media Widgets Div Style */
-      .widgets-container {
-        width: 25px;
-        height: 80px;
-        position: absolute;
-        left: 0;
-        bottom: 50px;
-        margin: auto 0;
-        z-index: 99;
-      }
+      /*--------------------------------------------------------------
+# Banner Image
+--------------------------------------------------------------*/
 
-      .widget-icon {
-        cursor: pointer;
-        width: 25px;
-        height: 25px;
-        background-size: 100% auto;
-        position: relative;
-        display: block;
-      }
-
-      .widget-icon .imge {
-        margin: 0;
-        padding: 0;
-        width: 25px;
-        height: 25px;
-      }
-
-      /* Banner Section Style */
-      .second_first_Section {
+      /* .second_first_Section {
         width: 100%;
         height: 70vh;
         position: relative;
-      }
+      } */
 
-      .second_first_Section_text {
+      /* .second_first_Section_text {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         text-align: center;
+      } */
+
+      /*text slider*/
+
+      /* #sliders-second-section,
+      .ul {
+        height: 60px;
       }
 
-      /* Banner Section Static Text */
+      #sliders-second-section {
+        overflow: hidden;
+        padding: 20px;
+        position: relative;
+        width: 1400px;
+      }
+
+      #sliders-second-section .li {
+        float: left;
+        position: relative;
+        width: 1400px;
+        display: inline-block;
+        height: 130px;
+        font-family: Minionpro, serif;
+
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+      } */
+
+      #sliders-second-section .ul {
+        list-style: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 12000px;
+        transition: left 0.2s linear;
+        -moz-transition: left 0.2s linear;
+        -o-transition: left 0.2s linear;
+        -webkit-transition: left 0.2s linear;
+        margin-left: -45px;
+      }
+
+      /*** Content ***/
+
+      .sliders-container-second-section {
+        margin: 0 auto;
+        padding: 0;
+        width: 1350px;
+      }
+
+      /*** target hooks ****/
+
+      @-webkit-keyframes slide-animation {
+        0% {
+          opacity: 0;
+        }
+        2% {
+          opacity: 1;
+        }
+        30% {
+          left: 0px;
+          opacity: 1;
+        }
+        32.5% {
+          opacity: 0.6;
+        }
+        35% {
+          left: -1400px;
+          opacity: 1;
+        }
+        55% {
+          left: -1400px;
+          opacity: 1;
+        }
+        57.5% {
+          opacity: 0.6;
+        }
+        60% {
+          left: -2800px;
+          opacity: 1;
+        }
+        80% {
+          left: -2800px;
+          opacity: 1;
+        }
+
+        95% {
+          opacity: 1;
+        }
+        98% {
+          left: -4200px;
+          opacity: 0;
+        }
+        100% {
+          left: 0px;
+          opacity: 0;
+        }
+      }
+
+      #sliders-second-section .ul {
+        -webkit-animation: slide-animation 10s infinite;
+      }
+
       .second_first_Section_text h4 {
         font-size: 20px;
         line-height: 1;
@@ -297,7 +489,7 @@
         padding: 0;
         margin: 0;
         line-height: 0.8;
-        transform: scale(1, 0.8);
+        transform: scale(1.5, 0.8);
         letter-spacing: 5px;
       }
 
@@ -310,26 +502,19 @@
         line-height: 0.8;
         text-transform: uppercase;
         font-weight: bold;
-        margin-bottom: 0.75rem;
       }
 
-      .banner_img img {
+      /* .banner_img img {
         width: 100%;
         height: 70vh;
-      }
+      } */
 
-      #sliders-second-section p {
-        position: relative;
-        height: 50px;
-        font-family: Minionpro, serif;
-        color: #fff;
-        font-size: 40px;
-        text-align: center;
-      }
+      /*--------------------------------------------------------------
+# Category
+--------------------------------------------------------------*/
 
-      /* Category Section Div Style */
-      .category_section {
-        padding-top: 30px;
+      /* .category_section {
+        padding-top: 20px;
         height: 30vh;
       }
 
@@ -365,10 +550,38 @@
       .category_box:hover {
         transform: scale(1.1) perspective(0px);
         box-shadow: -1px 0px 22px 5px rgb(120, 120, 120);
+      } */
+
+      /* @media (max-width: 992px) {
+        .category_box {
+          width: 160px;
+        }
+      } */
+
+      /* .contentt {
+        color: white;
       }
 
-      /* News Slider */
-      .news {
+      .contentt h3 {
+        color: #8ea9db;
+        font-size: 15px;
+      }
+
+      .third_img {
+        height: 50px;
+        width: 60px;
+        margin-right: 15px;
+      }
+
+      .third_content h5 {
+        font-size: 16px;
+      }
+
+      .third_content p {
+        font-size: 14px;
+      } */
+
+      /* .news {
         width: 160px;
       }
 
@@ -395,20 +608,19 @@
         background-color: white;
         border-radius: 50%;
         display: inline-block;
-      }
+      } */
 
-      /* Why Join Us Section Style */
-      #why-join-us {
+      /* #why-join-us {
         width: 100%;
-        height: 100vh;
+        height: auto;
         position: relative;
       }
 
       .why-join-us-img {
         width: 100%;
-        height: 100%;
-        position: relative; /* Change position to relative */
-        z-index: 9;
+        height: auto;
+        position: relative;
+        z-index: 999;
       }
 
       #why-join-us .overlay {
@@ -427,17 +639,30 @@
 
       .third_content h5 {
         font-size: 16px;
-        color: white;
       }
 
       .third_content p {
         font-size: 14px;
         text-align: justify;
-        color: white;
-      }
+      } */
 
-      .contentt {
+      /* @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .section-content {
+          padding: 15% 0;
+        }
+
+        #why-join-us {
+          height: 100vh;
+        }
+
+        .why-join-us-img {
+          height: 100%;
+        }
+      } */
+
+      /* .contentt {
         color: white;
+        text-align: justify;
       }
 
       .contentt h3 {
@@ -451,11 +676,10 @@
         margin-right: 15px;
       }
 
-      /* Mission, Vision Section Style */
       .flip-box {
         background-color: transparent;
         width: 100%;
-        height: 280px;
+        height: 300px;
         perspective: 1000px;
       }
 
@@ -476,7 +700,7 @@
       .flip-box-back {
         position: absolute;
         width: 100%;
-        height: 80%;
+        height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
       }
@@ -494,29 +718,62 @@
         align-items: center;
         align-content: center;
         text-align: justify;
-      }
+      } */
 
-      .btn-custom {
+      /* .btn-custom {
         background: none;
         border: 2px solid #eb9356;
         color: white;
       }
 
-      .modal-content {
+      .btn-custom:hover {
+        background: none;
+        border: 2px solid #eb9356;
+        color: white;
+      } */
+
+      /* .modal-content {
         background-color: black;
         color: white;
       }
 
       .btn-close {
         background-color: white !important;
-      }
+      } */
 
-      #changeable-height-div {
+      /* #changeable-height-div {
         transition: height 0.5s ease-in-out;
+      } */
+
+      /* @media screen and (max-width: 767px) {
+        .flip-box,
+        .flip-box-front img {
+          height: 280px !important;
+        }
+
+        .fifth_backimage img {
+          height: 150px;
+        }
+
+        .section-content {
+          padding: 25% 0;
+        }
+
+        #changeable-height-div {
+          height: 1020px;
+        }
+      } */
+
+      /* .fifth_backimage {
+        width: 100%;
       }
 
-      /* Benefit Section Style */
-      .scene {
+      .fifth_backimage img {
+        width: 100%;
+        height: 100%;
+      } */
+
+      /* .scene {
         display: inline-block;
         width: 100%;
         height: 350px;
@@ -612,19 +869,9 @@
         font-weight: normal;
         color: #ffffff;
         text-align: center;
-      }
+      } */
 
-      .fifth_backimage {
-        width: 100%;
-      }
-
-      .fifth_backimage img {
-        width: 100%;
-        height: 100%;
-      }
-
-      /* You've Got A Request Style */
-      .six_p {
+      /* .six_p {
         text-align: justify;
         color: white;
         font-size: 12px;
@@ -722,10 +969,9 @@
         font-size: 12px;
         color: white;
         text-align: center;
-      }
+      } */
 
-      /* Hiring Process Section Style */
-      .hiringBox_head img {
+      /* .hiringBox_head img {
         width: 120px;
         height: 100px;
       }
@@ -767,10 +1013,9 @@
         text-align: justify;
         width: 90%;
         font-size: 12px;
-      }
+      } */
 
-      /* Testimonial Section Style */
-      .testimonial {
+      /* .testimonial {
         text-align: center;
         padding: 35px 20px 20px 10px;
         margin: 70px 15px 35px;
@@ -862,316 +1107,12 @@
       .slick-prev {
         left: -16px;
         z-index: 1;
-      }
+      } */
 
-      /* Contact Us Section Style */
-      .contact .php-email-form .form-group {
-        padding-bottom: 8px;
-      }
-
-      .contact .php-email-form .error-message {
-        display: none;
-        color: #fff;
-        background: #db8316;
-        text-align: center;
-        padding: 15px;
-        font-weight: 600;
-      }
-
-      .contact .php-email-form .sent-message {
-        display: none;
-        color: #fff;
-        background: #db8316;
-        text-align: left;
-        padding: 15px;
-        font-weight: 600;
-      }
-
-      .contact .php-email-form .sent-message br + br {
-        margin-top: 25px;
-      }
-
-      .contact .php-email-form .loading {
-        display: none;
-        background: #fff;
-        text-align: center;
-        padding: 15px;
-      }
-
-      .contact .php-email-form .loading:before {
-        content: "";
-        display: inline-block;
-        border-radius: 50%;
-        width: 24px;
-        height: 24px;
-        margin: 0 10px -6px 0;
-        border: 3px solid #db8316;
-        border-top-color: #eee;
-        -webkit-animation: animate-loading 1s linear infinite;
-        animation: animate-loading 1s linear infinite;
-      }
-
-      .contact .php-email-form input,
-      .contact .php-email-form textarea {
-        border-radius: 0;
-        box-shadow: none;
-        font-size: 14px;
-      }
-
-      .contact .php-email-form input:focus,
-      .contact .php-email-form textarea:focus {
-        border-color: #db8316;
-      }
-
-      .contact .php-email-form input {
-        height: 44px;
-      }
-
-      .contact .php-email-form textarea {
-        padding: 10px 12px;
-      }
-
-      .contact .php-email-form button[type="submit"] {
-        background: transparent;
-        border: 1px solid white;
-        padding: 8px 20px;
-        color: #fff;
-        transition: 0.4s;
-        border-radius: 50px;
-      }
-
-      @-webkit-keyframes animate-loading {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-
-      @keyframes animate-loading {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-
-      /* Media Query */
-      @media screen and (max-width: 767px) {
-        #sliders {
-          height: 100px;
-        }
-
-        #sliders-job-search-section p {
-          font-size: 25px;
-        }
-
-        #sliders-second-section p {
-          font-size: 20px;
-        }
-
-        .second_first_Section_text h1 {
-          transform: scale(1, 1);
-          font-size: 40px;
-          margin-bottom: 15px;
-        }
-
-        .second_first_Section_text .last_text {
-          font-size: 12px;
-        }
-
-        .flip-box,
-        .flip-box-front img {
-          height: 280px !important;
-        }
-
-        .section-content {
-          padding: 25% 0;
-        }
-
-        #benefits-sub-title {
-          font-size: 0.85rem;
-        }
-
-        #changeable-height-div {
-          height: 950px;
-        }
-
-        .card1 .is-flipped > .fifth_text_upper {
-          margin-bottom: 2.5rem;
-        }
-
-        .fifth_text_upper h1 {
-          font-size: 30px;
-        }
-
-        .fifth_text_upper p {
-          font-size: 14px;
-        }
-
-        .fifth_last_text {
-          font-size: 22px;
-          margin-bottom: 0.75rem;
-        }
-
-        .fifth_back_box {
-          display: grid;
-          justify-items: center;
-        }
-
-        .flip-card-front1 .d-flex {
-          justify-content: space-around;
-        }
-
-        .specialize_box {
-          display: flex;
-          align-items: center;
-          padding-top: 0;
-          padding-left: 0;
-        }
-
-        .specialize_box p,
-        .flip-card-back1 p {
-          margin-bottom: 0;
-        }
-
-        .flip-card1 {
-          height: 120px;
-        }
-
-        .custom-font-weight h2 {
-          margin-top: 1.5rem;
-          font-size: 22px;
-        }
-
-        #urgent-vacancy-web-view,
-        #urgent-vacancy-tablet-view {
-          display: none !important;
-        }
-
-        .terms_and_conditions_label {
-          display: flex;
-          float: left;
-          margin-bottom: 1.5rem;
-        }
-
-        .vacancy_news_slider {
-          margin-bottom: 1.5rem;
-        }
-
-        .php-email-form {
-          margin-bottom: 1.5rem;
-        }
-      }
-
-      @media (max-width: 992px) {
-        .hero-banner {
-          width: 100%;
-          height: 100vh;
-        }
-
-        .category_box {
-          width: 160px;
-        }
-      }
-
-      @media (min-width: 1268px) {
-        .navik-header.center-menu-1.sticky {
-          background-color: transparent;
-        }
-
-        .navik-menu > ul > li > a {
-          color: white;
-        }
-
-        .navik-menu ul li.dropdown_menu > a > span::before {
-          border-color: white;
-        }
-      }
-
-      @media screen and (min-width: 768px) and (max-width: 1023px) {
-        #sliders {
-          height: 140px;
-        }
-
-        #sliders-job-search-section p {
-          font-size: 40px;
-        }
-
+      /* @media screen and (max-width: 1023px) {
         .banner_img img,
         .second_first_Section {
-          height: 45vh !important;
-        }
-
-        .second_first_Section_text h1 {
-          font-size: 60px;
-        }
-
-        .second_first_Section_text .last_text {
-          font-size: 23px;
-        }
-
-        #sliders-second-section p {
-          height: 30px;
-          font-size: 25px;
-        }
-
-        .section-content {
-          padding: 15% 0 0;
-        }
-
-        .fifth_last_text {
-          margin-bottom: 1.5rem;
-        }
-
-        #why-join-us {
-          height: 100vh;
-        }
-
-        .why-join-us-img {
-          height: 100%;
-        }
-
-        #urgent-vacancy-web-view,
-        #urgent-vacancy-mobile-view {
-          display: none !important;
-        }
-
-        #changeable-height-div {
-          height: 500px;
-        }
-
-        .terms_and_conditions_label {
-          margin-bottom: 1.5rem;
-        }
-
-        .php-email-form {
-          margin-bottom: 1.5rem;
-        }
-      }
-
-      @media screen and (max-width: 1023px) {
-        .form_border_reviews {
-          padding: 10px;
-        }
-
-        .sign-up-div {
-          padding: 0;
-        }
-
-        .custom_button_text {
-          float: right;
-        }
-
-        #testimonial-web-view {
-          display: none !important;
-        }
-
-        .banner_img img,
-        .second_first_Section {
-          height: 40vh;
+          height: 40vh !important;
         }
         .category_section {
           height: 100% !important;
@@ -1205,14 +1146,9 @@
         .third_content h5 {
           text-align: center;
         }
-      }
+      } */
 
-      @media screen and (min-width: 1024px) {
-        #fullview > * {
-          height: 768px !important;
-          overflow: visible;
-        }
-
+      /* @media screen and (min-width: 1024px) {
         .web-view-flex {
           height: 100%;
           display: flex !important;
@@ -1220,7 +1156,55 @@
         }
 
         .section-content {
-          margin-top: 14%;
+          margin-top: 13%;
+        }
+      } */
+
+      /* @media screen and (max-width: 767px) {
+        #urgent-vacancy-web-view,
+        #urgent-vacancy-tablet-view {
+          display: none !important;
+        }
+
+        .fifth_back_box {
+          display: grid;
+          justify-items: center;
+        }
+      } */
+
+      /* @media screen and (min-width: 768px) and (max-width: 1023px) {
+        #urgent-vacancy-web-view,
+        #urgent-vacancy-mobile-view {
+          display: none !important;
+        }
+
+        #changeable-height-div {
+          height: 500px;
+        }
+      } */
+
+      /* @media screen and (max-width: 1023px) {
+        .form_border_reviews {
+          padding: 10px;
+        }
+
+        .sign-up-div {
+          padding: 0;
+        }
+
+        .custom_button_text {
+          float: right;
+        }
+
+        #testimonial-web-view {
+          display: none !important;
+        }
+      } */
+
+      /* @media screen and (min-width: 1024px) {
+        #fullview > * {
+          height: 100% !important;
+          overflow: visible;
         }
 
         #urgent-vacancy-tablet-view,
@@ -1228,10 +1212,10 @@
         #testimonial-tablet-mobile-view {
           display: none !important;
         }
-      }
+      } */
     </style>
   </head>
-  <body>
+  <body class="montserrat-font">
     <!-- Navigation Bar Starts Here -->
     <div class="navik-header header-shadow center-menu-1 header-opacity">
       <div class="container-fluid">
@@ -1392,9 +1376,10 @@
 
     <!-- Fullview Div Starts Here -->
     <div id="fullview">
-      <!-- Hero Image Video Section Starts Here -->
-      <section class="contentss">
-        <!-- Hero Image Banner Video Starts Here -->
+      <!-- Hero Image Section Starts Here -->
+      <!-- Content -->
+      <div class="contentss">
+        <!-- Hero banner -->
         <div class="hero-banner">
           <video loop="true" autoplay="autoplay" muted class="video_section">
             <source
@@ -1403,15 +1388,14 @@
             />
           </video>
         </div>
-        <!-- Hero Image Banner Video Ends Here -->
 
-        <!-- Job Search Section Starts Here -->
+        <!-- ======= Job Search Section ======= -->
         <div class="job_ser">
           <div class="container">
             <div id="sliders">
-              <div class="container">
-                <div id="sliders-job-search-section">
-                  <div class="slider_box">
+              <ul class="ul">
+                <li class="li">
+                  <div class="slider-container">
                     <p>
                       Turn Your Passion <br />
                       <span style="padding-left: 1.5em; text-indent: -1.5em"
@@ -1419,7 +1403,9 @@
                       >
                     </p>
                   </div>
-                  <div class="slider_box">
+                </li>
+                <li class="li">
+                  <div class="slider-container">
                     <p>
                       Your Attitude <br />
                       <span style="padding-left: 1.5em; text-indent: -1.5em">
@@ -1427,11 +1413,13 @@
                       </span>
                     </p>
                   </div>
-                  <div class="slider_box">
+                </li>
+                <li class="li">
+                  <div class="slider-container">
                     <p>Love Your Career</p>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
 
             <form class="form-inline" role="form" id="filter_form">
@@ -1523,9 +1511,7 @@
             </form>
           </div>
         </div>
-        <!-- Job Search Section Ends Here -->
 
-        <!-- Social Media Widget Div Starts Here -->
         <div class="widgets-container">
           <div class="widget-item">
             <div class="widget-icon">
@@ -1562,13 +1548,13 @@
             </div>
           </div>
         </div>
-        <!-- Social Media Widget Div Ends Here -->
-      </section>
-      <!-- Hero Image Video Section Ends Here -->
+      </div>
+      <!-- Hero Image Section Ends Here -->
 
-      <!-- Banner Section Starts Here -->
-      <div class="section">
-        <!-- Banner Section Image Slider Starts Here -->
+      <!-- Banner Image Section Starts Here -->
+      <section class="container-fluid p-0 mb-4">
+        <!-- ======= Banner Section ======= -->
+
         <div class="container-fluid p-0">
           <div class="second_first_Section">
             <div class="slider SecondDivSliderNav">
@@ -1622,38 +1608,16 @@
                 />
               </div>
             </div>
-
-            <div class="second_first_Section_text">
-              <div class="container">
-                <div class="slider_second_section" id="sliders-second-section">
-                  <div class="slider_box">
-                    <p>Discover Your Next Opportunities</p>
-                  </div>
-                  <div class="slider_box">
-                    <p>What Career Are You Interested In</p>
-                  </div>
-                  <div class="slider_box">
-                    <p>Connecting The Best Crew With The Maritime Industry's</p>
-                  </div>
-                </div>
-              </div>
-
-              <h1>CREW ON CALL</h1>
-              <p class="last_text">
-                job vacancy openings! Click here for details!
-              </p>
-            </div>
           </div>
         </div>
-        <!-- Banner Section Image Slider Ends Here -->
+        <!-- End Banner Section -->
 
-        <!-- Category and Important News Div Starts Here -->
+        <!-- ======= Category Section ======= -->
         <div class="container-fluid category_section">
-          <!-- Category Div Starts Here -->
           <div class="row">
-            <div class="col-6">
+            <div class="col-6 mb-3">
               <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div
                     class="card category_box"
                     onclick="window.location.href = 'https://isol.com.bd/cruiseship';"
@@ -1668,7 +1632,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div
                     class="card category_box"
                     onclick="window.location.href = 'https://isol.com.bd/megayacht';"
@@ -1683,7 +1647,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div
                     class="card category_box"
                     onclick="window.location.href = 'https://isol.com.bd/river_cruise';"
@@ -1698,7 +1662,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div
                     class="card category_box"
                     onclick="window.location.href = 'https://isol.com.bd/merchant_navy';"
@@ -1715,7 +1679,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 mb-3">
               <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
                   <div
@@ -1780,10 +1744,9 @@
               </div>
             </div>
           </div>
-          <!-- Category Div Starts Here -->
 
-          <!-- Important News Slider Starts Here -->
-          <div class="container mb-3">
+          <!--        news slider-->
+          <div class="container">
             <div class="row">
               <div class="col-md-12">
                 <div
@@ -1825,14 +1788,13 @@
               </div>
             </div>
           </div>
-          <!-- Important News Slider Ends Here -->
         </div>
-        <!-- Category and Important News Div Ends Here -->
-      </div>
-      <!-- Banner Section Ends Here -->
+        <!-- End Category Section -->
+      </section>
+      <!-- Banner Image Section Ends Here -->
 
-      <!-- Why Join Us Mobile View Div Starts Here -->
-      <section class="container-fluid p-0" id="why-join-us">
+      <!-- Why Join Us Section Starts Here -->
+      <section class="container-fluid mb-5 p-0" id="why-join-us">
         <img
           src="https://isol.com.bd/public/front/assets/img/why.jpg"
           alt="Picture"
@@ -1845,7 +1807,7 @@
                 <div class="col-12">
                   <div class="card border-0 rounded-0 p-0 bg-transparent">
                     <div class="section-title">
-                      <h2 class="mb-3 fira-sans-font">Why Join Us</h2>
+                      <h2 class="mb-3">Why Join Us</h2>
                     </div>
                   </div>
                 </div>
@@ -1994,7 +1956,7 @@
                         <div class="mobile-view-grid">
                           <img
                             src="https://isol.com.bd/public/front/assets/img/third/4.jpg"
-                            class="third_img mb-2"
+                            class="third_img mb-3"
                             alt=""
                           />
                           <div class="third_content">
@@ -2021,7 +1983,7 @@
                         <div class="mobile-view-grid">
                           <img
                             src="https://isol.com.bd/public/front/assets/img/third/5.jpg"
-                            class="third_img mb-2"
+                            class="third_img mb-3"
                             alt=""
                           />
                           <div class="third_content">
@@ -2045,7 +2007,7 @@
                         <div class="mobile-view-grid">
                           <img
                             src="https://isol.com.bd/public/front/assets/img/third/2.jpg"
-                            class="third_img mb-2"
+                            class="third_img mb-3"
                             alt=""
                           />
                           <div class="third_content">
@@ -2071,7 +2033,7 @@
                         <div class="mobile-view-grid">
                           <img
                             src="https://isol.com.bd/public/front/assets/img/third/1.jpg"
-                            class="third_img mb-2"
+                            class="third_img mb-3"
                             alt=""
                           />
                           <div class="third_content">
@@ -2096,7 +2058,7 @@
                         <div class="mobile-view-grid">
                           <img
                             src="https://isol.com.bd/public/front/assets/img/third/6.jpg"
-                            class="third_img mb-2"
+                            class="third_img mb-3"
                             alt=""
                           />
                           <div class="third_content">
@@ -2123,7 +2085,7 @@
                         <div class="mobile-view-grid">
                           <img
                             src="https://isol.com.bd/public/front/assets/img/third/24_7.jpg"
-                            class="third_img mb-2"
+                            class="third_img mb-3"
                             alt=""
                           />
                           <div class="third_content">
@@ -2148,12 +2110,12 @@
           </div>
         </div>
       </section>
-      <!-- Why Join Us Mobile View Div Ends Here -->
+      <!-- Why Join Us Section Ends Here -->
 
       <!-- Mission, Vision Section Starts Here -->
-      <section class="container d-flex align-items-center">
-        <div class="row w-100 my-5">
-          <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+      <section class="container mb-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
             <div class="card bg-transparent border-0 rounded-0 flip-box">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
@@ -2161,7 +2123,7 @@
                     src="https://isol.com.bd/public/front/assets/img/1_MISSION.jpg"
                     alt=""
                     class="p-0"
-                    style="width: 100%; height: 280px"
+                    style="width: 100%; height: 300px"
                   />
                 </div>
                 <div class="flip-box-back">
@@ -2189,7 +2151,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+          <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
             <div class="card bg-transparent border-0 rounded-0 flip-box">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
@@ -2198,7 +2160,7 @@
                     src="https://isol.com.bd/public/front/assets/img/VISION_2.jpg"
                     alt=""
                     class="p-0"
-                    style="width: 100%; height: 280px"
+                    style="width: 100%; height: 300px"
                   />
                 </div>
                 <div class="flip-box-back">
@@ -2225,14 +2187,14 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+          <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
             <div class="card bg-transparent border-0 rounded-0 flip-box">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
                   <img
                     <img
                     src="https://isol.com.bd/public/front/assets/img/T-4.png"
-                    style="width: 100%; height: 280px"
+                    style="width: 100%; height: 300px"
                     class="p-0"
                     alt=""
                   />
@@ -2300,7 +2262,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+          <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
             <div class="card bg-transparent border-0 rounded-0 flip-box">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
@@ -2309,7 +2271,7 @@
                     src="https://isol.com.bd/public/front/assets/img/VALUE_3.jpg"
                     alt=""
                     class="p-0"
-                    style="width: 100%; height: 280px"
+                    style="width: 100%; height: 300px"
                   />
                 </div>
                 <div class="flip-box-back">
@@ -2340,14 +2302,14 @@
       <!-- Mission, Vision Section Ends Here -->
 
       <!-- Benefits Section Starts Here -->
-      <section class="container mt-2">
-        <div class="row">
+      <section class="container mb-5">
+        <div class="row mb-3">
           <div class="col-12">
             <div class="scene scene--card" id="changeable-height-div">
               <div class="card1">
                 <div class="card__face card__face--front">
                   <h3>Welcome On Board</h3>
-                  <h5 class="mb-4" id="benefits-sub-title">
+                  <h5 class="mb-4">
                     We are representatives of the most important lines in the
                     shipping industry. Bangladesh's leading cruise ship crew
                     recruitment agency
@@ -2535,12 +2497,12 @@
       <!-- Benefits Section Ends Here -->
 
       <!-- You've Got A Request Section Starts Here -->
-      <section class="container">
+      <section class="container mb-5">
         <div class="section-title">
           <h2>You've got a request- What's next?</h2>
         </div>
         <div class="row">
-          <div class="col-12 six_p">
+          <div class="col-12 mb-4 six_p">
             <p>
               If you are looking for quality, reliability, efficiency and
               trusted collaboration, it's nothing other than inter-world
@@ -2566,7 +2528,9 @@
                   <div class="flip-card1">
                     <div class="flip-card-inner1">
                       <div class="flip-card-front1">
-                        <div class="d-flex align-items-center">
+                        <div
+                          class="d-flex align-items-center justify-content-left"
+                        >
                           <div class="specialize_img">
                             <img
                               src="https://isol.com.bd/public/front/assets/img/sixthtab/middle_1.png"
@@ -2596,7 +2560,9 @@
                   <div class="flip-card1">
                     <div class="flip-card-inner1">
                       <div class="flip-card-front1">
-                        <div class="d-flex align-items-center">
+                        <div
+                          class="d-flex align-items-center justify-content-left"
+                        >
                           <div class="specialize_img">
                             <img
                               src="https://isol.com.bd/public/front/assets/img/sixthtab/middle_2.png"
@@ -2627,7 +2593,9 @@
                   <div class="flip-card1">
                     <div class="flip-card-inner1">
                       <div class="flip-card-front1">
-                        <div class="d-flex align-items-center">
+                        <div
+                          class="d-flex align-items-center justify-content-left"
+                        >
                           <div class="specialize_img">
                             <img
                               src="https://isol.com.bd/public/front/assets/img/sixthtab/middle_4.png"
@@ -2659,7 +2627,9 @@
                   <div class="flip-card1">
                     <div class="flip-card-inner1">
                       <div class="flip-card-front1">
-                        <div class="d-flex align-items-center">
+                        <div
+                          class="d-flex align-items-center justify-content-left"
+                        >
                           <div class="specialize_img">
                             <img
                               src="https://isol.com.bd/public/front/assets/img/sixthtab/middle_5.png"
@@ -2689,7 +2659,9 @@
                   <div class="flip-card1">
                     <div class="flip-card-inner1">
                       <div class="flip-card-front1">
-                        <div class="d-flex align-items-center">
+                        <div
+                          class="d-flex align-items-center justify-content-left"
+                        >
                           <div class="specialize_img">
                             <img
                               src="https://isol.com.bd/public/front/assets/img/sixthtab/middle_6.png"
@@ -2720,7 +2692,9 @@
                   <div class="flip-card1">
                     <div class="flip-card-inner1">
                       <div class="flip-card-front1">
-                        <div class="d-flex align-items-center">
+                        <div
+                          class="d-flex align-items-center justify-content-left"
+                        >
                           <div class="specialize_img">
                             <img
                               src="https://isol.com.bd/public/front/assets/img/sixthtab/middle_7.png"
@@ -2751,7 +2725,9 @@
                   <div class="flip-card1">
                     <div class="flip-card-inner1">
                       <div class="flip-card-front1">
-                        <div class="d-flex align-items-center">
+                        <div
+                          class="d-flex align-items-center justify-content-left"
+                        >
                           <div class="specialize_img">
                             <img
                               src="https://isol.com.bd/public/front/assets/img/sixthtab/middle_8.png"
@@ -2780,7 +2756,9 @@
                   <div class="flip-card1">
                     <div class="flip-card-inner1">
                       <div class="flip-card-front1">
-                        <div class="d-flex align-items-center">
+                        <div
+                          class="d-flex align-items-center justify-content-left"
+                        >
                           <div class="specialize_img">
                             <img
                               src="https://isol.com.bd/public/front/assets/img/sixthtab/middle_3.png"
@@ -2847,14 +2825,14 @@
       <!-- You've Got A Request Section Ends Here -->
 
       <!-- Hiring Process Section Starts Here -->
-      <section class="container">
+      <section class="container mb-5">
         <div class="row">
           <div class="col-12">
             <div class="row">
               <!-- Hiring Process Slider Starts Here -->
               <div class="hiring_process_slider">
                 <div class="slider_box">
-                  <div class="section-title custom-font-weight mb-4">
+                  <div class="section-title mb-4">
                     <h2 class="fira-sans-font" style="color: #3c9fb4">
                       Our Hiring Process - For CLients
                     </h2>
@@ -2985,7 +2963,7 @@
                 </div>
 
                 <div class="slider_box">
-                  <div class="section-title custom-font-weight mb-4">
+                  <div class="section-title mb-4">
                     <h2 class="fira-sans-font" style="color: #ff8c00">
                       Our Hiring Process - For Applicants
                     </h2>
@@ -3118,13 +3096,13 @@
       <!-- Hiring Process Section Ends Here -->
 
       <!-- Urgent Vacancy Section Starts Here -->
-      <section class="container">
+      <section class="container mb-5">
         <div class="section-title">
           <h2 class="fira-sans-font">Urgent Vacancy</h2>
         </div>
 
         <!-- Urgent Vacancy Carousel Starts Here -->
-        <div class="row mb-4">
+        <div class="row mb-2">
           <div class="col-12">
             <!-- Urgent Vacancy Webview Starts Here -->
             <div class="urgent_vacancy_slider" id="urgent-vacancy-web-view">
@@ -4429,7 +4407,7 @@
       <!-- Urgent Vacancy Section Ends Here -->
 
       <!-- What They Say About Us Section Starts Here -->
-      <section class="container">
+      <section class="container mb-5">
         <div class="section-title">
           <h2 class="fira-sans-font">What They Say About Us</h2>
         </div>
@@ -4949,7 +4927,7 @@
             >
               <div class="slider_box">
                 <div class="row mb-2">
-                  <div class="col-12">
+                  <div class="col-12 mb-4">
                     <div class="testimonial">
                       <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -4985,7 +4963,7 @@
               </div>
               <div class="slider_box">
                 <div class="row mb-2">
-                  <div class="col-12">
+                  <div class="col-12 mb-4">
                     <div class="testimonial">
                       <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -5021,7 +4999,7 @@
               </div>
               <div class="slider_box">
                 <div class="row mb-2">
-                  <div class="col-12">
+                  <div class="col-12 mb-4">
                     <div class="testimonial">
                       <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -5057,7 +5035,7 @@
               </div>
               <div class="slider_box">
                 <div class="row mb-2">
-                  <div class="col-12">
+                  <div class="col-12 mb-4">
                     <div class="testimonial">
                       <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -5093,7 +5071,7 @@
               </div>
               <div class="slider_box">
                 <div class="row mb-2">
-                  <div class="col-12">
+                  <div class="col-12 mb-4">
                     <div class="testimonial">
                       <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -5129,7 +5107,7 @@
               </div>
               <div class="slider_box">
                 <div class="row mb-2">
-                  <div class="col-12">
+                  <div class="col-12 mb-4">
                     <div class="testimonial">
                       <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -5165,7 +5143,7 @@
               </div>
               <div class="slider_box">
                 <div class="row mb-2">
-                  <div class="col-12">
+                  <div class="col-12 mb-4">
                     <div class="testimonial">
                       <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -5201,7 +5179,7 @@
               </div>
               <div class="slider_box">
                 <div class="row mb-2">
-                  <div class="col-12">
+                  <div class="col-12 mb-4">
                     <div class="testimonial">
                       <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -5356,8 +5334,8 @@
       <!-- What They Say About Us Section Ends Here -->
 
       <!-- Global Recruitment News Section Starts Here -->
-      <section class="container">
-        <div class="section-title">
+      <section class="container mb-5">
+        <div class="section-title mb-4">
           <h2 class="fira-sans-font">Global Recruitment News</h2>
         </div>
 
@@ -5408,7 +5386,7 @@
       <!-- Global Recruitment News Section Ends Here -->
 
       <!-- Contact Us Section Starts Here -->
-      <section class="contact" id="contact">
+      <section class="contact mb-5" id="contact">
         <div class="contact_wave">
           <div class="p-md-4 p-lg-4 mb-xxl-4">&nbsp;</div>
           <div class="container">
@@ -5421,7 +5399,7 @@
               <div class="col-lg-5 col-md-12 col-sm-12 mb-4">
                 <div class="info">
                   <div class="row">
-                    <div class="col-lg-12 col-md-6 col-sm-12 mb-3">
+                    <div class="col-lg-12 col-md-4 col-sm-12 mb-3">
                       <div class="form-group">
                         <i class="fa-solid fa-location-arrow"></i>
                         <h4>Location:</h4>
@@ -5437,23 +5415,19 @@
                         </p>
                       </div>
                     </div>
-                    <div class="col-lg-12 col-md-6 col-sm-12 mb-3">
-                      <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
-                          <div class="form-group">
-                            <i class="fa-solid fa-at"></i>
-                            <h4>Email:</h4>
-                            <p>info@isol.com.bd</p>
-                          </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                          <div class="form-group">
-                            <i class="fa-solid fa-phone"></i>
-                            <h4>Call:</h4>
-                            <p>+880 1982-547679</p>
-                            <p>+880 28899210</p>
-                          </div>
-                        </div>
+                    <div class="col-lg-12 col-md-4 col-sm-12 mb-3">
+                      <div class="form-group">
+                        <i class="fa-solid fa-at"></i>
+                        <h4>Email:</h4>
+                        <p>info@isol.com.bd</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-4 col-sm-12 mb-3">
+                      <div class="form-group">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Call:</h4>
+                        <p>+880 1982-547679</p>
+                        <p>+880 28899210</p>
                       </div>
                     </div>
                   </div>
@@ -5462,7 +5436,7 @@
               <div class="col-lg-7 col-md-12 col-sm-12">
                 <h4>Enquiry</h4>
                 <p>Email us with any questions or inquiries</p>
-                <form action="" class="php-email-form">
+                <form action="">
                   <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                       <div class="form-group">
@@ -5533,7 +5507,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="text-center">
+                  <div class="float-end">
                     <button class="btn btn-primary" type="submit">
                       Send Message
                     </button>
@@ -5548,11 +5522,11 @@
       <!-- Contact Us Section Ends Here -->
 
       <!-- Why Us Section Starts Here -->
-      <section class="container fira-sans-font">
+      <section class="container fira-sans-font mb-5">
         <div class="section-title">
           <h2>Why Us</h2>
         </div>
-        <div class="row mb-4">
+        <div class="row">
           <div class="col-lg-2 col-md-4 col-sm-12 mb-3">
             <div
               class="card align-items-center bg-transparent footer_upper_box border-0"
@@ -5640,134 +5614,131 @@
             </div>
           </div>
         </div>
-        <!-- Footer About Us Section Starts Here -->
-        <section class="container">
-          <div class="row pb-4">
-            <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-              <div class="footer_text_box" style="text-align: justify">
-                <h5>About Us</h5>
-                <p>
-                  ISOL (Interworld Shipping Overseas Limited) is a Licensed and
-                  MLC Certified Soli eTas International HR Management Service
-                  Provider.
-                </p>
-                <p>
-                  We provide services for Maritime, Oil and Gas Sectors, Cruise
-                  Ships, Mega- Yachts, River Cruise, Cargo Shipping, Merchant
-                  Navy's, Hotels & Resorts, Chartered Crew, Offshore and
-                  Hospitality Butlers respectively.
-                </p>
-                <p>
-                  If you are looking for quality, reliability and efficient
-                  services — ISOL is the brand name and partner you are sourcing
-                  for. We offer flexible HR solutions, allowing you to focus on
-                  your core business goals
-                </p>
-                <p>
-                  At ISOL, we think differently and there are a lot of benefits
-                  that you can reap when you work with us. Our specialists are
-                  highly motivated, ambitious and talented. We have developed
-                  recruitment solutions that meet and exceeds the highest
-                  expectation of our clients.
-                </p>
-                <p>License: 356375, C-171113/2021</p>
+      </section>
+      <!-- Why Us Section Ends Here -->
+
+      <!-- Footer About Us Section Starts Here -->
+      <section class="container">
+        <div class="row pb-4">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="footer_text_box" style="text-align: justify">
+              <h5>About Us</h5>
+              <p>
+                ISOL (Interworld Shipping Overseas Limited) is a Licensed and
+                MLC Certified Soli eTas International HR Management Service
+                Provider.
+              </p>
+              <p>
+                We provide services for Maritime, Oil and Gas Sectors, Cruise
+                Ships, Mega- Yachts, River Cruise, Cargo Shipping, Merchant
+                Navy's, Hotels & Resorts, Chartered Crew, Offshore and
+                Hospitality Butlers respectively.
+              </p>
+              <p>
+                If you are looking for quality, reliability and efficient
+                services — ISOL is the brand name and partner you are sourcing
+                for. We offer flexible HR solutions, allowing you to focus on
+                your core business goals
+              </p>
+              <p>
+                At ISOL, we think differently and there are a lot of benefits
+                that you can reap when you work with us. Our specialists are
+                highly motivated, ambitious and talented. We have developed
+                recruitment solutions that meet and exceeds the highest
+                expectation of our clients.
+              </p>
+              <p>License: 356375, C-171113/2021</p>
+            </div>
+            <div class="copyright">
+              Interworld Shipping Overseas Limited (ISOL) All Rights Reserved
+              &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h5 class="footer_header">Others Link</h5>
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <div class="footer_link_list">
+                  <p><a href="">Contact</a></p>
+                  <p><a href="">Privacy Policies</a></p>
+                  <p><a href="">Terms & Condition</a></p>
+                  <p><a href="">Recruitment Procedures</a></p>
+                  <p><a href="">Fraud Warning Disclaimers</a></p>
+                </div>
               </div>
-              <div class="copyright">
-                Interworld Shipping Overseas Limited (ISOL) All Rights Reserved
-                &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
+              <div class="col-lg-6 col-sm-12 py-4">
+                <button
+                  type="button"
+                  class="align-self-end btn custom-btn1 mb-4"
+                  style="margin-top: auto; width: 100%"
+                >
+                  Find a Crew
+                </button>
+                <button
+                  type="button"
+                  class="align-self-end btn custom-btn2"
+                  style="margin-top: auto; width: 100%"
+                >
+                  Upload a CV
+                </button>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <h5 class="footer_header">Others Link</h5>
-              <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                  <div class="footer_link_list">
-                    <p><a href="">Contact</a></p>
-                    <p><a href="">Privacy Policies</a></p>
-                    <p><a href="">Terms & Condition</a></p>
-                    <p><a href="">Recruitment Procedures</a></p>
-                    <p><a href="">Fraud Warning Disclaimers</a></p>
-                  </div>
+            <div class="second_box_gap">
+              <div class="row align-items-center">
+                <div class="col-xl-4 col-sm-12 social_icon_list py-4">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/profile.php?id=100095457271998"
+                    class="fa-brands fa-facebook-f"
+                  >
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/company/interworld-shipping-overseas-limited-isol/?viewAsMember=true"
+                    class="fa-brands fa-linkedin-in"
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/@ManningAgent/featured"
+                    class="fa-brands fa-youtube"
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://g.page/r/CcKGtJQjvbksEB0/review"
+                    class="fa-brands fa-google"
+                  ></a>
                 </div>
-                <div class="col-lg-6 col-sm-12 py-4">
-                  <button
-                    type="button"
-                    class="align-self-end btn custom-btn1 mb-4"
-                    style="margin-top: auto; width: 100%"
-                  >
-                    Find a Crew
-                  </button>
-                  <button
-                    type="button"
-                    class="align-self-end btn custom-btn2"
-                    style="margin-top: auto; width: 100%"
-                  >
-                    Upload a CV
-                  </button>
+                <div class="col-xl-8 col-sm-12">
+                  <div class="d-flex justify-content-between footer_link py-4">
+                    <a href="">HOME</a>
+                    <a href="">HOW IT WORKS</a>
+                    <a href="">ABOUT US</a>
+                    <a href="">VACANCIES</a>
+                    <a href="">CONTACTS</a>
+                  </div>
                 </div>
               </div>
-              <div class="second_box_gap">
-                <div class="row align-items-center">
-                  <div class="col-xl-4 col-sm-12 social_icon_list py-4">
-                    <a
-                      target="_blank"
-                      href="https://www.facebook.com/profile.php?id=100095457271998"
-                      class="fa-brands fa-facebook-f"
-                    >
-                    </a>
-                    <a
-                      target="_blank"
-                      href="https://www.linkedin.com/company/interworld-shipping-overseas-limited-isol/?viewAsMember=true"
-                      class="fa-brands fa-linkedin-in"
-                    ></a>
-                    <a
-                      target="_blank"
-                      href="https://www.youtube.com/@ManningAgent/featured"
-                      class="fa-brands fa-youtube"
-                    ></a>
-                    <a
-                      target="_blank"
-                      href="https://g.page/r/CcKGtJQjvbksEB0/review"
-                      class="fa-brands fa-google"
-                    ></a>
-                  </div>
-                  <div class="col-xl-8 col-sm-12">
-                    <div
-                      class="d-flex justify-content-between footer_link py-4"
-                    >
-                      <a href="">HOME</a>
-                      <a href="">HOW IT WORKS</a>
-                      <a href="">ABOUT US</a>
-                      <a href="">VACANCIES</a>
-                      <a href="">CONTACTS</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="flag_section py-4">
-                  <div class="row">
-                    <div class="col-12">
-                      <a
-                        href="https://info.flagcounter.com/avW9"
-                        target="_blank"
-                        ><img
-                          src="./assets/images/flag-counter/download.png"
-                          class="img-fluid"
-                          alt="Flag Counter"
-                          border="0"
-                      /></a>
-                    </div>
+              <div class="flag_section py-4">
+                <div class="row">
+                  <div class="col-12">
+                    <a href="https://info.flagcounter.com/avW9" target="_blank"
+                      ><img
+                        src="./assets/images/flag-counter/download.png"
+                        class="img-fluid"
+                        alt="Flag Counter"
+                        border="0"
+                    /></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- Footer About Us Section Ends Here -->
+        </div>
       </section>
-      <!-- Why Us Section Ends Here -->
+      <!-- Footer About Us Section Ends Here -->
     </div>
     <!-- Fullview Div Ends Here -->
 
@@ -5951,10 +5922,20 @@
     <!-- Removing Fullview For Mobile and Tablet -->
     <script>
       // Check the screen size
-      if ($(window).width() <= 1023) {
-        $("#fullview").removeAttr("id");
-        $("#fullview-js").remove();
-        $("#fullview-css").remove();
+      if (window.innerWidth <= 1024) {
+        // If the screen size is less than or equal to 1024px, unlink the fullview.js and fullview.css files
+
+        // Remove the fullview.js script (if it exists)
+        var fullviewScript = document.getElementById("fullview-js");
+        if (fullviewScript) {
+          fullviewScript.parentNode.removeChild(fullviewScript);
+        }
+
+        // Remove the fullview.css stylesheet
+        var fullviewStylesheet = document.getElementById("fullview-css");
+        if (fullviewStylesheet) {
+          fullviewStylesheet.parentNode.removeChild(fullviewStylesheet);
+        }
       }
     </script>
 
@@ -5986,61 +5967,89 @@
 
     <script>
       $(document).ready(function () {
-        var windowWidth = $(window).width();
-        if (windowWidth >= 1024) {
-          var fv = $("#fullview").fullView({
-            //Navigation
-            dots: true,
+        var fv = $("#fullview").fullView({
+          //Navigation
+          dots: true,
 
-            //Scrolling
-            easing: "swing",
-            backToTop: false,
+          //Scrolling
+          easing: "swing",
+          backToTop: false,
 
-            // Accessibility
-            keyboardScrolling: true,
+          // Accessibility
+          keyboardScrolling: true,
 
-            // Callback
-            onScrollEnd: function (currentView, preView) {
-              // console.log("Current", currentView);
-              // console.log("Previus", preView);
-            },
-          });
+          // Callback
+          onScrollEnd: function (currentView, preView) {
+            // console.log("Current", currentView);
+            // console.log("Previus", preView);
 
-          $("#down").click(function () {
-            // To Scroll Down 1 Section
-            fv.data("fullView").scrollDown();
+            checkScrollStatus(currentView);
 
-            // To Scroll Up 1 Section
-            // fv.data('fullView').scrollDown();
-          });
+            // Get the active element by its class
+            var activeElement = document.querySelector(".active");
 
-          $("#select").change(function () {
-            // To Scroll to Specfic Section
-            fv.data("fullView").scrollTo($(this).val());
-          });
+            // Check if the active element exists
+            if (activeElement) {
+              // Get the height of the active element
+              var activeElementHeight = activeElement.clientHeight;
+
+              // Log or use the height as needed
+              console.log("Height of active element:", activeElementHeight);
+
+              var screenHeight = window.innerHeight;
+              console.log("Current screen height: " + screenHeight + " pixels");
+            } else {
+              console.log('No element with the class "active" found');
+            }
+          },
+        });
+
+        $("#down").click(function () {
+          customScrollDown();
+        });
+
+        $("#select").change(function () {
+          // To Scroll to Specfic Section
+          fv.data("fullView").scrollTo($(this).val());
+        });
+
+        function checkScrollStatus(currentView) {
+          var activeSection = $(".active");
+          var activeSectionHeight = activeSection[0].scrollHeight;
+          var screenHeight = window.innerHeight;
+
+          console.log(
+            "Active Section Height: " + activeSectionHeight + " pixels"
+          );
+          console.log("Current Screen Height: " + screenHeight + " pixels");
+
+          // Check if the screen has reached the bottom of the active section
+          if (screenHeight + activeSection.scrollTop() >= activeSectionHeight) {
+            console.log("Scrolling down...");
+            customScrollDown();
+          }
+        }
+
+        function customScrollDown() {
+          var activeSection = $(".active"); // Adjust this selector based on your actual active section class
+          var activeSectionHeight = activeSection[0].scrollHeight;
+          var screenHeight = window.innerHeight;
+
+          // Check if there's an active section
+          if (activeSection.length > 0) {
+            // Scroll to the top of the next section (considering the next active section height will start from 0)
+            $("html, body").animate(
+              { scrollTop: activeSection.offset().top + activeSectionHeight },
+              "slow"
+            );
+          } else {
+            console.log("No active section found");
+          }
         }
       });
     </script>
 
     <script>
-      $("#sliders-job-search-section").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-      });
-
-      $(".slider_second_section").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-      });
-
       $(".SecondDivSliderNav").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
