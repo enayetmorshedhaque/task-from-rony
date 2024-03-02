@@ -732,18 +732,18 @@
         color: white;
       } */
 
-      .modal-content {
+      /* .modal-content {
         background-color: black;
         color: white;
       }
 
       .btn-close {
         background-color: white !important;
-      }
+      } */
 
-      #changeable-height-div {
-        transition: height 0.5s ease-in-out; /* You can adjust the duration and timing function as needed */
-      }
+      /* #changeable-height-div {
+        transition: height 0.5s ease-in-out;
+      } */
 
       /* @media screen and (max-width: 767px) {
         .flip-box,
@@ -1015,7 +1015,7 @@
         font-size: 12px;
       } */
 
-      .testimonial {
+      /* .testimonial {
         text-align: center;
         padding: 35px 20px 20px 10px;
         margin: 70px 15px 35px;
@@ -1107,9 +1107,9 @@
       .slick-prev {
         left: -16px;
         z-index: 1;
-      }
+      } */
 
-      @media screen and (max-width: 1023px) {
+      /* @media screen and (max-width: 1023px) {
         .banner_img img,
         .second_first_Section {
           height: 40vh !important;
@@ -1146,7 +1146,7 @@
         .third_content h5 {
           text-align: center;
         }
-      }
+      } */
 
       /* @media screen and (min-width: 1024px) {
         .web-view-flex {
@@ -5918,6 +5918,26 @@
 
     <!-- Navigation Bar JS Link -->
     <script src="https://isol.com.bd/public/front/assets/js/navik.menu.js"></script>
+
+    <!-- Removing Fullview For Mobile and Tablet -->
+    <script>
+      // Check the screen size
+      if (window.innerWidth <= 1024) {
+        // If the screen size is less than or equal to 1024px, unlink the fullview.js and fullview.css files
+
+        // Remove the fullview.js script (if it exists)
+        var fullviewScript = document.getElementById("fullview-js");
+        if (fullviewScript) {
+          fullviewScript.parentNode.removeChild(fullviewScript);
+        }
+
+        // Remove the fullview.css stylesheet
+        var fullviewStylesheet = document.getElementById("fullview-css");
+        if (fullviewStylesheet) {
+          fullviewStylesheet.parentNode.removeChild(fullviewStylesheet);
+        }
+      }
+    </script>
 
     <!-- Fullview JS CDN -->
     <script
