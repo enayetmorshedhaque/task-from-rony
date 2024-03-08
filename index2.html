@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISOL</title>
+
+    <!-- Bootstrap CSS File -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/bootstrap-5/css/bootstrap.min.css"
+    />
+
+    <!-- Fontawesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/86bc96ac49.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme/theme.css" />
+
+    <!-- Homepage CSS -->
+    <link id="homepage-css" rel="stylesheet" />
+
+    <!-- Navigation Bar CSS Link -->
+    <link
+      rel="stylesheet"
+      href="https://isol.com.bd/public/front/assets/css/middle_header.css"
+    />
+
+    <!-- Fullview CSS CDN -->
+    <link
+      rel="stylesheet"
+      id="fullview-css"
+      href="https://isol.com.bd/public/front/assets/vendor/fullView/fullview.css"
+    />
+
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/slick/slick-theme.css"
+    />
+
+    <!-- Select2 CSS Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery JS File -->
+    <script src="./assets/js/jquery/jquery.min.js"></script>
+
+    <!-- Viewing Web Elements Based On Screen Height -->
+    <script>
+      $(document).ready(function () {
+        // Check window height on page load
+        checkWindowHeight();
+
+        // Check window height on window resize
+        $(window).resize(function () {
+          checkWindowHeight();
+        });
+
+        // Function to check and hide the web-large-view div
+        function checkWindowHeight() {
+          var windowHeight = $(window).height();
+          console.log(windowHeight);
+
+          if (windowHeight === 590 || windowHeight === 607) {
+            $(".web-large-view").css("display", "none");
+            $(".web-small-view").css("display", "block");
+            $("#homepage-css").attr("href", "./assets/css/theme/web-small.css");
+          }
+
+          if (windowHeight === 768) {
+            $(".web-large-view").css("display", "block");
+            $(".web-small-view").css("display", "none");
+            $("#homepage-css").attr("href", "./assets/css/theme/web-large.css");
+          }
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navigation Bar Starts Here -->
+    <div
+      class="navik-header sticky-top header-shadow center-menu-1 header-opacity"
+    >
+      <div class="container-fluid">
+        <div class="d-none d-lg-block text-center">
+          <h1 class="web-small-header_text">
+            <span>I</span>nterworld <span>S</span>hipping <span>O</span>verseas
+            <span>L</span>imited
+          </h1>
+        </div>
+
+        <!-- Navik header -->
+        <div class="navik-header-container">
+          <!--Logo-->
+          <div
+            class="logo"
+            data-mobile-logo="https://isol.com.bd/public/front/assets/img/logo.png"
+            data-sticky-logo="https://isol.com.bd/assets/img/logo.png"
+          >
+            <a href="index.html"
+              ><img
+                src="https://isol.com.bd/public/front/assets/img/logo.png"
+                alt="logo"
+            /></a>
+          </div>
+
+          <!-- Burger menu -->
+          <div class="burger-menu">
+            <div class="line-menu line-half first-line"></div>
+            <div class="line-menu"></div>
+            <div class="line-menu line-half last-line"></div>
+          </div>
+
+          <!--Navigation menu-->
+          <nav class="navik-menu menu-caret submenu-top-border submenu-scale">
+            <ul>
+              <li>
+                <a href="index.html" class="other_button">
+                  <span class="home_box">H</span>ome</a
+                >
+              </li>
+              <li>
+                <a href="how_it_work.html" class="other_button">How It Works</a>
+              </li>
+              <li>
+                <a href="#" class="other_button">Why Us</a>
+                <ul>
+                  <li><a href="mission.html">Mission</a></li>
+                  <li><a href="vision.html">Vision</a></li>
+                  <li><a href="values.html">Values</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="other_button">About ISOL</a>
+                <ul>
+                  <li>
+                    <a href="our_expertises.html">Expertise</a>
+                  </li>
+                  <li>
+                    <a href="our_services.html">Service</a>
+                  </li>
+                  <li>
+                    <a href="our_accreditations.html">Accreditations</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="other_button">Employer</a>
+                <ul>
+                  <li>
+                    <a href="post_a_job.html">Partner with us</a>
+                  </li>
+                  <li>
+                    <a href="crew_cv_searching.html">Crew cv searching</a>
+                  </li>
+                  <li>
+                    <a href="top_notch.html">Top notch candidate</a>
+                  </li>
+                  <li><a href="hierarchy.html">Hierarchy</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#" class="other_button">Crew Portal</a>
+                <ul>
+                  <li><a href="crew_login.html">Login</a></li>
+                  <li><a href="help24_7.html">Help 24/7</a></li>
+                  <li>
+                    <a href="urgent_vacancy.html">Urgent Vacancy</a>
+                  </li>
+                  <li>
+                    <a href="hiring_process.html">Hiring Process</a>
+                  </li>
+                  <li>
+                    <a href="career_navigation.html">Career Navigation</a>
+                  </li>
+                  <li>
+                    <a href="#">Find Job</a>
+                    <ul>
+                      <li>
+                        <a href="cruiseship.html">Cruiseship</a>
+                      </li>
+                      <li>
+                        <a href="megayacht.html">Megayacht</a>
+                      </li>
+                      <li>
+                        <a href="river_cruise.html">River Cruise</a>
+                      </li>
+                      <li>
+                        <a href="private_jets.html">Private Jets</a>
+                      </li>
+                      <li>
+                        <a href="hotel_ressort.html">Hotel & Resort</a>
+                      </li>
+                      <li>
+                        <a href="merchant_navy.html">Merchant Navy</a>
+                      </li>
+                      <li>
+                        <a href="offshore.html">Offshore</a>
+                      </li>
+                      <li>
+                        <a href="world_butler.html">World Butler</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="other_button">Insight</a>
+                <ul>
+                  <li><a href="event.html">Event</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="other_button">Contact</a>
+                <ul>
+                  <li><a href="#">Interview Appointment</a></li>
+                  <li><a href="#">Enquiry</a></li>
+                  <li><a href="#">Complain</a></li>
+                  <li><a href="#">Survey</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="crew_login.html" class="other_button">Hire Employee</a>
+              </li>
+              <li>
+                <a href="crew_login.html" class="other_button">CV Register</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation Bar Ends Here -->
+
+    <!-- Full View Main Content Starts Here -->
+    <!-- Small View Ends Here -->
+    <div id="fullview" class="web-small-view">
+      <!-- Small View Ends Here -->
+
+      <!-- Mission, Vision Section Web Small View Starts Here -->
+      <div class="web-small-view"></div>
+      <!-- Mission, Vision Section Web Small View Ends Here -->
+    </div>
+    <!-- Full View Main Content Ends Here -->
+
+    <!-- Modal Div Starts Here -->
+    <div
+      class="modal align-middle"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="web-small-modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Help</h5>
+            <button
+              type="button"
+              class="web-small-btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close web-small-btn-close-white"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              We are available 24/7 to attend, listen to and understand our
+              client’s needs and expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal align-middle"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="web-small-modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Assistance</h5>
+            <button
+              type="button"
+              class="web-small-btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close web-small-btn-close-white"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Our highly motivated HR Managers will assess the crews CVs and
+              provide assistance and recommend steps on how to get hired.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal align-middle"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="web-small-modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Support</h5>
+            <button
+              type="button"
+              class="web-small-btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close web-small-btn-close-white"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              We not only provide you with leads on latest cruise ship jobs, but
+              also valuable information and support for job seekers
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal align-middle"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="web-small-modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tips</h5>
+            <button
+              type="button"
+              class="web-small-btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close web-small-btn-close-white"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              The best way to get a job, is to do your own research and find out
+              every possible detail about working on cruise ship by visiting
+              their websites and then decide if you can adapt to the job.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal align-middle"
+      id="exampleModal4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="web-small-modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Guidance</h5>
+            <button
+              type="button"
+              class="web-small-btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close web-small-btn-close-white"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              After visiting the cruise liner websites and if you find something
+              suitable, ensure to update your CV to demonstrate your suitability
+              for the job. Recruiters have only a few seconds to look at your CV
+              so make sure you prepare a clear, brief, informative and well
+              styled CV.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal align-middle"
+      id="exampleModal5"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="web-small-modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Advice</h5>
+            <button
+              type="button"
+              class="web-small-btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Do not apply for positions if you have no or little previous
+              experience; and do not apply for jobs which require qualifications
+              you don&#39;t hold – you will be only wasting your time and the
+              recruiter’s time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Div Ends Here -->
+
+    <!-- jQuery JS File -->
+    <script src="./assets/js/jquery/jquery.min.js"></script>
+
+    <!-- Navigation Bar JS Link -->
+    <script src="https://isol.com.bd/public/front/assets/js/navik.menu.js"></script>
+
+    <!-- Removing Fullview For Mobile and Tablet -->
+    <script>
+      $(document).ready(function () {
+        checkDisplayWidth();
+
+        $(window).on("scroll resize", function () {
+          checkDisplayWidth();
+        });
+
+        function checkDisplayWidth() {
+          var windowWidth = $(window).width();
+
+          var fullviewCSSLink = $("#fullview-css");
+          var fullviewJSScript = $("#fullview-js");
+
+          if (windowWidth <= 1023) {
+            fullviewCSSLink.removeAttr("href");
+            fullviewJSScript.removeAttr("src");
+          } else {
+            if (!fullviewCSSLink.attr("href")) {
+              fullviewCSSLink.attr(
+                "href",
+                "https://isol.com.bd/public/front/assets/vendor/fullView/fullview.css"
+              );
+            }
+
+            if (!fullviewJSScript.attr("src")) {
+              fullviewJSScript.attr(
+                "src",
+                "https://isol.com.bd/public/front/assets/vendor/fullView/fullview.js"
+              );
+            }
+          }
+        }
+      });
+    </script>
+
+    <!-- Fullview JS CDN -->
+    <script
+      id="fullview-js"
+      src="https://isol.com.bd/public/front/assets/vendor/fullView/fullview.js"
+    ></script>
+
+    <!-- Bootstrap JS File -->
+    <script src="./assets/js/bootstrap-5/js/bootstrap.min.js"></script>
+
+    <!-- Slick JS File -->
+    <script
+      src="./assets/js/slick/slick.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
+    <!-- Select2 JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- Modal JS Script -->
+    <script>
+      $(document).ready(function () {
+        $("#myModalnews").modal("show");
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        var windowWidth = $(window).width();
+
+        if (windowWidth >= 1024) {
+          var fv = $("#fullview").fullView({
+            //Navigation
+            dots: true,
+
+            //Scrolling
+            easing: "swing",
+            backToTop: false,
+
+            // Accessibility
+            keyboardScrolling: true,
+
+            // Callback
+            onScrollEnd: function (currentView, preView) {
+              // console.log("Current", currentView);
+              // console.log("Previus", preView);
+            },
+
+            afterLoad: function (anchorLink, index) {
+              // Check if the scroll position is beyond a certain threshold
+              if (index > 1 && $(window).scrollTop() > 200) {
+                // Hide the .logocenter div
+                $(".logoCenter").css("display", "none !important");
+              } else {
+                // Show the .logocenter div if the scroll position is within the threshold
+                $(".logoCenter").css("display", "block"); // or 'inline-block' depending on your layout
+              }
+            },
+          });
+
+          $("#down").click(function () {
+            // To Scroll Down 1 Section
+            fv.data("fullView").scrollDown();
+
+            // To Scroll Up 1 Section
+            // fv.data('fullView').scrollDown();
+          });
+
+          $("#select").change(function () {
+            // To Scroll to Specfic Section
+            fv.data("fullView").scrollTo($(this).val());
+          });
+        }
+      });
+    </script>
+
+    <script>
+      $("#web-small-sliders-job-search-section").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+      });
+
+      $(".slider_second_section").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+      });
+
+      $(".SecondDivSliderNav").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+
+      $(".why_join_us_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: 5000,
+      });
+
+      $(".mission_vision_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: false,
+      });
+
+      $(".benefits_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: 5000,
+      });
+
+      $(".specialize_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: false,
+      });
+
+      $(".hiring_process_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: 5000,
+      });
+
+      $(".urgent_vacancy_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: false,
+      });
+
+      $(".web-small-testimonials_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: false,
+      });
+
+      $(".vacancy_news_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1500,
+      });
+    </script>
+
+    <script>
+      var cards = document.querySelectorAll(".web-small-card1");
+      var changable_height_div = document.getElementById(
+        "changeable-height-div"
+      );
+
+      // Use a variable to keep track of the current height state
+      let isWebView = true;
+      let isTabletView = false;
+      let isMobileView = false;
+
+      [...cards].forEach((card) => {
+        card.addEventListener("click", function () {
+          card.classList.toggle("is-flipped");
+          adjustDivHeight(card);
+        });
+      });
+
+      function adjustDivHeight(card) {
+        const tabletViewHeight = 200;
+        const tabletViewDefaultHeight = 500;
+
+        const mobileViewHeight = 100;
+        const mobileViewDefaultHeight = 1020;
+
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth < 767) {
+          // Toggle between mobile view height and default height
+          if (isMobileView) {
+            changable_height_div.style.height = `${mobileViewDefaultHeight}px`;
+          } else {
+            changable_height_div.style.height = `${mobileViewHeight}px`;
+          }
+
+          // Update the height state for mobile view
+          isMobileView = !isMobileView;
+        }
+
+        if (screenWidth >= 768 && screenWidth < 1024) {
+          // Toggle between tablet view height and default height
+          if (isTabletView) {
+            changable_height_div.style.height = `${tabletViewDefaultHeight}px`;
+          } else {
+            changable_height_div.style.height = `${tabletViewHeight}px`;
+          }
+
+          // Update the height state for tablet view
+          isTabletView = !isTabletView;
+        }
+      }
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".js-example-basic-single").select2();
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".js-example-basic-single1").select2();
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".js-example-basic-single2").select2();
+      });
+    </script>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: myFirstFont;
-  src: url("../../font/chinese.sthupo.ttf");
+  src: url("../font/chinese.sthupo.ttf");
 }
 
 html,
@@ -55,7 +55,7 @@ a {
 
 /* Global Recruitment News Image Slider Homepage */
 .news_img_box {
-  max-height: 430px;
+  height: 360px;
   width: 100%;
 }
 
