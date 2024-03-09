@@ -1161,6 +1161,10 @@ body {
     height: 100vh !important;
   }
 
+  #why-join-spacing {
+    padding-top: 20%;
+  }
+
   #benefits-large-view {
     display: none;
   }
