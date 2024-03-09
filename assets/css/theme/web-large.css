@@ -28,6 +28,7 @@ body {
   line-height: 1.42857143;
   color: #a3a3a3;
   background-color: #000000;
+  overflow: visible;
 }
 
 /* Header Section Style */
@@ -1162,7 +1163,7 @@ body {
   }
 
   #why-join-spacing {
-    padding-top: 20%;
+    padding-top: 30%;
   }
 
   #benefits-large-view {
@@ -1219,7 +1220,7 @@ body {
 
   .flip-box,
   .flip-box-front img {
-    height: 350px !important;
+    height: 300px !important;
   }
 
   .flip-box-back {
@@ -1345,14 +1346,6 @@ body {
   .why_us_slider {
     display: block;
   }
-
-  /* .slick-next {
-    right: 20px !important;
-  }
-
-  .slick-prev {
-    left: 20px !important;
-  } */
 
   .wave,
   .wave::before,
