@@ -1284,6 +1284,10 @@ body {
     font-size: 14px;
   }
 
+  .news_img_box {
+    height: 200px;
+  }
+
   flip-card-back1 {
     display: flex !important;
     align-items: center !important;
@@ -1320,6 +1324,14 @@ body {
 
   .php-email-form {
     margin-bottom: 1.5rem;
+  }
+
+  #why-us-web {
+    display: none;
+  }
+
+  .why_us_slider {
+    display: block;
   }
 
   /* .slick-next {
@@ -1504,6 +1516,14 @@ body {
 
   .php-email-form {
     margin-bottom: 1.5rem;
+  }
+
+  #why-us-web {
+    display: block;
+  }
+
+  .why_us_slider {
+    display: none;
   }
 
   /* .social_icon_list {
@@ -1739,6 +1759,14 @@ body {
   .wave::before,
   .wave::after {
     top: 0;
+  }
+
+  #why-us-web {
+    display: block;
+  }
+
+  .why_us_slider {
+    display: none;
   }
 
   #footer {

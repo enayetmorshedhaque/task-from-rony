@@ -91,4 +91,12 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 1500,
     });
+
+    $(".why_us_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: false,
+    });
 });
