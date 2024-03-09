@@ -30,33 +30,33 @@ $(document).ready(function () {
     $(".why_join_us_slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         dots: false,
-        autoplay: false,
+        autoplay: 5000,
     });
 
     $(".benefits_slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         dots: false,
-        autoplay: false,
+        autoplay: 3000,
     });
 
     $(".mission_vision_slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         dots: false,
-        autoplay: false,
+        autoplay: 5000,
     });
 
     $(".specialize_slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         dots: false,
-        autoplay: false,
+        autoplay: 3000,
     });
 
     $(".hiring_process_slider").slick({
