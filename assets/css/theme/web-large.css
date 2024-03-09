@@ -1157,6 +1157,10 @@ body {
     font-weight: 700;
   }
 
+  .why-join-us-img {
+    height: 100vh !important;
+  }
+
   #benefits-large-view {
     display: none;
   }
@@ -1198,7 +1202,10 @@ body {
   }
 
   #why-join-us {
-    height: 100% !important;
+    height: 100vh !important;
+  }
+  .why-join-spacing {
+    padding-top: 20%;
   }
 
   .flip-box-front,
@@ -1311,15 +1318,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.5rem;
+    text-align: left !important;
+    margin-bottom: 1rem !important;
   }
 
   .terms_and_conditions_label label {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .vacancy_news_slider {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .php-email-form {
