@@ -38,9 +38,9 @@ $(document).ready(function () {
     $(".benefits_slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         dots: false,
-        autoplay: 5000,
+        autoplay: false,
     });
 
     $(".mission_vision_slider").slick({

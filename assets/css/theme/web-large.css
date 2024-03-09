@@ -1157,6 +1157,18 @@ body {
     font-weight: 700;
   }
 
+  #benefits-large-view {
+    display: none;
+  }
+
+  .benefits_slider {
+    display: block;
+  }
+
+  .fifth_icon_box p {
+    margin-bottom: 0;
+  }
+
   #sliders-second-section p {
     font-size: 12px;
     height: 10px;
@@ -1204,7 +1216,8 @@ body {
   }
 
   .section-content {
-    padding: 5% 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   #benefits-sub-title {
@@ -1217,6 +1230,15 @@ body {
 
   #changeable-height-div {
     height: 950px;
+  }
+
+  #specialize-in-web {
+    display: none;
+  }
+
+  .specialize_slider {
+    margin-top: 1rem;
+    display: block;
   }
 
   .card1 .is-flipped > .fifth_text_upper {
@@ -1242,14 +1264,15 @@ body {
   }
 
   .flip-card-front1 .d-flex {
-    justify-content: space-around;
+    display: grid !important;
+    align-items: center;
+    justify-items: center;
   }
 
   .specialize_box {
-    display: flex;
-    align-items: center;
-    padding-top: 0;
+    padding-top: 10px;
     padding-left: 0;
+    width: 100%;
   }
 
   .specialize_box p,
@@ -1257,8 +1280,17 @@ body {
     margin-bottom: 0;
   }
 
+  .specialize_box p {
+    font-size: 14px;
+  }
+
+  flip-card-back1 {
+    display: flex !important;
+    align-items: center !important;
+  }
+
   .flip-card1 {
-    height: 120px;
+    height: 140px;
   }
 
   .custom-font-weight h2 {
@@ -1290,13 +1322,13 @@ body {
     margin-bottom: 1.5rem;
   }
 
-  .slick-next {
-    right: -15px !important;
+  /* .slick-next {
+    right: 20px !important;
   }
 
   .slick-prev {
-    left: -15px !important;
-  }
+    left: 20px !important;
+  } */
 }
 
 @media (max-width: 992px) {
@@ -1344,6 +1376,14 @@ body {
 
   .second_first_Section_text .last_text {
     font-size: 23px;
+  }
+
+  #benefits-large-view {
+    display: block;
+  }
+
+  .benefits_slider {
+    display: none;
   }
 
   #sliders-second-section p {
@@ -1421,6 +1461,14 @@ body {
 
   .fifth_last_text {
     margin-bottom: 1.5rem;
+  }
+
+  #specialize-in-web {
+    display: block;
+  }
+
+  .specialize_slider {
+    display: none;
   }
 
   #urgent-vacancy-web-view,
@@ -1583,6 +1631,14 @@ body {
     padding-top: 12%;
   }
 
+  #benefits-large-view {
+    display: block;
+  }
+
+  .benefits_slider {
+    display: none;
+  }
+
   .fifth_back_box img {
     width: 50px;
   }
@@ -1642,6 +1698,14 @@ body {
 
   .custom-height {
     height: 300px;
+  }
+
+  #specialize-in-web {
+    display: block;
+  }
+
+  .specialize_slider {
+    display: none;
   }
 
   .web-view-flex {
