@@ -1349,6 +1349,12 @@ body {
   .slick-prev {
     left: 20px !important;
   } */
+
+  .wave,
+  .wave::before,
+  .wave::after {
+    top: 0;
+  }
 }
 
 @media (max-width: 992px) {
