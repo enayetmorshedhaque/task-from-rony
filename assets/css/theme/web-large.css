@@ -1170,6 +1170,15 @@ body {
     display: none;
   }
 
+  .flip-box-back p {
+    font-size: 11px;
+  }
+
+  .flip-box-back .btn {
+    --bs-btn-padding-y: 0.175rem;
+    font-size: 11px;
+  }
+
   .benefits_slider {
     display: block;
   }
@@ -1215,16 +1224,22 @@ body {
 
   .flip-box-front,
   .flip-box-back {
-    height: 300px !important;
+    height: 200px !important;
   }
 
   .flip-box,
   .flip-box-front img {
-    height: 300px !important;
+    height: 200px !important;
   }
 
   .flip-box-back {
+    font-size: 11px;
     padding: 15px !important;
+  }
+
+  .flip-box i {
+    margin-right: 5px !important;
+    font-size: 16px !important;
   }
 
   .section-content {
@@ -1266,7 +1281,7 @@ body {
   }
 
   .fifth_last_text {
-    font-size: 22px;
+    font-size: 21px;
     margin-bottom: 0.75rem;
   }
 
@@ -1352,6 +1367,15 @@ body {
   .wave::after {
     top: 0;
   }
+
+  .mission_vision_slider .slick-prev {
+    left: -15px;
+    z-index: 1;
+  }
+
+  .mission_vision_slider .slick-next {
+    right: -15px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1401,12 +1425,20 @@ body {
     font-size: 23px;
   }
 
-  #benefits-large-view {
-    display: block;
+  .benefits_slider {
+    display: none !important;
   }
 
-  .benefits_slider {
-    display: none;
+  .fifth_text_upper h1 {
+    font-size: 35px;
+  }
+
+  .fifth_text_upper p {
+    font-size: 16px;
+  }
+
+  .fifth_last_text {
+    font-size: 25px;
   }
 
   #sliders-second-section p {
@@ -1425,6 +1457,14 @@ body {
   #why-join-us,
   .showcase {
     height: 100vh;
+  }
+
+  #specialize-in-web {
+    display: flex !important;
+  }
+
+  .specialize_slider {
+    display: none !important;
   }
 
   #why-join-us-web {
@@ -1550,6 +1590,14 @@ body {
     padding-top: 15px !important;
     padding-bottom: 15px !important;
   }
+
+  #why-us-web {
+    display: flex !important;
+  }
+
+  .why_us_slider {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -1622,7 +1670,7 @@ body {
     overflow: visible;
   }
 
-  #why-join-us-web-view {
+  #why-join-spacing {
     padding-top: 20%;
   }
 
@@ -1662,12 +1710,12 @@ body {
     padding-top: 12%;
   }
 
-  #benefits-large-view {
-    display: block;
+  .mission_vision_slider {
+    display: none;
   }
 
   .benefits_slider {
-    display: none;
+    display: none !important;
   }
 
   .fifth_back_box img {
@@ -1731,12 +1779,8 @@ body {
     height: 300px;
   }
 
-  #specialize-in-web {
-    display: block;
-  }
-
   .specialize_slider {
-    display: none;
+    display: none !important;
   }
 
   .web-view-flex {
@@ -1752,7 +1796,8 @@ body {
 
   #urgent-vacancy-tablet-view,
   #urgent-vacancy-mobile-view,
-  #testimonial-tablet-mobile-view {
+  #testimonial-tablet-mobile-view,
+  #mission-tablet-container {
     display: none !important;
   }
 
@@ -1772,12 +1817,8 @@ body {
     top: 0;
   }
 
-  #why-us-web {
-    display: block;
-  }
-
   .why_us_slider {
-    display: none;
+    display: none !important;
   }
 
   #footer {
